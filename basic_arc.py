@@ -25,7 +25,84 @@ class Arc:
         self.color = color
         self.width = width
 
-def draw_arc(arc:  Arc, ax):
+def _labels_from_df(df):
+    """
+    Return node labels from Pandas dataframe
+    
+    TODO:  allow user to specify names of source and dest columns
+
+    """
+
+    # Create node labels
+    source_set = set(df["source"])
+    dest_set = set(df["dest"])
+    # Combine
+    combined = source_set.union(dest_set)
+    # list and sort
+    return sorted(list(combined))
+
+def _arcs_from_df(df, node_index):
+    """
+    Create list of Arc objects from Pandas dataframe 
+    
+    TODO:  allow user to specify names for df columns
+
+    """
+    arcs = []
+    for i in range(len(df)):
+        row = df.iloc[i]
+        
+        cur_arc = Arc(node_index[row["source"]], node_index[row["dest"]])
+        if not pd.isna(row["color"]):
+            cur_arc.color = row["color"]
+        if not pd.isna(row["width"]):
+            cur_arc.width = row["width"]
+        arcs.append(cur_arc)
+    return arcs
+
+def _max_text_width(node_labels):
+    """
+    Helper function to determine how many pixels are used in an x-axis text label
+    
+    Input:  list of strings
+    Output:  max pixel width 
+    
+    Reference:  https://stackoverflow.com/questions/5320205/matplotlib-text-dimensions
+
+    """
+    
+    f = plt.figure()
+    plt.xlim(0, len(node_labels))
+    r = f.canvas.get_renderer()
+    
+    cur_max = 0
+    for n in node_labels:    
+        t = plt.text(len(node_labels) / 2, 0.5, n)
+        bb = t.get_window_extent(renderer=r)    
+        width = bb.width
+        if width > cur_max:
+            cur_max = width
+    plt.close()
+    return cur_max
+
+def _auto_resize(node_labels):
+    """
+    If figsize set to "auto" in basic_arc_plot, calculate figsize param
+    based on size of node labels    
+
+    """
+    
+    # Adjust figsize so that x tick labels don't overlap
+    max_width = _max_text_width(node_labels)
+    dpi = plt.rcParams['figure.dpi']
+    label_width_in_inches = max_width / dpi
+    fig_width = label_width_in_inches * len(node_labels) * 1.05
+    if fig_width < 6.4:
+        fig_width = 6.4
+    
+    return (fig_width, fig_width / 4)
+    
+def _draw_arc(arc:  Arc, ax):
     """
     Function to visually represent an arc
     
@@ -52,34 +129,9 @@ def draw_arc(arc:  Arc, ax):
     ax.add_patch(new_arc)
     
     # return radius of arc to resize figure if necessary
-    return radius
-
-def max_text_width(node_labels):
-    """
-    Helper function to determine how many pixels are used in an x-axis text label
+    return radius  
     
-    Input:  list of strings
-    Output:  max pixel width 
-    
-    Reference:  https://stackoverflow.com/questions/5320205/matplotlib-text-dimensions
-
-    """
-    
-    f = plt.figure()
-    plt.xlim(0, len(node_labels))
-    r = f.canvas.get_renderer()
-    
-    cur_max = 0
-    for n in node_labels:    
-        t = plt.text(len(node_labels) / 2, 0.5, n)
-        bb = t.get_window_extent(renderer=r)    
-        width = bb.width
-        if width > cur_max:
-            cur_max = width
-    plt.close()
-    return cur_max
-
-    
+  
 def basic_arc_plot(df = None, node_labels = [], arcs = [], figsize="auto", title = ""):
     """
         
@@ -100,13 +152,7 @@ def basic_arc_plot(df = None, node_labels = [], arcs = [], figsize="auto", title
     
     if not df is None:
         if not node_labels:
-            # Create node labels
-            source_set = set(df["source"])
-            dest_set = set(df["dest"])
-            # Combine
-            combined = source_set.union(dest_set)
-            # list and sort
-            node_labels = sorted(list(combined))
+            node_labels = _labels_from_df(df)
         
     # Create dictionary for nodes for quick index lookup
     node_index = {}
@@ -116,28 +162,11 @@ def basic_arc_plot(df = None, node_labels = [], arcs = [], figsize="auto", title
         
     # Create arc objects for df
     if not df is None:
-        arcs = []
-        for i in range(len(df)):
-            row = df.iloc[i]
-            
-            cur_arc = Arc(node_index[row["source"]], node_index[row["dest"]])
-            if not pd.isna(row["color"]):
-                cur_arc.color = row["color"]
-            if not pd.isna(row["width"]):
-                cur_arc.width = row["width"]
-            arcs.append(cur_arc)
+        arcs = _arcs_from_df(df, node_index)
         
+    # resize figure
     if figsize == "auto":
-        # Adjust figsize so that x tick labels don't overlap
-        max_width = max_text_width(node_labels)
-        dpi = plt.rcParams['figure.dpi']
-        label_width_in_inches = max_width / dpi
-        fig_width = label_width_in_inches * len(node_labels) * 1.05
-        if fig_width < 6.4:
-            fig_width = 6.4
-        
-        
-        figsize = (fig_width, fig_width / 4)
+        figsize = _auto_resize(node_labels)
     
     fig, ax = plt.subplots(figsize=figsize)
    
@@ -156,10 +185,11 @@ def basic_arc_plot(df = None, node_labels = [], arcs = [], figsize="auto", title
         else:
             cur_arc = arc
 
-        radius = draw_arc(cur_arc, ax)
+        radius = _draw_arc(cur_arc, ax)
         if radius > max_height:
             max_height = radius
     
+    # final adjustments
     ax.set_ylim(0, (max_height / 2) * 1.01)  
     ax.set_xlim(0 - x_vals[-1] * 0.01, x_vals[-1] * 1.01)
 
