@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import pandas as pd
 
+from helper import auto_resize
+
 
 class Arc:
     
@@ -60,47 +62,6 @@ def _arcs_from_df(df, node_index):
         arcs.append(cur_arc)
     return arcs
 
-def _max_text_width(node_labels):
-    """
-    Helper function to determine how many pixels are used in an x-axis text label
-    
-    Input:  list of strings
-    Output:  max pixel width 
-    
-    Reference:  https://stackoverflow.com/questions/5320205/matplotlib-text-dimensions
-
-    """
-    
-    f = plt.figure()
-    plt.xlim(0, len(node_labels))
-    r = f.canvas.get_renderer()
-    
-    cur_max = 0
-    for n in node_labels:    
-        t = plt.text(len(node_labels) / 2, 0.5, n)
-        bb = t.get_window_extent(renderer=r)    
-        width = bb.width
-        if width > cur_max:
-            cur_max = width
-    plt.close()
-    return cur_max
-
-def _auto_resize(node_labels):
-    """
-    If figsize set to "auto" in basic_arc_plot, calculate figsize param
-    based on size of node labels    
-
-    """
-    
-    # Adjust figsize so that x tick labels don't overlap
-    max_width = _max_text_width(node_labels)
-    dpi = plt.rcParams['figure.dpi']
-    label_width_in_inches = max_width / dpi
-    fig_width = label_width_in_inches * len(node_labels) * 1.05
-    if fig_width < 6.4:
-        fig_width = 6.4
-    
-    return (fig_width, fig_width / 4)
     
 def _draw_arc(arc:  Arc, ax):
     """
@@ -166,7 +127,8 @@ def basic_arc_plot(df = None, node_labels = [], arcs = [], figsize="auto", title
         
     # resize figure
     if figsize == "auto":
-        figsize = _auto_resize(node_labels)
+        fig_width = auto_resize(node_labels)
+        figsize = (fig_width, fig_width / 4)
     
     fig, ax = plt.subplots(figsize=figsize)
    
