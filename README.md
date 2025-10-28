@@ -22,6 +22,8 @@ Proportional arc chart:  show part to whole relationships among many sources (in
 
 ### Requirements
 
+Python 3.11
+
 Pandas
 
 Matplotlib

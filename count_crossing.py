@@ -95,6 +95,7 @@ def count_graph_crossings(
     'arcs' represets the edges.
     """
     adjacency_matrix = construct_adj_matrix(node_labels, arcs)
+
     # print(adjacency_matrix)
 
     node_size = len(node_labels)
@@ -128,12 +129,11 @@ def count_node_crossings(
         )
 
     adjacency_matrix = construct_adj_matrix(node_labels, arcs)
-    # print(adjacency_matrix)
 
     node_size = len(node_labels)
-    index_i = node_labels.index(node)
     # 'node_size' represents the cardiality of the set of nodes in the
     # graph.
+    index_i = node_labels.index(node)
 
     return sum(
         adjacency_matrix[index_i][index_j] * adjacency_matrix[index_k][index_l]
@@ -158,7 +158,8 @@ if __name__ == "__main__":
     crossings_pre: int = count_graph_crossings(node_order, arcs)
 
     from arc_crossing import minimize_crossings
-    name_order = minimize_crossings(node_order, arcs)
+    node_order = minimize_crossings(node_order, arcs)
+    print("Nodes:", node_order)
     crossings_post: int = count_graph_crossings(node_order, arcs)
 
     print(
@@ -166,6 +167,3 @@ if __name__ == "__main__":
         f"  - before minimization: {crossings_pre}\n"
         f"  - after minimization: {crossings_post}"
     )
-
-    print(count_node_crossings("Amina", node_order, arcs), "<- correct")
-    print(count_node_crossings("Diego", node_order, arcs), "<- incorrect")
