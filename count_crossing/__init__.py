@@ -1,29 +1,5 @@
 from warnings import warn
-
-"""
-# Counting Crossing Algorithm (and other utilities)
-Author: Carlos Rubio
-
-## Notes:
-
-- For now, I decided to follow Dr. C.'s design pattern and have the counting
-algorithm generate it's own adjacency list. It was proposed that the data
-transformation be abstracted out of the functions, but in order to keep that
-avoid irregularities in the API, I decided to keep the design unified.
-
-- Interstingly, I found using an adjacency matrix more useful for the Crossing
-Counting algorithm: it was easier to keep track of which pairs of edges
-had been visited.
-
-- The postprocessing phase (local adjusting) requires to count the number of
-crossings on the incident edges of a node, not the sum total of crossings. Such
-algorithm also requires the ASVDF, since it assumes that the adjacency matrix
-representation of the graph organizes the rows in decreasing node degree order.
-
-A draft for the implementation of a node crossing counting algorithm can be
-found in the 'count_node_crossing'.
-"""
-
+from collections.abc import Callable
 
 # Type Annotations (using type hinting as of Python 3.10)
 NodeLabel = str
@@ -117,14 +93,13 @@ def count_node_crossings(
 ) -> int:
     # WARN: This algorithm hasn't been fully implemented, and it's output is
     # incorrect.
-    warn("Unfinished implementation: this algorithm might not be correct.")
+    # warn("Unfinished implementation: this algorithm might not be correct.")
     """
     Returns the count of crossings on the incident edges of 'node' in the
     graph ('node_labels', 'arcs'), where 'node_labels' represents the nodes,
     and 'arcs' represets the edges.
     """
-    if node not in node_labels:
-        raise ValueError(
+    if node not in node_labels: raise ValueError(
             f"Node {node} is not in node_labels: {node_labels}"
         )
 
@@ -134,36 +109,22 @@ def count_node_crossings(
     # 'node_size' represents the cardiality of the set of nodes in the
     # graph.
     index_i = node_labels.index(node)
+    p = permutator(node_size, index_i)
 
     return sum(
-        adjacency_matrix[index_i][index_j] * adjacency_matrix[index_k][index_l]
-        for index_j in range(index_i + 2, node_size - 1)
-        for index_k in range(index_i + 1, index_j)
+        adjacency_matrix[index_i][p(index_j)] * adjacency_matrix[p(index_k)][p(index_l)]
+        for index_j in range(2, node_size)
+        for index_k in range(1, index_j)
         for index_l in range(index_j + 1, node_size)
     )
 
-# Testing the counting algorithm
-if __name__ == "__main__":
-    node_order =  ["Amina", "Diego", "Liam", "Mei", "Zanele"]
-    arcs = [
-        ("Amina", "Liam"),
-        ("Diego", "Zanele"),
-        ("Amina", "Mei"),
-        ("Mei", "Zanele"),
-        ("Liam", "Zanele"),
-        ("Diego", "Mei"),
-        ("Amina", "Zanele"),
-    ]
+def permutator(matrix_size: int, offset: int) -> Callable[[int], int]:
+    if offset >= matrix_size: raise ValueError(
+            f"Offset {offset} is too large for matrix with size {matrix_size}."
+        )
 
-    crossings_pre: int = count_graph_crossings(node_order, arcs)
+    def permutate(index: int) -> int:
+        result = (index + offset) % matrix_size 
+        return result
 
-    from arc_crossing import minimize_crossings
-    node_order = minimize_crossings(node_order, arcs)
-    print("Nodes:", node_order)
-    crossings_post: int = count_graph_crossings(node_order, arcs)
-
-    print(
-        "Count of crossings in circular graph:\n"
-        f"  - before minimization: {crossings_pre}\n"
-        f"  - after minimization: {crossings_post}"
-    )
+    return permutate
