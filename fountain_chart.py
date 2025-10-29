@@ -13,39 +13,7 @@ Author:  Nathan Cordner
 """
 
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-# import pandas as pd
-import numpy as np
-
-from helper import auto_resize
-
-def _draw_arc(left, right, ax, color="tab:blue"):
-    midpoint = (left + right) / 2
-    radius = np.abs(right - midpoint)
-    
-    new_arc = mpatches.Arc(xy = (midpoint, 0),  width = 2 * radius, height = 4 * radius, theta1 = 0, theta2 = 180, color=color, lw=0.5)
-    ax.add_patch(new_arc) 
-    
-    return radius
-    
-def _shade_arc(pair1, pair2, ax, color="tab:blue"):
-    # Find points on ellipse using parametric coordinates
-    midpoint1 = (pair1[0] + pair1[1]) / 2
-    radius1 = np.abs(pair1[0] - midpoint1)    
-    
-    theta1 = np.radians(np.linspace(0, 180, 100))
-    x1 = midpoint1 + radius1 * np.cos(theta1)
-    y1 = 2 * radius1 * np.sin(theta1)
-    
-    midpoint2 = (pair2[0] + pair2[1]) / 2
-    radius2 = np.abs(pair2[0] - midpoint2)    
-    
-    theta2 = np.radians(np.linspace(0, 180, 100))
-    x2 = midpoint2 + radius2 * np.cos(theta2)
-    y2 = 2 * radius2 * np.sin(theta2)
-
-    # Fill the area between the arcs
-    ax.fill_between(np.concatenate([x1, x2[::-1]]), np.concatenate([y1, y2[::-1]]), color=color, alpha=0.5)
+from helper import auto_resize, draw_arc, shade_arc
 
 
 def fountain_chart(source: str, data:  list[tuple], figsize = "auto", title: str = "", x_label_padding: float = 1.05):
@@ -120,12 +88,12 @@ def fountain_chart(source: str, data:  list[tuple], figsize = "auto", title: str
     
     max_radius = 0
     for i in range(len(lefts)):
-        cur_radius = _draw_arc(lefts[i], rights[i], ax) 
+        cur_radius = draw_arc(lefts[i], rights[i], ax) 
         if cur_radius > max_radius:
             max_radius = cur_radius
         
     for i in range(0, len(lefts), 2):
-        _shade_arc((lefts[i], rights[i]), (lefts[i+1], rights[i+1]), ax)
+        shade_arc((lefts[i], rights[i]), (lefts[i+1], rights[i+1]), ax)
         
         
     # Final adjustments
