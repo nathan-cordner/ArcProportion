@@ -128,3 +128,55 @@ def permutator(matrix_size: int, offset: int) -> Callable[[int], int]:
         return result
 
     return permutate
+
+
+
+
+
+def local_adjusting(nodes = [], arcs = []):
+
+    # WARN: This algorithm hasn't been fully implemented, and it's output is
+    # incorrect.
+    # warn("Unfinished implementation: this algorithm might not be correct.")
+
+    """
+    Re-orders the list from higher to lower crossing counts. 
+    Then it grabs the the first node and places it in all positions and inserts it in the best position. 
+    Repeats for all nodes. Then moves to the next node in the ranked list.
+    """
+
+    order = list(nodes)
+
+    node_crossing_counts = []
+    for node in nodes:
+        node_crossing_counts.append(
+            node, count_node_crossings(node)
+        )
+    
+    node_crossing_counts = sorted(
+        [(node,node_crossing_counts(node)) for node in nodes],
+        key=lambda x: x[1],
+        reverse=True
+    )
+
+    ranked = [for n in (n,_) in node_crossing_counts]
+
+
+    for node in ranked :
+        current = nodes.index(node)
+        order.pop(current)
+        best_pos = 0
+        best_cnt = None
+
+        for pos in range(len(nodes)):
+            order.insert(pos, node)
+            cnt = count_graph_crossings(order, arcs)
+            if best_cnt is None or cnt < best_cnt:
+                best_cnt = cnt
+                best_pos = pos
+            order.pop(pos)
+
+        order.insert(best_pos, node)
+        
+    return order
+
