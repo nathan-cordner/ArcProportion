@@ -1,4 +1,4 @@
-from .__init__ import count_graph_crossings, count_node_crossings
+from count_crossing import construct_adj_matrix
 from arc_crossing import minimize_crossings
 
 """
@@ -43,20 +43,26 @@ def test_graph_count_crossings():
         ("Diego", "Mei"),
         ("Amina", "Zanele"),
     ]
+    print("====Testing count_graph_crossing====")
     print("Nodes:", node_order)
+    from count_crossing import count_graph_crossings
 
     # Count crossings pre minimization
-    crossings_pre: int = count_graph_crossings(node_order, arcs)
+    crossings_pre: int = count_graph_crossings(
+        construct_adj_matrix(node_order, arcs)
+    )
 
     # Count crossings after minimization
     node_order = minimize_crossings(node_order, arcs)
-    crossings_post: int = count_graph_crossings(node_order, arcs)
+    crossings_post: int = count_graph_crossings(
+        construct_adj_matrix(node_order, arcs)
+    )
 
     # Print result
     print(
         "Count of crossings in circular graph:\n"
         f"  - before minimization: {crossings_pre}\n"
-        f"  - after minimization: {crossings_post}"
+        f"  - after minimization: {crossings_post}\n"
     )
 
 def test_node_count_crossings():
@@ -72,26 +78,56 @@ def test_node_count_crossings():
         ("Diego", "Mei"),
         ("Amina", "Zanele"),
     ]
+    print("====Testing count_node_crossing====")
     print("Nodes:", node_order)
 
-    for interest_node in node_order:
-        crossings_pre: int = count_node_crossings(interest_node, node_order, arcs)
+    from functools import partial
+    from count_crossing import count_node_crossings
+    node_crossings = partial(
+        count_node_crossings,
+        construct_adj_matrix(node_order, arcs)
+    )
+
+    for index, interest_node in enumerate(node_order):
+        crossings_pre: int = node_crossings(index)
         print(
             f"Count of crossings of edges with node \"{interest_node}\" in circular"
                 f" graph: {crossings_pre}."
         )
+    print()
 
-def test_permutator():
-    from .algorithms import permutator
+# def test_permutator():
+#     from .__init__ import permutator
+#
+#     foo = permutator(5, 2)
+#
+#     print(foo(1) == 3)
+#
+#     try: permutator(4, 5)
+#     except ValueError: print("Function fails appropriately.")
 
-    foo = permutator(5, 2)
+def test_local_adjusting():
+    node_order =  ["Amina", "Diego", "Liam", "Mei", "Zanele"]
+    arcs = [
+        ("Amina", "Liam"),
+        ("Diego", "Zanele"),
+        ("Amina", "Mei"),
+        ("Mei", "Zanele"),
+        ("Liam", "Zanele"),
+        ("Diego", "Mei"),
+        ("Amina", "Zanele"),
+    ]
+    print("Testing local_adjusting")
+    print("Nodes:", node_order)
 
-    print(foo(1) == 3)
-
-    try: permutator(4, 5)
-    except ValueError: print("Function fails appropriately.")
+    from count_crossing import local_adjusting
+    node_order = minimize_crossings(node_order, arcs)
+    print("After AVSDF:", node_order)
+    node_order = local_adjusting(node_order, arcs)
+    print("After Postprocessing:", node_order)
 
 if __name__ == "__main__":
-    # test_graph_count_crossings()
+    test_graph_count_crossings()
     test_node_count_crossings()
     # test_permutator()
+    # test_local_adjusting()

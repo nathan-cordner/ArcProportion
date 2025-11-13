@@ -46,7 +46,7 @@ def construct_adj_matrix(
         node_labels list argument of the construct_adj_matrix
         function.
 
-        It also implements a custom ValueError Exception message.
+        Raises ValueError if node is not in graph.
         """
         try:
             return node_labels.index(node)
@@ -61,23 +61,72 @@ def construct_adj_matrix(
 
     return adjacency_matrix
 
-def count_graph_crossings(
-    node_labels: list[NodeLabel] = [],
-    arcs: list[ArcTuple] = []
-) -> int:
+# WARN: Counting crossing functions signature has been updated and the
+#       subroutine have been separated. Now fuctions expect a matrix as
+#       part of their arguments, instead of building it in situ.
+# def count_graph_crossings(
+#     node_labels: list[NodeLabel] = [],
+#     arcs: list[ArcTuple] = []
+# ) -> int:
+#     """
+#     Returns the crossing count of the circular drawing of the graph
+#     ('node_labels', 'arcs'), where 'node_labels' represents the nodes, and
+#     'arcs' represets the edges.
+#     """
+#     adjacency_matrix = construct_adj_matrix(node_labels, arcs)
+#
+#     # print(adjacency_matrix)
+#
+#     node_size = len(node_labels)
+#     # 'node_size' represents the cardiality of the set of nodes in the
+#     # graph.
+#
+#     return sum(
+#         adjacency_matrix[index_i][index_j] * adjacency_matrix[index_k][index_l]
+#         for index_i in range(node_size - 2)
+#         for index_j in range(index_i + 2, node_size - 1)
+#         for index_k in range(index_i + 1, index_j)
+#         for index_l in range(index_j + 1, node_size)
+#     )
+
+# def count_node_crossings(
+#     node: NodeLabel,
+#     node_labels: list[NodeLabel] = [],
+#     arcs: list[ArcTuple] = []
+# ) -> int:
+#     """
+#     Returns the count of crossings on the incident edges of 'node' in the
+#     graph ('node_labels', 'arcs'), where 'node_labels' represents the nodes,
+#     and 'arcs' represets the edges.
+#     """
+#     if node not in node_labels: raise ValueError(
+#             f"Node {node} is not in node_labels: {node_labels}"
+#         )
+#
+#     adjacency_matrix = construct_adj_matrix(node_labels, arcs)
+#
+#     node_size = len(node_labels)
+#     # 'node_size' represents the cardiality of the set of nodes in the
+#     # graph.
+#     index_i = node_labels.index(node)
+#     p = permutator(node_size, index_i)
+#
+#     return sum(
+#         adjacency_matrix[index_i][p(index_j)] * adjacency_matrix[p(index_k)][p(index_l)]
+#         for index_j in range(2, node_size)
+#         for index_k in range(1, index_j)
+#         for index_l in range(index_j + 1, node_size)
+#     )
+
+# TODO: Replace count_graph_crossings and count_node_crossings for these
+#       implementations
+
+def count_graph_crossings(adjacency_matrix: AdjacencyMatrix) -> int:
     """
-    Returns the crossing count of the circular drawing of the graph
-    ('node_labels', 'arcs'), where 'node_labels' represents the nodes, and
-    'arcs' represets the edges.
+    Returns the crossing count of the circular drawing of the graph represented
+    by the matrix. 
     """
-    adjacency_matrix = construct_adj_matrix(node_labels, arcs)
-
-    # print(adjacency_matrix)
-
-    node_size = len(node_labels)
-    # 'node_size' represents the cardiality of the set of nodes in the
-    # graph.
-
+    node_size = len(adjacency_matrix)
     return sum(
         adjacency_matrix[index_i][index_j] * adjacency_matrix[index_k][index_l]
         for index_i in range(node_size - 2)
@@ -87,36 +136,27 @@ def count_graph_crossings(
     )
 
 def count_node_crossings(
-    node: NodeLabel,
-    node_labels: list[NodeLabel] = [],
-    arcs: list[ArcTuple] = []
+    adjacency_matrix: AdjacencyMatrix,
+    node_index: int,
 ) -> int:
-    # WARN: This algorithm hasn't been fully implemented, and it's output is
-    # incorrect.
-    # warn("Unfinished implementation: this algorithm might not be correct.")
     """
-    Returns the count of crossings on the incident edges of 'node' in the
-    graph ('node_labels', 'arcs'), where 'node_labels' represents the nodes,
-    and 'arcs' represets the edges.
+    Returns the count of crossings on the incident edges of node corresponding
+    to the `node_index` in the graph represented by `adjacency_matrix`.
     """
-    if node not in node_labels: raise ValueError(
-            f"Node {node} is not in node_labels: {node_labels}"
+    if not (0 <= node_index < len(adjacency_matrix)): raise IndexError(
+            f"Node index {node_index} is out off bounds."
         )
 
-    adjacency_matrix = construct_adj_matrix(node_labels, arcs)
-
-    node_size = len(node_labels)
-    # 'node_size' represents the cardiality of the set of nodes in the
-    # graph.
-    index_i = node_labels.index(node)
-    p = permutator(node_size, index_i)
+    node_size = len(adjacency_matrix)
+    p = permutator(node_size, node_index)
 
     return sum(
-        adjacency_matrix[index_i][p(index_j)] * adjacency_matrix[p(index_k)][p(index_l)]
+        adjacency_matrix[node_index][p(index_j)] * adjacency_matrix[p(index_k)][p(index_l)]
         for index_j in range(2, node_size)
         for index_k in range(1, index_j)
         for index_l in range(index_j + 1, node_size)
     )
+
 
 def permutator(matrix_size: int, offset: int) -> Callable[[int], int]:
     if offset >= matrix_size: raise ValueError(
@@ -133,6 +173,8 @@ def permutator(matrix_size: int, offset: int) -> Callable[[int], int]:
 
 
 
+# FIX: Change count_node_crossings(nl, a) and count_graph_crossings(nl, a)
+#       for the corresponding matrix functions
 def local_adjusting(nodes = [], arcs = []):
 
     # WARN: This algorithm hasn't been fully implemented, and it's output is
@@ -152,14 +194,18 @@ def local_adjusting(nodes = [], arcs = []):
         node_crossing_counts.append(
             node, count_node_crossings(node)
         )
+    # FIX: list.append() called with 2 arguments
+    # FIX: count_node_crossing called with 1 argument (no graph/matrix given)
     
     node_crossing_counts = sorted(
         [(node,node_crossing_counts(node)) for node in nodes],
         key=lambda x: x[1],
         reverse=True
     )
+    # FIX: count_node_crossing called with 1 argument (no graph/matrix given)
 
     ranked = [for n in (n,_) in node_crossing_counts]
+    # FIX: Syntax Error
 
 
     for node in ranked :
@@ -171,6 +217,7 @@ def local_adjusting(nodes = [], arcs = []):
         for pos in range(len(nodes)):
             order.insert(pos, node)
             cnt = count_graph_crossings(order, arcs)
+            # FIX: count_graph_crossings reimplemented
             if best_cnt is None or cnt < best_cnt:
                 best_cnt = cnt
                 best_pos = pos
