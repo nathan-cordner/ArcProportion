@@ -122,18 +122,18 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
     
     for a in arcs:
         node1 = a[0] + str(node_count[a[0]])
-        node2 = a[1] + str(node_count[a[1]])
-        
         new_node_map[node1] = a[0]
+        node_count[a[0]] += 1       
+        
+        node2 = a[1] + str(node_count[a[1]])        
         new_node_map[node2] = a[1]
+        node_count[a[1]] += 1 
 
         # TODO:  maintain weights with arcs, or create separate set        
         
         new_nodes += [node1, node2]
         new_arcs += [(node1, node2, a[2])]
         
-        node_count[a[0]] += 1
-        node_count[a[1]] += 1 
         
     new_nodes.sort()
         
@@ -173,7 +173,7 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
     # TEST CASE -- hard coding for the moment `:D
     
     new_nodes[0], new_nodes[1] = new_nodes[1], new_nodes[0]
-    new_nodes[-1], new_nodes[-2] = new_nodes[-2], new_nodes[-1]
+    #new_nodes[-1], new_nodes[-2] = new_nodes[-2], new_nodes[-1]
     
     # Node groups shall be preserved 
     cur_node = new_node_map[new_nodes[0]]
@@ -289,11 +289,31 @@ if __name__ == "__main__":
     
     """
     
+    """
     nodes = ["A", "B", "C"] # listed in this order, for now
     
     arcs =[("A", "B", 1000),
            ("A", "C", 500),
            ("B", "C", 2000)]
+    """
+    nodes = ['Gryffindor', 'Hufflepuff', 'Other', 'Ravenclaw', 'Slytherin']
+    
+    arcs = [('Gryffindor', 'Gryffindor', 52913),
+            ('Gryffindor', 'Hufflepuff', 711),
+            ('Gryffindor', 'Other', 1501),
+            ('Gryffindor', 'Ravenclaw', 1058),
+            ('Gryffindor', 'Slytherin', 12721),
+            ('Hufflepuff', 'Hufflepuff', 0),
+            ('Hufflepuff', 'Other', 0),
+            ('Hufflepuff', 'Ravenclaw', 62),
+            ('Hufflepuff', 'Slytherin', 35),
+            ('Other', 'Other', 15),
+            ('Other', 'Ravenclaw', 11),
+            ('Other', 'Slytherin', 41),
+            ('Ravenclaw', 'Ravenclaw', 0),
+            ('Ravenclaw', 'Slytherin', 32),
+            ('Slytherin', 'Slytherin', 627)]   
+    
     
     grouped_proportion_arc_chart(nodes, arcs)
     # convert_to_basic_arc(nodes, arcs)
