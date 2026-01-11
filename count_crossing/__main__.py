@@ -127,7 +127,7 @@ def test_local_adjusting():
     print("After Postprocessing:", node_order)
 
 if __name__ == "__main__":
-    test_graph_count_crossings()
-    test_node_count_crossings()
+    # test_graph_count_crossings()
+    # test_node_count_crossings()
     # test_permutator()
-    # test_local_adjusting()
+    test_local_adjusting()

@@ -1,5 +1,6 @@
 from warnings import warn
 from collections.abc import Callable
+from math import inf
 
 # Type Annotations (using type hinting as of Python 3.10)
 NodeLabel = str
@@ -15,19 +16,10 @@ def construct_adj_list(
     ('node_labels', 'arcs'), where 'node_labels' represents the nodes, and
     'arcs' represents the edges.
     """
-
-    # Allocate Dictionary structure
-    adj_list = {}
-
-    # Allocate Set structure for adjacency list
-    for node in node_labels:
-        adj_list[node] = set()
-
-    # Fill adjacency lists
+    adj_list = {node: set() for node in node_labels}
     for node_a, node_b in arcs:
         adj_list[node_a].add(node_b)
         adj_list[node_b].add(node_a)
-
     return adj_list
 
 def construct_adj_matrix(
@@ -61,6 +53,17 @@ def construct_adj_matrix(
 
     return adjacency_matrix
 
+def permutator(matrix_size: int, offset: int) -> Callable[[int], int]:
+    if offset >= matrix_size: raise ValueError(
+            f"Offset {offset} is too large for matrix with size {matrix_size}."
+        )
+
+    def permutate(index: int) -> int:
+        result = (index + offset) % matrix_size 
+        return result
+
+    return permutate
+
 #WARN: Counting crossing functions signature has been updated and the
 #      subroutine have been separated. Now fuctions expect a matrix as
 #      part of their arguments, instead of building it in situ.
@@ -75,11 +78,7 @@ def count_graph_crossings(
     """
     adjacency_matrix = construct_adj_matrix(node_labels, arcs)
 
-    # print(adjacency_matrix)
-
     node_size = len(node_labels)
-    # 'node_size' represents the cardiality of the set of nodes in the
-    # graph.
 
     return sum(
         adjacency_matrix[index_i][index_j] * adjacency_matrix[index_k][index_l]
@@ -118,58 +117,6 @@ def count_node_crossings(
         for index_l in range(index_j + 1, node_size)
     )
 
-
-# def count_graph_crossings(adjacency_matrix: AdjacencyMatrix) -> int:
-#     """
-#     Returns the crossing count of the circular drawing of the graph represented
-#     by the matrix. 
-#     """
-#     node_size = len(adjacency_matrix)
-#     return sum(
-#         adjacency_matrix[index_i][index_j] * adjacency_matrix[index_k][index_l]
-#         for index_i in range(node_size - 2)
-#         for index_j in range(index_i + 2, node_size - 1)
-#         for index_k in range(index_i + 1, index_j)
-#         for index_l in range(index_j + 1, node_size)
-#     )
-
-# def count_node_crossings(
-#     adjacency_matrix: AdjacencyMatrix,
-#     node_index: int,
-# ) -> int:
-#     """
-#     Returns the count of crossings on the incident edges of node corresponding
-#     to the `node_index` in the graph represented by `adjacency_matrix`.
-#     """
-#     if not (0 <= node_index < len(adjacency_matrix)): raise IndexError(
-#             f"Node index {node_index} is out off bounds."
-#         )
-
-#     node_size = len(adjacency_matrix)
-#     p = permutator(node_size, node_index)
-
-#     return sum(
-#         adjacency_matrix[node_index][p(index_j)] * adjacency_matrix[p(index_k)][p(index_l)]
-#         for index_j in range(2, node_size)
-#         for index_k in range(1, index_j)
-#         for index_l in range(index_j + 1, node_size)
-#     )
-
-
-def permutator(matrix_size: int, offset: int) -> Callable[[int], int]:
-    if offset >= matrix_size: raise ValueError(
-            f"Offset {offset} is too large for matrix with size {matrix_size}."
-        )
-
-    def permutate(index: int) -> int:
-        result = (index + offset) % matrix_size 
-        return result
-
-    return permutate
-
-
-
-
 def local_adjusting(nodes = [], arcs = []):
     """
     Re-orders the list from higher to lower crossing counts. 
@@ -177,39 +124,28 @@ def local_adjusting(nodes = [], arcs = []):
     Repeats for all nodes. Then moves to the next node in the ranked list.
     """
 
-    order = list(nodes)
-
-    node_crossing_counts = []
-    for node in nodes:
-        node_crossing_counts += [(
-            node, count_node_crossings(node, nodes, arcs)
-        )]
-    
-    node_crossing_counts = sorted(
-        node_crossing_counts,
-        key=lambda x: x[1],
-        reverse=True
+    ranked_by_count_crossing = sorted(
+        list(nodes),
+        key = lambda x: count_node_crossings(x, nodes, arcs),
+        reverse = True
     )
 
-    ranked = [n[0] for n in node_crossing_counts]
-
-
-    for node in ranked:
-        current = order.index(node)
-        order.pop(current)
+    final_order = list(nodes)
+    for node in ranked_by_count_crossing:
+        final_order.remove(node)
         best_pos = 0
-        best_cnt = None
-        
+        graph_cross_counting = inf
+
         for pos in range(len(nodes)):
-            order.insert(pos, node)
-            
-            cnt = count_graph_crossings(order, arcs)
+            final_order.insert(pos, node)
 
-            if best_cnt is None or cnt < best_cnt:
-                best_cnt = cnt
+            current_graph_cross_counting = count_graph_crossings(final_order, arcs)
+
+            if current_graph_cross_counting < graph_cross_counting:
+                graph_cross_counting = current_graph_cross_counting
                 best_pos = pos
-            order.pop(pos)
-        order.insert(best_pos, node)
-        
-    return order
+            final_order.pop(pos)
 
+        final_order.insert(best_pos, node)
+
+    return final_order
