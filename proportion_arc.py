@@ -15,8 +15,11 @@ Author:  Nathan Cordner
 import matplotlib.pyplot as plt
 from helper import auto_resize, draw_arc, shade_arc
 
+from count_crossing import count_graph_crossings
+
 # test code
 from basic_arc import basic_arc_plot
+
 
 def proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "", x_label_padding: float = 1.05):
     """
@@ -137,7 +140,7 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
         
     new_nodes.sort()
         
-    # basic_arc_plot(node_labels = new_nodes, arcs = new_arcs)
+    basic_arc_plot(node_labels = new_nodes, arcs = new_arcs)
     
     # print(new_nodes)
     # print(new_arcs)
@@ -145,6 +148,59 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
     
     return new_nodes, new_arcs, new_node_map
     
+        
+def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, node_map):
+    end_index = start_index
+    cur_group = node_map[nodes[start_index]]
+    while end_index < len(nodes) and node_map[nodes[end_index]] == cur_group:
+        end_index += 1
+
+    
+    # Local search loop
+    for i in range(start_index, end_index):
+        for j in range(start_index,end_index):
+            if not i == j:
+                # Try swapping
+                nodes[i], nodes[j] = nodes[j], nodes[i]
+                new_crossings = count_graph_crossings(nodes, clean_arcs)
+                if new_crossings < cur_crossings:
+                    cur_crossings = new_crossings
+                else:
+                    # Swap back
+                    nodes[i], nodes[j] = nodes[j], nodes[i]  
+    return end_index, cur_crossings
+
+
+def grouped_node_order(node_groups, nodes, arcs, node_map):
+    """
+        node_groups:  labels of node clusters
+        nodes:  cluster_label followed by integer
+        arcs:  shows edges and weights between individual nodes
+        node_map:  maps node labels back to node cluster labels
+    """
+    
+    clean_arcs = [(a[0], a[1]) for a in arcs]
+    
+    
+    cur_crossings = count_graph_crossings(nodes, clean_arcs)
+    print(cur_crossings)
+    
+    
+    # Write code to reduce node crossings
+    # TODO:  add step to swap node clusters as well
+    #        then iterate between swapping clusters and swapping order inside clusters
+    
+    # Currently just swap order inside clusters
+    start_index = 0
+    while start_index < len(nodes):
+        start_index, cur_crossings = local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, node_map)
+       
+    
+    
+    print(count_graph_crossings(nodes, clean_arcs))
+    
+
+
     
 def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "", x_label_padding: float = 1.05):
     """
@@ -168,6 +224,9 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
     
     # Split nodes by arcs
     new_nodes, new_arcs, new_node_map = convert_to_basic_arc(nodes, arcs)
+    
+    # Redo node order
+    grouped_node_order(nodes, new_nodes, new_arcs, new_node_map)
         
     
     # TEST CASE -- hard coding for the moment `:D
@@ -235,7 +294,7 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
         # update
         cur_left = right
         
-    print(node_boundary_dict)
+    # print(node_boundary_dict)
         
     # Plot arcs
     
