@@ -12,10 +12,12 @@ Author:  Nathan Cordner
 
 """
 
+import pandas as pd
 import matplotlib.pyplot as plt
 from helper import auto_resize, draw_arc, shade_arc
 
-from count_crossing import count_graph_crossings
+from count_crossing import count_graph_crossings, local_adjusting
+from arc_crossing import minimize_crossings
 
 # test code
 from basic_arc import basic_arc_plot
@@ -140,13 +142,15 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
         
     new_nodes.sort()
         
-    basic_arc_plot(node_labels = new_nodes, arcs = new_arcs)
+    # now reorder new_nodes based on list given in nodes
     
-    # print(new_nodes)
-    # print(new_arcs)
-    # print(new_node_map)
+    tmp_new_nodes = []
+    for n in nodes:
+        for x in new_nodes:
+            if new_node_map[x] == n:
+                tmp_new_nodes.append(x)
     
-    return new_nodes, new_arcs, new_node_map
+    return tmp_new_nodes, new_arcs, new_node_map
     
         
 def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, node_map):
@@ -171,6 +175,7 @@ def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, 
     return end_index, cur_crossings
 
 
+
 def grouped_node_order(node_groups, nodes, arcs, node_map):
     """
         node_groups:  labels of node clusters
@@ -183,23 +188,45 @@ def grouped_node_order(node_groups, nodes, arcs, node_map):
     
     
     cur_crossings = count_graph_crossings(nodes, clean_arcs)
-    print(cur_crossings)
+    # print(cur_crossings)
     
-    
-    # Write code to reduce node crossings
-    # TODO:  add step to swap node clusters as well
-    #        then iterate between swapping clusters and swapping order inside clusters
-    
-    # Currently just swap order inside clusters
+    # just swap order inside clusters
     start_index = 0
     while start_index < len(nodes):
         start_index, cur_crossings = local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, node_map)
        
     
-    
-    print(count_graph_crossings(nodes, clean_arcs))
+    # print(count_graph_crossings(nodes, clean_arcs))
     
 
+def node_cluster_order(nodes, arcs):
+    """
+        Compute best of AVSDF, Local Adjusting 
+        
+        Edit node order accordingly    
+    
+    """
+
+    clean_arcs = [(a[0], a[1]) for a in arcs]        
+    before_crossings = count_graph_crossings(nodes, clean_arcs)
+        
+    # AVSDF
+    avsdf_order = minimize_crossings(nodes, clean_arcs)
+    avsdf_crossings = count_graph_crossings(avsdf_order, clean_arcs)
+           
+    # Local Adjusting    
+    local_order = local_adjusting(nodes, clean_arcs)
+    local_crossings = count_graph_crossings(local_order, clean_arcs)
+        
+    # Find best
+    candidates = [(before_crossings, nodes),
+                  (avsdf_crossings, avsdf_order),
+                  (local_crossings, local_order)]
+    
+    # print(before_crossings, avsdf_crossings, local_crossings)
+    
+    # return node order of smallest number of crossings
+    return min(candidates)[1]
 
     
 def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "", x_label_padding: float = 1.05):
@@ -222,17 +249,17 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
         loc_totals[a[1]] += a[2]   
     total = max(loc_totals.values())
     
+    # compute clustered node order
+    # print(nodes)
+    nodes = node_cluster_order(nodes, arcs)
+    # print(nodes)
+    
     # Split nodes by arcs
     new_nodes, new_arcs, new_node_map = convert_to_basic_arc(nodes, arcs)
     
     # Redo node order
     grouped_node_order(nodes, new_nodes, new_arcs, new_node_map)
-        
     
-    # TEST CASE -- hard coding for the moment `:D
-    
-    new_nodes[0], new_nodes[1] = new_nodes[1], new_nodes[0]
-    #new_nodes[-1], new_nodes[-2] = new_nodes[-2], new_nodes[-1]
     
     # Node groups shall be preserved 
     cur_node = new_node_map[new_nodes[0]]
@@ -241,12 +268,14 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
         if new_node_map[n] != cur_node:
             cur_node = new_node_map[n]
             temp_nodes += [cur_node]
+            
+    # print(temp_nodes)
+    # print(nodes)
     assert(len(temp_nodes) == len(nodes)) # Sanity check
     
     # reassign node order
     nodes = temp_nodes
-    
-    
+    # print(nodes)
     
     
     # Create rectangle widths using specified node order
@@ -337,6 +366,31 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
             
     plt.show()
         
+    
+def read_csv(file_name, source_col = "source", dest_col = "dest", connections_col = "connections"):
+    """
+    Data format:
+        (Source, Destination, Weight)
+        Arcs are undirected (self-arcs allowed)
+        Total of each location = sum of arc weights where location is either source or dest
+    
+    """
+
+    df = pd.read_csv(file_name)
+    
+    nodes = list(set(pd.concat([df[source_col], df[dest_col]])))
+            
+    arcs = []
+    
+    for i in range(len(df)):
+        if df[connections_col].iloc[i] > 0:
+            arcs.append((df[source_col].iloc[i],
+                         df[dest_col].iloc[i],
+                         df[connections_col].iloc[i]))
+                
+    return nodes, arcs
+        
+    
 
 
 if __name__ == "__main__":
@@ -348,31 +402,10 @@ if __name__ == "__main__":
     
     """
     
-    """
-    nodes = ["A", "B", "C"] # listed in this order, for now
+ 
     
-    arcs =[("A", "B", 1000),
-           ("A", "C", 500),
-           ("B", "C", 2000)]
-    """
-    nodes = ['Gryffindor', 'Hufflepuff', 'Other', 'Ravenclaw', 'Slytherin']
-    
-    arcs = [('Gryffindor', 'Gryffindor', 52913),
-            ('Gryffindor', 'Hufflepuff', 711),
-            ('Gryffindor', 'Other', 1501),
-            ('Gryffindor', 'Ravenclaw', 1058),
-            ('Gryffindor', 'Slytherin', 12721),
-            ('Hufflepuff', 'Hufflepuff', 0),
-            ('Hufflepuff', 'Other', 0),
-            ('Hufflepuff', 'Ravenclaw', 62),
-            ('Hufflepuff', 'Slytherin', 35),
-            ('Other', 'Other', 15),
-            ('Other', 'Ravenclaw', 11),
-            ('Other', 'Slytherin', 41),
-            ('Ravenclaw', 'Ravenclaw', 0),
-            ('Ravenclaw', 'Slytherin', 32),
-            ('Slytherin', 'Slytherin', 627)]   
-    
+    nodes, arcs = read_csv("../datasets/power grid/power_grid.csv")
+    # nodes, arcs = read_csv("../datasets/harry_potter_house_interactions.csv")
     
     grouped_proportion_arc_chart(nodes, arcs)
     # convert_to_basic_arc(nodes, arcs)
