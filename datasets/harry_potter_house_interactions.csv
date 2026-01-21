@@ -1,0 +1,16 @@
+source,dest,connections
+Gryffindor,Gryffindor,52913
+Gryffindor,Hufflepuff,711
+Gryffindor,Other,1501
+Gryffindor,Ravenclaw,1058
+Gryffindor,Slytherin,12721
+Hufflepuff,Hufflepuff,0
+Hufflepuff,Other,0
+Hufflepuff,Ravenclaw,62
+Hufflepuff,Slytherin,35
+Other,Other,15
+Other,Ravenclaw,11
+Other,Slytherin,41
+Ravenclaw,Ravenclaw,0
+Ravenclaw,Slytherin,32
+Slytherin,Slytherin,627
