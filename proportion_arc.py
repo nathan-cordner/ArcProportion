@@ -405,7 +405,8 @@ if __name__ == "__main__":
  
     
     # nodes, arcs = read_csv("datasets/power_grid.csv")
-    nodes, arcs = read_csv("datasets/harry_potter_house_interactions.csv")
+    # nodes, arcs = read_csv("datasets/harry_potter_house_interactions.csv")
+    nodes, arcs = read_csv("datasets/arXiv_arcs_25.csv")
     
     grouped_proportion_arc_chart(nodes, arcs)
     # convert_to_basic_arc(nodes, arcs)
