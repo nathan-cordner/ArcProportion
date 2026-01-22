@@ -1,0 +1,4088 @@
+source,dest,connections
+L. Legrand (155,Italy,45
+D. Karagiannis (117,Italy,45
+G. Rodighiero (4,Italy,45
+21),Italy,45
+A. Grazian (5),Italy,45
+21),France,23
+21),Spain,23
+L. Legrand (155,Spain,23
+A. Grazian (5),France,23
+A. Grazian (5),Spain,23
+D. Karagiannis (117,France,23
+G. Rodighiero (4,Spain,23
+G. Rodighiero (4,France,23
+L. Legrand (155,France,23
+D. Karagiannis (117,Spain,23
+A. Grazian (5),UK,15
+G. Rodighiero (4,UK,15
+21),UK,15
+L. Legrand (155,UK,15
+D. Karagiannis (117,UK,15
+21),CNRS,13
+L. Legrand (155,CNRS,13
+D. Karagiannis (117,CNRS,13
+G. Rodighiero (4,CNRS,13
+A. Grazian (5),CNRS,13
+D. Karagiannis (117,USA,11
+L. Legrand (155,USA,11
+L. Legrand (155,Germany,11
+21),Germany,11
+21),USA,11
+D. Karagiannis (117,Germany,11
+G. Rodighiero (4,Germany,11
+G. Rodighiero (4,USA,11
+A. Grazian (5),USA,11
+A. Grazian (5),Germany,11
+G. Rodighiero (4,Switzerland,7
+G. Rodighiero (4,Astronomy,7
+A. Grazian (5),Astronomy,7
+A. Grazian (5),Switzerland,7
+21),32),7
+21),Switzerland,7
+21),Astronomy,7
+L. Legrand (155,Switzerland,7
+D. Karagiannis (117,Switzerland,7
+D. Karagiannis (117,Astronomy,7
+L. Legrand (155,Astronomy,7
+21),The Netherlands,6
+L. Legrand (155,Finland,6
+21),Portugal,6
+21),Finland,6
+21),2),6
+21),18,6
+A. Grazian (5),2),6
+D. Karagiannis (117,Finland,6
+L. Legrand (155,The Netherlands,6
+A. Grazian (5),Portugal,6
+A. Grazian (5),The Netherlands,6
+G. Rodighiero (4,Portugal,6
+G. Rodighiero (4,The Netherlands,6
+A. Grazian (5),Finland,6
+G. Rodighiero (4,Finland,6
+D. Karagiannis (117,The Netherlands,6
+D. Karagiannis (117,Portugal,6
+L. Legrand (155,Portugal,6
+L. Legrand (155,s/n,5
+D. Karagiannis (117,s/n,5
+A. Grazian (5),62),5
+A. Grazian (5),32),5
+A. Grazian (5),s/n,5
+A. Grazian (5),18,5
+G. Rodighiero (4,s/n,5
+21),62),5
+21),s/n,5
+21),30,5
+A. Grazian (5),Department of Physics,4
+A. Grazian (5),85748 Garching,4
+A. Grazian (5),30,4
+A. Grazian (5),29,4
+A. Grazian (5),40129 Bologna,4
+A. Grazian (5),Camino bajo del Castillo,4
+A. Grazian (5),Urbanizacion Villafranca del Castillo,4
+A. Grazian (5),Villanueva de la Ca\~nada,4
+A. Grazian (5),28692 Madrid,4
+A. Grazian (5),Pasadena,4
+A. Grazian (5),Denmark,4
+D. Karagiannis (117,40129 Bologna,4
+D. Karagiannis (117,85748 Garching,4
+D. Karagiannis (117,Denmark,4
+D. Karagiannis (117,Pasadena,4
+D. Karagiannis (117,Camino bajo del Castillo,4
+D. Karagiannis (117,Urbanizacion Villafranca del Castillo,4
+D. Karagiannis (117,Villanueva de la Ca\~nada,4
+D. Karagiannis (117,28692 Madrid,4
+D. Karagiannis (117,Department of Physics,4
+G. Rodighiero (4,40129 Bologna,4
+G. Rodighiero (4,Denmark,4
+G. Rodighiero (4,Pasadena,4
+G. Rodighiero (4,85748 Garching,4
+G. Rodighiero (4,Department of Physics,4
+G. Rodighiero (4,28692 Madrid,4
+G. Rodighiero (4,Villanueva de la Ca\~nada,4
+G. Rodighiero (4,Urbanizacion Villafranca del Castillo,4
+G. Rodighiero (4,Camino bajo del Castillo,4
+L. Legrand (155,Pasadena,4
+L. Legrand (155,Denmark,4
+L. Legrand (155,85748 Garching,4
+L. Legrand (155,Department of Physics,4
+L. Legrand (155,40129 Bologna,4
+L. Legrand (155,Camino bajo del Castillo,4
+L. Legrand (155,Urbanizacion Villafranca del Castillo,4
+L. Legrand (155,28692 Madrid,4
+L. Legrand (155,Villanueva de la Ca\~nada,4
+21),Department of Physics,4
+21),Pasadena,4
+21),85748 Garching,4
+21),40129 Bologna,4
+21),28692 Madrid,4
+21),Urbanizacion Villafranca del Castillo,4
+21),Camino bajo del Castillo,4
+21),Villanueva de la Ca\~nada,4
+21),Denmark,4
+21),29,4
+A. Grazian (5),68),3
+A. Grazian (5),127),3
+A. Grazian (5),110,3
+A. Grazian (5),82),3
+A. Grazian (5),30),3
+A. Grazian (5),66),3
+A. Grazian (5),CA 91125,3
+A. Grazian (5),Observatoire de Paris,3
+A. Grazian (5),00014 Helsinki,3
+A. Grazian (5),University of Helsinki,3
+A. Grazian (5),Sorbonne Universit\'e,3
+A. Grazian (5),Canada,3
+A. Grazian (5),Waterloo,3
+A. Grazian (5),Paris,3
+A. Grazian (5),Lecce,3
+A. Grazian (5),73100,3
+A. Grazian (5),Via per Arnesano,3
+A. Grazian (5),20133 Milano,3
+A. Grazian (5),Genova,3
+A. Grazian (5),16146,3
+A. Grazian (5),Via Dodecaneso 33,3
+A. Grazian (5),Universidade de Lisboa,3
+A. Grazian (5),Faculdade de Ci\^encias,3
+A. Grazian (5),CNRS/IN2P3,3
+A. Grazian (5),Campus UAB,3
+A. Grazian (5),Tenerife,3
+L. Legrand (155,20133 Milano,3
+L. Legrand (155,Faculdade de Ci\^encias,3
+L. Legrand (155,Universidade de Lisboa,3
+L. Legrand (155,CNRS/IN2P3,3
+L. Legrand (155,Tenerife,3
+L. Legrand (155,Campus UAB,3
+L. Legrand (155,Via Dodecaneso 33,3
+L. Legrand (155,16146,3
+L. Legrand (155,Genova,3
+L. Legrand (155,Via per Arnesano,3
+L. Legrand (155,73100,3
+L. Legrand (155,Lecce,3
+L. Legrand (155,Paris,3
+L. Legrand (155,Waterloo,3
+L. Legrand (155,Canada,3
+L. Legrand (155,Sorbonne Universit\'e,3
+L. Legrand (155,Observatoire de Paris,3
+L. Legrand (155,University of Helsinki,3
+L. Legrand (155,00014 Helsinki,3
+L. Legrand (155,CA 91125,3
+D. Karagiannis (117,Via per Arnesano,3
+D. Karagiannis (117,73100,3
+D. Karagiannis (117,Lecce,3
+D. Karagiannis (117,Waterloo,3
+D. Karagiannis (117,Canada,3
+D. Karagiannis (117,Paris,3
+D. Karagiannis (117,CA 91125,3
+D. Karagiannis (117,Via Dodecaneso 33,3
+D. Karagiannis (117,16146,3
+D. Karagiannis (117,Genova,3
+D. Karagiannis (117,CNRS/IN2P3,3
+D. Karagiannis (117,20133 Milano,3
+D. Karagiannis (117,Tenerife,3
+D. Karagiannis (117,Campus UAB,3
+D. Karagiannis (117,University of Helsinki,3
+D. Karagiannis (117,00014 Helsinki,3
+D. Karagiannis (117,Observatoire de Paris,3
+D. Karagiannis (117,Faculdade de Ci\^encias,3
+D. Karagiannis (117,Universidade de Lisboa,3
+D. Karagiannis (117,Sorbonne Universit\'e,3
+21),20133 Milano,3
+21),Tenerife,3
+21),Campus UAB,3
+21),127),3
+21),CA 91125,3
+21),Lecce,3
+21),Via per Arnesano,3
+21),73100,3
+21),CNRS/IN2P3,3
+21),Faculdade de Ci\^encias,3
+21),Universidade de Lisboa,3
+21),Via Dodecaneso 33,3
+21),16146,3
+21),Genova,3
+21),Canada,3
+21),Waterloo,3
+21),Paris,3
+21),Observatoire de Paris,3
+21),00014 Helsinki,3
+21),Sorbonne Universit\'e,3
+21),University of Helsinki,3
+21),29),3
+21),34,3
+21),46),3
+21),82),3
+21),65),3
+21),68),3
+21),2,3
+21),110,3
+21),30),3
+21),66),3
+G. Rodighiero (4,73100,3
+G. Rodighiero (4,Lecce,3
+G. Rodighiero (4,Via per Arnesano,3
+G. Rodighiero (4,Waterloo,3
+G. Rodighiero (4,Canada,3
+G. Rodighiero (4,University of Helsinki,3
+G. Rodighiero (4,00014 Helsinki,3
+G. Rodighiero (4,Sorbonne Universit\'e,3
+G. Rodighiero (4,Paris,3
+G. Rodighiero (4,Observatoire de Paris,3
+G. Rodighiero (4,CA 91125,3
+G. Rodighiero (4,Tenerife,3
+G. Rodighiero (4,Campus UAB,3
+G. Rodighiero (4,Via Dodecaneso 33,3
+G. Rodighiero (4,16146,3
+G. Rodighiero (4,Genova,3
+G. Rodighiero (4,20133 Milano,3
+G. Rodighiero (4,Faculdade de Ci\^encias,3
+G. Rodighiero (4,Universidade de Lisboa,3
+G. Rodighiero (4,CNRS/IN2P3,3
+A. Grazian (5),46),2
+A. Grazian (5),88),2
+A. Grazian (5),2,2
+A. Grazian (5),127,2
+A. Grazian (5),Universit\'e Paris Cit\'e,2
+A. Grazian (5),CEA,2
+A. Grazian (5),Departamento de Astrof\'isica,2
+A. Grazian (5),38200,2
+A. Grazian (5),La Laguna,2
+A. Grazian (5),Via Marzolo 8,2
+A. Grazian (5),35131 Padova,2
+A. Grazian (5),Marseille,2
+A. Grazian (5),Via Brera 28,2
+A. Grazian (5),20122 Milano,2
+A. Grazian (5),CNES,2
+A. Grazian (5),31,2
+A. Grazian (5),18),2
+A. Grazian (5),17),2
+A. Grazian (5),65),2
+A. Grazian (5),34,2
+A. Grazian (5),29),2
+A. Grazian (5),,2
+A. Grazian (5),"Gustaf H\""allstr\""omin katu 2",2
+A. Grazian (5),1290 Versoix,2
+A. Grazian (5),Via Celoria 16,2
+A. Grazian (5),California Institute of Technology,2
+A. Grazian (5),75014,2
+A. Grazian (5),University of Copenhagen,2
+A. Grazian (5),2200 Copenhagen,2
+A. Grazian (5),University of Waterloo,2
+A. Grazian (5),Ontario N2L 3G1,2
+A. Grazian (5),Universit\'e PSL,2
+A. Grazian (5),92190 Meudon,2
+A. Grazian (5),Arts of Northwestern Switzerland,2
+A. Grazian (5),5210 Windisch,2
+A. Grazian (5),00185 Roma,2
+A. Grazian (5),Durham University,2
+A. Grazian (5),South Road,2
+A. Grazian (5),Durham,2
+A. Grazian (5),DH1 3LE,2
+A. Grazian (5),Via Cinthia 6,2
+A. Grazian (5),80126,2
+A. Grazian (5),Napoli,2
+A. Grazian (5),Rua das Estrelas,2
+A. Grazian (5),Firenze,2
+A. Grazian (5),Observatoire de Sauverny,2
+A. Grazian (5),Viale Berti Pichat 6/2,2
+A. Grazian (5),40127 Bologna,2
+A. Grazian (5),59000 Lille,2
+A. Grazian (5),Via P. Giuria 1,2
+A. Grazian (5),IP2I Lyon,2
+A. Grazian (5),Campo Grande,2
+A. Grazian (5),10125 Torino,2
+A. Grazian (5),Leiden University,2
+A. Grazian (5),Einsteinweg 55,2
+A. Grazian (5),08193 Bellaterra (Barcelona),2
+A. Grazian (5),2333 CA Leiden,2
+A. Grazian (5),30202 Cartagena,2
+A. Grazian (5),Via Giuseppe Saragat 1,2
+A. Grazian (5),44122 Ferrara,2
+A. Grazian (5),Australia,2
+A. Grazian (5),Madingley Road,2
+A. Grazian (5),Sweden,2
+21),18),2
+21),17),2
+21),88),2
+21),31,2
+21),44),2
+21),10),2
+21),92190 Meudon,2
+21),Arts of Northwestern Switzerland,2
+21),5210 Windisch,2
+21),00185 Roma,2
+21),Durham University,2
+21),South Road,2
+21),Durham,2
+21),DH1 3LE,2
+21),75014,2
+21),University of Copenhagen,2
+21),2200 Copenhagen,2
+21),Ontario N2L 3G1,2
+21),30202 Cartagena,2
+21),Via Giuseppe Saragat 1,2
+21),44122 Ferrara,2
+21),Australia,2
+21),Madingley Road,2
+21),Sweden,2
+21),University of Waterloo,2
+21),Via Marzolo 8,2
+21),35131 Padova,2
+21),CNES,2
+21),Universit\'e PSL,2
+21),Via Brera 28,2
+21),20122 Milano,2
+21),Universit\'e Paris Cit\'e,2
+21),CEA,2
+21),Departamento de Astrof\'isica,2
+21),38200,2
+21),Marseille,2
+21),127,2
+21),2333 CA Leiden,2
+21),Einsteinweg 55,2
+21),08193 Bellaterra (Barcelona),2
+21),IP2I Lyon,2
+21),La Laguna,2
+21),Campo Grande,2
+21),1290 Versoix,2
+21),Via Celoria 16,2
+21),California Institute of Technology,2
+21),,2
+21),"Gustaf H\""allstr\""omin katu 2",2
+21),Firenze,2
+21),Observatoire de Sauverny,2
+21),Viale Berti Pichat 6/2,2
+21),40127 Bologna,2
+21),59000 Lille,2
+21),Leiden University,2
+21),Via Cinthia 6,2
+21),80126,2
+21),Napoli,2
+21),Rua das Estrelas,2
+21),Via P. Giuria 1,2
+21),10125 Torino,2
+L. Legrand (155,"Gustaf H\""allstr\""omin katu 2",2
+L. Legrand (155,Universit\'e PSL,2
+L. Legrand (155,92190 Meudon,2
+L. Legrand (155,Arts of Northwestern Switzerland,2
+L. Legrand (155,5210 Windisch,2
+L. Legrand (155,00185 Roma,2
+L. Legrand (155,Durham University,2
+L. Legrand (155,South Road,2
+L. Legrand (155,Durham,2
+L. Legrand (155,DH1 3LE,2
+L. Legrand (155,University of Copenhagen,2
+L. Legrand (155,2200 Copenhagen,2
+L. Legrand (155,University of Waterloo,2
+L. Legrand (155,Ontario N2L 3G1,2
+L. Legrand (155,30202 Cartagena,2
+L. Legrand (155,Via Giuseppe Saragat 1,2
+L. Legrand (155,44122 Ferrara,2
+L. Legrand (155,Australia,2
+L. Legrand (155,Madingley Road,2
+L. Legrand (155,75014,2
+L. Legrand (155,Via Cinthia 6,2
+L. Legrand (155,80126,2
+L. Legrand (155,Napoli,2
+L. Legrand (155,Rua das Estrelas,2
+L. Legrand (155,,2
+L. Legrand (155,10125 Torino,2
+L. Legrand (155,Leiden University,2
+L. Legrand (155,2333 CA Leiden,2
+L. Legrand (155,Einsteinweg 55,2
+L. Legrand (155,08193 Bellaterra (Barcelona),2
+L. Legrand (155,IP2I Lyon,2
+L. Legrand (155,Campo Grande,2
+L. Legrand (155,1290 Versoix,2
+L. Legrand (155,Via Celoria 16,2
+L. Legrand (155,California Institute of Technology,2
+L. Legrand (155,Via P. Giuria 1,2
+L. Legrand (155,Sweden,2
+L. Legrand (155,Via Marzolo 8,2
+L. Legrand (155,35131 Padova,2
+L. Legrand (155,CNES,2
+L. Legrand (155,Marseille,2
+L. Legrand (155,Via Brera 28,2
+L. Legrand (155,20122 Milano,2
+L. Legrand (155,Universit\'e Paris Cit\'e,2
+L. Legrand (155,18,2
+L. Legrand (155,127,2
+L. Legrand (155,30),2
+L. Legrand (155,62),2
+L. Legrand (155,40127 Bologna,2
+L. Legrand (155,59000 Lille,2
+L. Legrand (155,CEA,2
+L. Legrand (155,Departamento de Astrof\'isica,2
+L. Legrand (155,38200,2
+L. Legrand (155,Viale Berti Pichat 6/2,2
+L. Legrand (155,La Laguna,2
+L. Legrand (155,Firenze,2
+L. Legrand (155,Observatoire de Sauverny,2
+D. Karagiannis (117,30202 Cartagena,2
+D. Karagiannis (117,Via Giuseppe Saragat 1,2
+D. Karagiannis (117,44122 Ferrara,2
+D. Karagiannis (117,75014,2
+D. Karagiannis (117,University of Copenhagen,2
+D. Karagiannis (117,2200 Copenhagen,2
+D. Karagiannis (117,University of Waterloo,2
+D. Karagiannis (117,Ontario N2L 3G1,2
+D. Karagiannis (117,Australia,2
+D. Karagiannis (117,18,2
+D. Karagiannis (117,127,2
+D. Karagiannis (117,DH1 3LE,2
+D. Karagiannis (117,62),2
+D. Karagiannis (117,Via Marzolo 8,2
+D. Karagiannis (117,35131 Padova,2
+D. Karagiannis (117,CNES,2
+D. Karagiannis (117,Marseille,2
+D. Karagiannis (117,Via Brera 28,2
+D. Karagiannis (117,20122 Milano,2
+D. Karagiannis (117,Universit\'e Paris Cit\'e,2
+D. Karagiannis (117,CEA,2
+D. Karagiannis (117,Departamento de Astrof\'isica,2
+D. Karagiannis (117,38200,2
+D. Karagiannis (117,30),2
+D. Karagiannis (117,Via Celoria 16,2
+D. Karagiannis (117,California Institute of Technology,2
+D. Karagiannis (117,,2
+D. Karagiannis (117,"Gustaf H\""allstr\""omin katu 2",2
+D. Karagiannis (117,La Laguna,2
+D. Karagiannis (117,Universit\'e PSL,2
+D. Karagiannis (117,92190 Meudon,2
+D. Karagiannis (117,Arts of Northwestern Switzerland,2
+D. Karagiannis (117,5210 Windisch,2
+D. Karagiannis (117,00185 Roma,2
+D. Karagiannis (117,Durham University,2
+D. Karagiannis (117,South Road,2
+D. Karagiannis (117,Durham,2
+D. Karagiannis (117,Firenze,2
+D. Karagiannis (117,Observatoire de Sauverny,2
+D. Karagiannis (117,Viale Berti Pichat 6/2,2
+D. Karagiannis (117,40127 Bologna,2
+D. Karagiannis (117,59000 Lille,2
+D. Karagiannis (117,Via Cinthia 6,2
+D. Karagiannis (117,80126,2
+D. Karagiannis (117,Napoli,2
+D. Karagiannis (117,Rua das Estrelas,2
+D. Karagiannis (117,Via P. Giuria 1,2
+D. Karagiannis (117,Leiden University,2
+D. Karagiannis (117,2333 CA Leiden,2
+D. Karagiannis (117,Einsteinweg 55,2
+D. Karagiannis (117,08193 Bellaterra (Barcelona),2
+D. Karagiannis (117,IP2I Lyon,2
+D. Karagiannis (117,Campo Grande,2
+D. Karagiannis (117,1290 Versoix,2
+D. Karagiannis (117,10125 Torino,2
+D. Karagiannis (117,Madingley Road,2
+D. Karagiannis (117,Sweden,2
+G. Rodighiero (4,Via Marzolo 8,2
+G. Rodighiero (4,35131 Padova,2
+G. Rodighiero (4,Marseille,2
+G. Rodighiero (4,Via Brera 28,2
+G. Rodighiero (4,20122 Milano,2
+G. Rodighiero (4,Universit\'e Paris Cit\'e,2
+G. Rodighiero (4,CEA,2
+G. Rodighiero (4,Departamento de Astrof\'isica,2
+G. Rodighiero (4,38200,2
+G. Rodighiero (4,La Laguna,2
+G. Rodighiero (4,Firenze,2
+G. Rodighiero (4,Observatoire de Sauverny,2
+G. Rodighiero (4,Viale Berti Pichat 6/2,2
+G. Rodighiero (4,CNES,2
+G. Rodighiero (4,Sweden,2
+G. Rodighiero (4,40127 Bologna,2
+G. Rodighiero (4,75014,2
+G. Rodighiero (4,University of Copenhagen,2
+G. Rodighiero (4,2200 Copenhagen,2
+G. Rodighiero (4,University of Waterloo,2
+G. Rodighiero (4,Ontario N2L 3G1,2
+G. Rodighiero (4,30202 Cartagena,2
+G. Rodighiero (4,Via Giuseppe Saragat 1,2
+G. Rodighiero (4,44122 Ferrara,2
+G. Rodighiero (4,Australia,2
+G. Rodighiero (4,Madingley Road,2
+G. Rodighiero (4,Leiden University,2
+G. Rodighiero (4,2333 CA Leiden,2
+G. Rodighiero (4,Einsteinweg 55,2
+G. Rodighiero (4,08193 Bellaterra (Barcelona),2
+G. Rodighiero (4,IP2I Lyon,2
+G. Rodighiero (4,59000 Lille,2
+G. Rodighiero (4,Via Cinthia 6,2
+G. Rodighiero (4,80126,2
+G. Rodighiero (4,Napoli,2
+G. Rodighiero (4,Rua das Estrelas,2
+G. Rodighiero (4,Via P. Giuria 1,2
+G. Rodighiero (4,10125 Torino,2
+G. Rodighiero (4,"Gustaf H\""allstr\""omin katu 2",2
+G. Rodighiero (4,Universit\'e PSL,2
+G. Rodighiero (4,92190 Meudon,2
+G. Rodighiero (4,5210 Windisch,2
+G. Rodighiero (4,00185 Roma,2
+G. Rodighiero (4,Durham University,2
+G. Rodighiero (4,South Road,2
+G. Rodighiero (4,Durham,2
+G. Rodighiero (4,DH1 3LE,2
+G. Rodighiero (4,Arts of Northwestern Switzerland,2
+G. Rodighiero (4,Campo Grande,2
+G. Rodighiero (4,1290 Versoix,2
+G. Rodighiero (4,Via Celoria 16,2
+G. Rodighiero (4,California Institute of Technology,2
+G. Rodighiero (4,,2
+21),F. Hormuth (72),1
+21),I. M. Hook (71),1
+21),W. Holmes (70),1
+21),S. V. H. Haugan (69),1
+21),10,1
+21),L. Guzzo (67,1
+21),14),1
+21),F. Grupp (66,1
+21),A. Grazian (5),1
+21),J. Gracia-Carpio (66),1
+21),C. Giocoli (2,1
+21),B. Gillis (52),1
+21),W. Gillard (63),1
+21),K. George (14),1
+21),E. Franceschi (2),1
+21),M. Frailis (18),1
+21),N. Fourmanoit (63),1
+21),F. Finelli (2,1
+21),S. Ferriol (55),1
+21),64),1
+21),F. Faustini (48,1
+21),R. Farinelli (2),1
+21),M. Farina (15),1
+21),S. Escoffier (63),1
+21),A. Ealet (55),1
+21),S. Dusini (62),1
+21),X. Dupac (9),1
+21),F. Dubath (61),1
+21),M. Douspis (27),1
+21),S. Galeotta (18),1
+21),S. Mei (90,1
+21),E. Medinaceli (2),1
+21),R. J. Massey (89),1
+21),F. Marulli (1,1
+21),N. Martinet (7),1
+21),M. Martinelli (48,1
+21),O. Marggraf (87),1
+21),S. Marcin (86),1
+21),O. Mansutti (18),1
+21),E. Maiorano (2),1
+21),3,1
+21),D. Maino (67,1
+21),G. Mainetti (85),1
+21),I. Lloro (84),1
+21),A. Hornstrup (73,1
+21),P. B. Lilje (69),1
+21),S. Ligori (41),1
+21),A. M. C. Le Brun (83),1
+21),H. Kurki-Suonio (81,1
+21),M. Kunz (80),1
+21),"M. K\""ummel (14)",1
+21),B. Kubik (55),1
+21),A. Kiessling (70),1
+21),S. Kermiche (63),1
+21),"E. Keih\""anen (79)",1
+21),B. Joachimi (78),1
+21),M. Jhabvala (77),1
+21),K. Jahnke (76),1
+21),P. Hudelot (75),1
+21),74),1
+21),V. Lindholm (81,1
+21),M. Brescia (35,1
+21),E. Branchini (33,1
+21),A. Biviano (18,1
+21),S. Bardelli (2),1
+21),M. Baldi (8,1
+21),31),1
+21),C. Baccigalupi (29,1
+21),N. Auricchio (2),1
+21),S. Andreon (10),1
+21),A. Amara (28),1
+21),N. Aghanim (27),1
+21),27),1
+21),J. G. Sorce (26,1
+21),25),1
+21),H. Dole (27),1
+21),A. Cimatti (23),1
+21),M. Hirschmann (22),1
+21),L. Wang (24,1
+21),S. de la Torre (7),1
+21),H. Degaudenzi (61),1
+21),60),1
+21),A. Da Silva (59,1
+21),H. M. Courtois (58),1
+21),57),1
+21),F. Courbin (56,1
+21),Y. Copin (55),1
+21),9),1
+21),L. Conversi (54,1
+21),C. J. Conselice (53),1
+21),G. Congedo (52),1
+21),C. Colodro-Conde (51),1
+21),K. C. Chambers (50),1
+21),13),1
+21),S. Cavuoti (13,1
+21),G. Castignani (2),1
+21),M. Castellano (48),1
+21),S. Casas (47),1
+21),J. Carretero (45,1
+21),C. Carbone (3),1
+21),V. Capobianco (41),1
+21),43,1
+21),G. Ca\~nas-Herrera (42,1
+21),41),1
+21),40,1
+21),S. Camera (39,1
+21),38),1
+21),37,1
+21),J. Brinchmann (36,1
+21),49),1
+21),N. Mauri (23,1
+21),S. Matthew (52),1
+21),J. Mart\'in-Fleitas (123),1
+21),122),1
+21),121,1
+21),16,1
+21),M. Huertas-Company (51,1
+21),J. A. Escartin Vigo (66),1
+21),D. Di Ferdinando (32),1
+21),120),1
+21),A. Cappi (2,1
+21),R. Cabanac (106),1
+21),C. Burigana (119,1
+21),E. Bozzo (61),1
+21),91),1
+21),M. Ballardini (117,1
+21),E. Zucca (2),1
+21),J. Weller (14,1
+21),Y. Wang (112),1
+21),D. Vibert (7),1
+21),33),1
+21),A. Veropalumbo (10,1
+21),G. Verdoes Kleijn (25),1
+21),T. Vassallo (14,1
+21),J. Valiviita (81,1
+21),L. Valenziano (2,1
+21),106),1
+21),I. Tutusaus (17,1
+21),45),1
+21),F. Torradeflot (46,1
+21),118,1
+21),A. Calabro (48),1
+21),S. Bruton (137),1
+21),M. L. Brown (53),1
+21),S. Borgani (136,1
+21),83),1
+21),L. Blot (135,1
+21),A. Blanchard (106),1
+21),M. Bethermin (134),1
+21),5,1
+21),D. Bertacca (4,1
+21),P. Bergamini (67,1
+21),F. Atrio-Barandela (133),1
+21),M. Archidiacono (67,1
+21),132),1
+21),R. B. Metcalf (1,1
+21),S. Anselmi (62,1
+21),131),1
+21),I. T. Andika (130,1
+21),129),1
+21),Y. Akrami (128,1
+21),M. Wiesmann (69),1
+21),M. Viel (29,1
+21),M. Tenti (32),1
+21),M. Sereno (2,1
+21),126),1
+21),V. Scottez (93,1
+21),I. Risso (125),1
+21),C. Porciani (87),1
+21),"M. P\""ontinen (81)",1
+21),A. Pezzotta (124,1
+21),4,1
+21),E. Romelli (18),1
+21),G. Riccio (13),1
+21),J. Rhodes (70),1
+21),A. Renzi (4,1
+21),104),1
+21),103,1
+21),R. Rebolo (51,1
+21),F. Raison (66),1
+21),L. A. Popa (102),1
+21),M. Poncet (101),1
+21),G. Polenta (64),1
+21),S. Pires (12),1
+21),V. Pettorino (42),1
+21),100),1
+21),R. Toledo-Moreo (116),1
+21),W. J. Percival (98,1
+21),K. Pedersen (97),1
+21),F. Pasian (18),1
+21),S. Paltani (61),1
+21),C. Padilla (96),1
+21),S.-M. Niemi (42),1
+21),C. Neissner (96,1
+21),L. Moscardini (1,1
+21),A. Mora (95),1
+21),G. Meylan (94),1
+21),E. Merlin (48),1
+21),M. Meneghetti (2,1
+21),75),1
+21),Y. Mellier (93,1
+21),M. Melchior (92),1
+21),99,1
+21),115),1
+21),S. Toft (114,1
+21),113),1
+21),I. Tereno (59,1
+21),H. I. Teplitz (112),1
+21),A. N. Taylor (52),1
+21),D. Tavagnacco (18),1
+21),P. Tallada-Cresp\'i (45,1
+21),J. Steinwagner (66),1
+21),J.-L. Starck (12),1
+21),L. Stanco (62),1
+21),G. Sirri (32),1
+21),C. Sirignano (4,1
+21),P. Simon (87),1
+21),M. Roncarelli (2),1
+21),S. Serrano (110,1
+21),M. Seiffert (70),1
+21),G. Seidel (76),1
+21),E. Sefusatti (18,1
+21),A. Secroun (63),1
+21),M. Scodeggio (3),1
+21),T. Schrabback (109),1
+21),P. Schneider (87),1
+21),B. Sartoris (14,1
+21),D. Sapone (108),1
+21),A. G. S\'anchez (66),1
+21),107),1
+21),106,1
+21),Z. Sakr (105,1
+21),R. Saglia (14,1
+21),111,1
+21),B. Camacho Quevedo (29,1
+21),UMR 7095,1
+21),(75) Institut d'Astrophysique de Paris,1
+21),(74) Cosmic Dawn Center (DAWN),1
+21),2800 Kgs. Lyngby,1
+21),Elektrovej 327,1
+21),(73) Technical University of Denmark,1
+21),69181 Leimen,1
+21),Goethestr. 17,1
+21),(72) Felix Hormuth Engineering,1
+21),LA1 4YB,1
+21),Lancaster,1
+21),Lancaster University,1
+21),(71) Department of Physics,1
+21),91109,1
+21),4800 Oak Grove Drive,1
+21),(70) Jet Propulsion Laboratory,1
+21),Norway,1
+21),0315 Oslo,1
+21),P.O. Box 1029 Blindern,1
+21),University of Oslo,1
+21),(69) Institute of Theoretical Astrophysics,1
+21),(68) INFN-Sezione di Milano,1
+21),Universit\`a degli Studi di Milano,1
+21),"(67) Dipartimento di Fisica ""Aldo Pontremoli""",1
+21),Giessenbachstr. 1,1
+21),(66) Max Planck Institute for Extraterrestrial Physics,1
+21),40126 Bologna,1
+21),Via Irnerio 46,1
+21),(65) INFN-Bologna,1
+21),CA,1
+21),(86) University of Applied Sciences,1
+21),21 avenue Pierre de Coubertin 69627 Villeurbanne Cedex,1
+21),(85) Centre de Calcul de l'IN2P3/CNRS,1
+21),United Kingdom,1
+21),Macclesfield SK11 9FT,1
+21),Lower Withington,1
+21),Jodrell Bank,1
+21),(84) SKAO,1
+21),(83) Laboratoire d'etude de l'Univers et des phenomenes eXtremes,1
+21),(82) Helsinki Institute of Physics,1
+21),P.O. Box 64,1
+21),(81) Department of Physics,1
+21),CH-1211 Gen\`eve 4,1
+21),24 quai Ernest-Ansermet,1
+21),98 bis boulevard Arago,1
+21),D\'epartement de Physique Th\'eorique,1
+21),(80) Universit\'e de Gen\`eve,1
+21),Helsinki Institute of Physics,1
+21),(79) Department of Physics,1
+21),London WC1E 6BT,1
+21),Gower Street,1
+21),University College London,1
+21),(78) Department of Physics,1
+21),MD 20771,1
+21),Greenbelt,1
+21),(77) NASA Goddard Space Flight Center,1
+21),69117 Heidelberg,1
+21),"K\""onigstuhl 17",1
+21),"(76) Max-Planck-Institut f\""ur Astronomie",1
+21),75014 Paris,1
+21),Centre for Astroparticle Physics,1
+21),Largo Galileo Galilei 1,1
+21),(54) European Space Agency/ESRIN,1
+21),Manchester M13 9PL,1
+21),Oxford Road,1
+21),University of Manchester,1
+21),(53) Jodrell Bank Centre for Astrophysics,1
+21),Edinburgh EH9 3HJ,1
+21),Blackford Hill,1
+21),Royal Observatory,1
+21),University of Edinburgh,1
+21),(52) Institute for Astronomy,1
+21),38205 La Laguna,1
+21),V\'ia L\'actea,1
+21),(51) Instituto de Astrof\'isica de Canarias,1
+21),00133 Roma,1
+21),Honolulu,1
+21),2680 Woodlawn Drive,1
+21),University of Hawaii,1
+21),(50) Institute for Astronomy,1
+21),(49) INFN section of Naples,1
+21),00078 Monteporzio Catone,1
+21),Via Frascati 33,1
+21),(48) INAF-Osservatorio Astronomico di Roma,1
+21),52056 Aachen,1
+21),RWTH Aachen University,1
+21),Cosmology (TTK),1
+21),(47) Institute for Theoretical Particle Physics,1
+21),C. Albareda s/n,1
+21),(46) Port d'Informaci\'o Cient\'ifica,1
+21),28040 Madrid,1
+21),HI 96822,1
+21),via del Politecnico snc,1
+21),Italian Space Agency,1
+21),(64) Space Science Data Center,1
+21),CPPM,1
+21),(63) Aix-Marseille Universit\'e,1
+21),(62) INFN-Padova,1
+21),ch. d'Ecogia 16,1
+21),University of Geneva,1
+21),(61) Department of Astronomy,1
+21),1749-016 Lisboa,1
+21),(60) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+21),PT1749-016 Lisboa,1
+21),Edif\'icio C8,1
+21),(59) Departamento de F\'isica,1
+21),00044 Frascati,1
+21),4 rue Enrico Fermi,1
+21),IUF,1
+21),(58) UCB Lyon 1,1
+21),08010 Barcelona,1
+21),Passeig de Llu\'is Companys 23,1
+21),(57) Instituci\'o Catalana de Recerca i Estudis Avan\c{c}ats (ICREA),1
+21),08028 Barcelona,1
+21),Mart\'i i Franqu\`es 1,1
+21),Universitat de Barcelona (IEEC-UB),1
+21),(56) Institut de Ci\`encies del Cosmos (ICCUB),1
+21),F-69100,1
+21),Villeurbanne,1
+21),UMR 5822,1
+21),(55) Universit\'e Claude Bernard Lyon 1,1
+21),Roma,1
+21),69622 Villeurbanne,1
+21),(116) Universidad Polit\'ecnica de Cartagena,1
+21),Jagtvej 128,1
+21),(115) Niels Bohr Institute,1
+21),(114) Cosmic Dawn Center (DAWN),1
+21),1349-018 Lisboa,1
+21),Tapada da Ajuda,1
+21),(113) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+21),Analysis Center,1
+21),(112) Infrared Processing,1
+21),Leioa-Bilbao,1
+21),Sede Bld 48940,1
+21),University Science Park,1
+21),(111) Satlantis,1
+21),Barcelona,1
+21),School of Computer Science,1
+21),Campus UPC,1
+21),Edifici RDIT,1
+21),(110) Institut d'Estudis Espacials de Catalunya (IEEC),1
+21),Austria,1
+21),6020 Innsbruck,1
+21),Technikerstr. 25/8,1
+21),"Institut f\""ur Astro- und Teilchenphysik",1
+21),"(109) Universit\""at Innsbruck",1
+21),Chile,1
+21),Santiago,1
+21),Blanco Encalada 2008,1
+21),Universidad de Chile,1
+21),FCFM,1
+21),(108) Departamento de F\'isica,1
+21),Lebanon,1
+21),08860 Castelldefels,1
+21),(127) ICSC - Centro Nazionale di Ricerca in High Performance Computing,1
+21),LITL,1
+21),Universit\'e Catholique de Lille,1
+21),Junia,1
+21),(126) ICL,1
+21),INFN-Sezione di Genova,1
+21),(125) INAF-Osservatorio Astronomico di Brera,1
+21),23807 Merate,1
+21),via Emilio Bianchi 46,1
+21),(124) INAF - Osservatorio Astronomico di Brera,1
+21),(123) Aurora Technology for European Space Agency (ESA),1
+21),75013,1
+21),5 Rue Thomas Mann,1
+21),(122) Universit\'e Paris-Cit\'e,1
+21),Departamento de Electr\'onica y Tecnolog\'ia de Computadoras,1
+21),(121) Universit\'e PSL,1
+21),06304 Nice cedex 4,1
+21),CS 34229,1
+21),Bd de l'Observatoire,1
+21),Laboratoire Lagrange,1
+21),Observatoire de la C\^ote d'Azur,1
+21),(120) Universit\'e C\^ote d'Azur,1
+21),Via Piero Gobetti 101,1
+21),Istituto di Radioastronomia,1
+21),(119) INAF,1
+21),Sezione di Ferrara,1
+21),(118) Istituto Nazionale di Fisica Nucleare,1
+21),Universit\`a degli Studi di Ferrara,1
+21),(117) Dipartimento di Fisica e Scienze della Terra,1
+21),Plaza del Hospital 1,1
+21),LERMA,1
+21),(97) DARK,1
+21),Technology,1
+21),The Barcelona Institute of Science,1
+21),(96) Institut de F\'isica d'Altes Energies (IFAE),1
+21),(95) Telespazio UK S.L. for European Space Agency (ESA),1
+21),Ecole Polytechnique F\'ed\'erale de Lausanne (EPFL),1
+21),Laboratory of Astrophysics,1
+21),(94) Institute of Physics,1
+21),98bis Boulevard Arago,1
+21),(93) Institut d'Astrophysique de Paris,1
+21),School of Engineering,1
+21),(92) University of Applied Sciences,1
+21),Berkeley,1
+21),CPB-IN2P3,1
+21),Beirut,1
+21),Centre Pierre Bin\'etruy,1
+21),(91) CNRS-UCB International Research Laboratory,1
+21),75013 Paris,1
+21),Astroparticule et Cosmologie,1
+21),(90) Universit\'e Paris Cit\'e,1
+21),Institute for Computational Cosmology,1
+21),(89) Department of Physics,1
+21),Edificio G. Marconi,1
+21),2 - c/o Dipartimento di Fisica,1
+21),Piazzale Aldo Moro,1
+21),(88) INFN-Sezione di Roma,1
+21),53121 Bonn,1
+21),"Auf dem H\""ugel 71",1
+21),"Argelander-Institut f\""ur Astronomie",1
+21),"(87) Universit\""at Bonn",1
+21),IRL2007,1
+21),Faculty of Sciences,1
+21),(107) Universit\'e St Joseph,1
+21),31400 Toulouse,1
+21),14 Av. Edouard Belin,1
+21),UPS,1
+21),Universit\'e de Toulouse,1
+21),(106) Institut de Recherche en Astrophysique et Plan\'etologie (IRAP),1
+21),69120 Heidelberg,1
+21),Philosophenweg 16,1
+21),University of Heidelberg,1
+21),"(105) Institut f\""ur Theoretische Physik",1
+21),38206 La Laguna,1
+21),(104) Universidad de La Laguna,1
+21),28006 Madrid,1
+21),Niels Bohr Institute,1
+21),(103) Consejo Superior de Investigaciones Cientificas,1
+21),Romania,1
+21),077125,1
+21),Ilfov,1
+21),nr. 409 M\u{a}gurele,1
+21),Str. Atomistilor,1
+21),(102) Institute of Space Science,1
+21),31401 Toulouse Cedex 9,1
+21),18 avenue Edouard Belin,1
+21),(101) Centre National d'Etudes Spatiales -- Centre spatial de Toulouse,1
+21),Ontario N2L 2Y5,1
+21),(100) Perimeter Institute for Theoretical Physics,1
+21),(99) Department of Physics,1
+21),(98) Waterloo Centre for Astrophysics,1
+21),Jagtvej 155,1
+21),Calle Serrano 117,1
+21),166),1
+21),141,1
+21),S. Sacquegna (142,1
+21),5),1
+21),G. Rodighiero (4,1
+21),P.-F. Rocci (27),1
+21),M. Radovich (5),1
+21),D. Potter (157),1
+21),A. Pisani (63),1
+21),L. Patrizii (32),1
+21),K. Paterson (76),1
+21),F. Passalacqua (4,1
+21),S. Nesseris (128),1
+21),A. Navarro-Alsina (87),1
+21),Avenida Complutense 40,1
+21),S. Nadathur (145),1
+21),G. Morgante (2),1
+21),C. Moretti (31,1
+21),P. Monaco (136,1
+21),165),1
+21),M. Miluzio (9,1
+21),L. Maurin (27),1
+21),36),1
+21),C. J. A. P. Martins (164,1
+21),48),1
+21),R. Maoli (163,1
+21),F. Mannucci (20),1
+21),G. Maggio (18),1
+21),J. Macias-Perez (162),1
+21),161),1
+21),K. Naidoo (145),1
+21),(6) Department of Physics,1
+21),35122 Padova,1
+21),Via dell'Osservatorio 5,1
+21),(5) INAF-Osservatorio Astronomico di Padova,1
+21),Universit\`a di Padova,1
+21),"(4) Dipartimento di Fisica e Astronomia ""G. Galilei""",1
+21),Via Alfonso Corti 12,1
+21),(3) INAF-IASF Milano,1
+21),Via Piero Gobetti 93/3,1
+21),(2) INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna,1
+21),via Piero Gobetti 93/2,1
+21),"N. A. Walton (170) ((1) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+21),P. Vielzeuf (63),1
+21),G. Verza (173),1
+21),M. Sahl\'en (167),1
+21),C. Valieri (32),1
+21),M. Tucci (61),1
+21),A. Troja (4,1
+21),S. Tosi (33,1
+21),R. Teyssier (171),1
+21),G. Testera (34),1
+21),C. Tao (63),1
+21),K. Tanidis (6),1
+21),L. C. Smith (170),1
+21),F. Shankar (169),1
+21),E. Sellentin (168,1
+21),D. Sciotti (48,1
+21),A. Schneider (157),1
+21),E. Sarpa (31,1
+21),D. B. Sanders (50),1
+21),A. Venhola (172),1
+21),F. Giacomini (32),1
+21),145),1
+21),E. Gaztanaga (17,1
+21),V. Gautard (144),1
+21),T. Gasparetto (18),1
+21),J. Garc\'ia-Bellido (128),1
+21),K. Ganga (90),1
+21),143),1
+21),142,1
+21),A. Franco (141,1
+21),F. Fontanot (18,1
+21),A. Fontana (48),1
+21),A. Finoguenov (81),1
+21),A. G. Ferrari (32),1
+21),A. Loureiro (160,1
+21),J. M. Diego (140),1
+21),34),1
+21),S. Di Domizio (33,1
+21),J. J. Diaz (51),1
+21),A. D\'iaz-S\'anchez (139),1
+21),G. Desprez (25),1
+21),S. Davini (34),1
+21),O. Cucciati (2),1
+21),A. R. Cooray (138),1
+21),T. Contini (106),1
+21),S. Conseil (55),1
+21),F. Cogato (1,1
+21),T. Castro (18,1
+21),C. S. Carvalho (113),1
+21),F. Caro (48),1
+21),Y. Fang (14),1
+21),S. J. Liu (15),1
+21),T. I. Liaudat (159),1
+21),L. Leuzzi (2),1
+21),J. Lesgourgues (47),1
+21),G. F. Lesci (1,1
+21),89),1
+21),G. Leroy (158,1
+21),F. Lepori (157),1
+21),M. Lembo (75),1
+21),156),1
+21),L. Legrand (155,1
+21),C. C. Kirkpatrick (79),1
+21),K. Kiiveri (79),1
+21),154),1
+21),F. Gianotti (2),1
+21),153),1
+21),V. Kansal (152,1
+21),Y. Kang (61),1
+21),151),1
+21),J. J. E. Kajava (150,1
+21),J. Hjorth (97),1
+21),H. Hildebrandt (149),1
+21),51),1
+21),C. Hern\'andez-Monteagudo (104,1
+21),S. Hemmati (148),1
+21),A. Hall (52),1
+21),C. M. Gutierrez (147),1
+21),M. Guidi (8,1
+21),81),1
+21),G. Gozaliasl (146,1
+21),D. Karagiannis (117,1
+21),Via Bonomea 265,1
+21),International School for Advanced Studies,1
+21),(31) SISSA,1
+21),34127 Trieste TS,1
+21),Via Valerio 2,1
+21),Sezione di Trieste,1
+21),(30) INFN,1
+21),34151 Trieste,1
+21),via Beirut 2,1
+21),Institute for Fundamental Physics of the Universe,1
+21),(29) IFPU,1
+21),GU2 7XH,1
+21),Surrey,1
+21),Guildford,1
+21),Oxford University,1
+21),Physics,1
+21),(28) School of Mathematics,1
+21),Orsay,1
+21),91405,1
+21),Institut d'astrophysique spatiale,1
+21),(27) Universit\'e Paris-Saclay,1
+21),UMR 9189 CRIStAL,1
+21),Centrale Lille,1
+21),(26) Univ. Lille,1
+21),9700 AV Groningen,1
+21),PO Box 800,1
+21),University of Groningen,1
+21),(25) Kapteyn Astronomical Institute,1
+21),Groningen,1
+21),9747 AD,1
+21),University of Surrey,1
+21),Medioambientales y Tecnol\'ogicas (CIEMAT),1
+21),(45) Centro de Investigaciones Energ\'eticas,1
+21),2333 CC Leiden,1
+21),(44) Leiden Observatory,1
+21),Niels Bohrweg 2,1
+21),(43) Institute Lorentz,1
+21),2201 AZ Noordwijk,1
+21),Keplerlaan 1,1
+21),(42) European Space Agency/ESTEC,1
+21),10025 Pino Torinese (TO),1
+21),Via Osservatorio 20,1
+21),(41) INAF-Osservatorio Astrofisico di Torino,1
+21),(40) INFN-Sezione di Torino,1
+21),Universit\`a degli Studi di Torino,1
+21),34136 Trieste TS,1
+21),Karl-Schwarzschild-Str. 2,1
+21),(38) European Southern Observatory,1
+21),4150-007 Porto,1
+21),Rua do Campo de Alegre,1
+21),(37) Faculdade de Ci\^encias da Universidade do Porto,1
+21),PT4150-762 Porto,1
+21),CAUP,1
+21),Universidade do Porto,1
+21),(36) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+21),University Federico II,1
+21),"(35) Department of Physics ""E. Pancini""",1
+21),(34) INFN-Sezione di Genova,1
+21),Universit\`a di Genova,1
+21),(33) Dipartimento di Fisica,1
+21),(32) INFN-Sezione di Bologna,1
+21),(39) Dipartimento di Fisica,1
+21),Scheinerstrasse 1,1
+21),"Ludwig-Maximilians-Universit\""at M\""unchen",1
+21),"Fakult\""at f\""ur Physik",1
+21),"(14) Universit\""ats-Sternwarte M\""unchen",1
+21),80131 Napoli,1
+21),Via Moiariello 16,1
+21),(13) INAF-Osservatorio Astronomico di Capodimonte,1
+21),Gif-sur-Yvette,1
+21),91191,1
+21),AIM,1
+21),(12) Universit\'e Paris-Saclay,1
+21),MN 55455,1
+21),Minneapolis,1
+21),116 Church St SE,1
+21),Landleven 12,1
+21),(11) Minnesota Institute for Astrophysics,1
+21),(10) INAF-Osservatorio Astronomico di Brera,1
+21),Madrid,1
+21),28692 Villanueva de la Ca\~nada,1
+21),Urb. Villafranca del Castillo,1
+21),s/n.,1
+21),Camino Bajo del Castillo,1
+21),(9) ESAC/ESA,1
+21),Via Gobetti 93/2,1
+21),Universit\`a di Bologna,1
+21),(8) Dipartimento di Fisica e Astronomia,1
+21),LAM,1
+21),(7) Aix-Marseille Universit\'e,1
+21),Oxford OX1 3RH,1
+21),Keble Road,1
+21),University of Minnesota,1
+21),(24) SRON Netherlands Institute for Space Research,1
+21),"(23) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+21),CH-1290 Versoix,1
+21),Ecole Polytechnique F\'ed\'erale de Lausanne,1
+21),Laboratory for Galaxy Evolution,1
+21),(22) Institute of Physics,1
+21),50019 Sesto Fiorentino,1
+21),via G. Sansone 1,1
+21),Universit\`a di Firenze,1
+21),(21) Dipartimento di Fisica e Astronomia,1
+21),50125,1
+21),Largo E. Fermi 5,1
+21),(20) INAF-Osservatorio Astrofisico di Arcetri,1
+21),MK7 6AA,1
+21),"81679 M\""unchen",1
+21),The Open University,1
+21),(19) School of Physical Sciences,1
+21),34143 Trieste,1
+21),Via G. B. Tiepolo 11,1
+21),(18) INAF-Osservatorio Astronomico di Trieste,1
+21),08193 Barcelona,1
+21),Carrer de Can Magrans,1
+21),CSIC),1
+21),(17) Institute of Space Sciences (ICE,1
+21),Universidad de La Laguna (ULL),1
+21),(16) Instituto de Astrof\'isica de Canarias (IAC),1
+21),00100 Roma,1
+21),100,1
+21),via del Fosso del Cavaliere,1
+21),(15) INAF-Istituto di Astrofisica e Planetologia Spaziali,1
+21),Milton Keynes,1
+21),Big Data e Quantum Computing,1
+21),Victoria 3122,1
+21),Hawthorn,1
+21),Swinburne University of Technology,1
+21),(153) Centre for Astrophysics \& Supercomputing,1
+21),Melbourne,1
+21),(152) ARC Centre of Excellence for Dark Matter Particle Physics,1
+21),(151) Serco for European Space Agency (ESA),1
+21),20014 Turku,1
+21),University of Turku,1
+21),Vesilinnantie 5,1
+21),(150) Department of Physics,1
+21),44780 Bochum,1
+21),German Centre for Cosmological Lensing (GCCL),1
+21),Astronomical Institute (AIRUB),1
+21),(149) Ruhr University Bochum,1
+21),1200 E. California Blvd.,1
+21),(148) Caltech/IPAC,1
+21),Avda. Francisco Sanchez,1
+21),Spain. Departamento de Astrof\'i sica de la Universidad de La Laguna,1
+21),La Laguna 38200,1
+21),c/ Via Lactea s/n,1
+21),(147) Instituto de Astrof\'i sica de Canarias,1
+21),FI-00 076,1
+21),Espoo,1
+21),PO Box 15400,1
+21),Aalto University,1
+21),(146) Department of Computer Science,1
+21),Portsmouth PO1 3FX,1
+21),University of Portsmouth,1
+21),Faculty of Physics,1
+21),Grenoble INP,1
+21),(162) Univ. Grenoble Alpes,1
+21),London SW7 2AZ,1
+21),Imperial College London,1
+21),Blackett Laboratory,1
+21),(161) Astrophysics Group,1
+21),SE-106 91,1
+21),Stockholm,1
+21),Stockholm University,1
+21),(160) Oskar Klein Centre for Cosmoparticle Physics,1
+21),Universit\'e Paris-Saclay 91191 Gif-sur-Yvette Cedex,1
+21),(159) IRFU,1
+21),Centre for Extragalactic Astronomy,1
+21),(158) Department of Physics,1
+21),(154) Department of Physics,1
+21),Winterthurerstrasse 190,1
+21),University of Zurich,1
+21),(157) Department of Astrophysics,1
+21),CB3 0HA,1
+21),Cambridge,1
+21),(156) Kavli Institute for Cosmology Cambridge,1
+21),Cambridge CB3 0WA,1
+21),Wilberforce Road,1
+21),Centre for Mathematical Sciences,1
+21),(155) DAMTP,1
+21),South Africa,1
+21),7535,1
+21),Cape Town,1
+21),Bellville,1
+21),University of the Western Cape,1
+21),8057 Zurich,1
+21),(136) Dipartimento di Fisica - Sezione di Astronomia,1
+21),Japan,1
+21),Chiba 277-8583,1
+21),Kashiwa,1
+21),The University of Tokyo,1
+21),UTIAS,1
+21),Kavli IPMU (WPI),1
+21),(135) Center for Data-Driven Discovery,1
+21),67000 Strasbourg,1
+21),UMR 7550,1
+21),Observatoire astronomique de Strasbourg,1
+21),(134) Universit\'e de Strasbourg,1
+21),(133) Departamento de F\'isica Fundamental. Universidad de Salamanca. Plaza de la Merced s/n. 37008 Salamanca,1
+21),(132) Laboratoire Univers et Th\'eorie,1
+21),Gravitation,1
+21),"(131) Max-Planck-Institut f\""ur Astrophysik",1
+21),James-Franck-Str. 1,1
+21),Physics Department,1
+21),TUM School of Natural Sciences,1
+21),(130) Technical University of Munich,1
+21),OH 44106,1
+21),Cleveland,1
+21),10900 Euclid Avenue,1
+21),Case Western Reserve University,1
+21),(129) CERCA/ISO,1
+21),28049 Madrid,1
+21),Campus de Cantoblanco,1
+21),(128) Instituto de F\'isica Te\'orica UAM-CSIC,1
+21),Bologna,1
+21),Via Magnanelli 2,1
+21),Karl-Schwarzschild-Str. 1,1
+21),(145) Institute of Cosmology,1
+21),91191 Gif-sur-Yvette,1
+21),Bat. 709,1
+21),Service d'Astrophysique,1
+21),DFR/IRFU,1
+21),(144) CEA Saclay,1
+21),c/o Dipartimento Matematica e Fisica,1
+21),(143) INAF-Sezione di Lecce,1
+21),CP-I93,1
+21),University of Salento,1
+21),Physics E. De Giorgi,1
+21),(142) Department of Mathematics,1
+21),CP-193,1
+21),Sezione di Lecce,1
+21),Universit\`a di Trieste,1
+21),39005 Santander,1
+21),Avenida de los Castros,1
+21),Edificio Juan Jord\'a,1
+21),(140) Instituto de F\'isica de Cantabria,1
+21),Murcia,1
+21),Campus Muralla del Mar,1
+21),Universidad Polit\'ecnica de Cartagena,1
+21),(139) Departamento F\'isica Aplicada,1
+21),Irvine CA 92697,1
+21),University of California Irvine,1
+21),(138) Department of Physics \& Astronomy,1
+21),1200 E California Blvd,1
+21),(137) California Institute of Technology,1
+21),34131 Trieste,1
+21),Via Tiepolo 11,1
+21),(141) INFN,1
+21),LPSC-IN2P3,1
+21),Princeton University,1
+21),Peyton Hall,1
+21),(171) Department of Astrophysical Sciences,1
+21),Cambridge CB3 0HA,1
+21),University of Cambridge,1
+21),(170) Institute of Astronomy,1
+21),Southampton SO17 1BJ,1
+21),Highfield Campus,1
+21),University of Southampton,1
+21),(169) School of Physics \& Astronomy,1
+21),University of Leiden,1
+21),(168) Mathematical Institute,1
+21),751 37 Uppsala,1
+21),Box 516,1
+21),(167) Theoretical astrophysics,1
+21),Teramo,1
+21),64100,1
+21),Via Maggini,1
+21),(166) INAF - Osservatorio Astronomico d'Abruzzo,1
+21),(165) HE Space for European Space Agency (ESA),1
+21),4150-762 Porto,1
+21),(164) Centro de Astrof\'isica da Universidade do Porto,1
+21),Piazzale Aldo Moro 2,1
+21),Sapienza Universit\`a di Roma,1
+21),(163) Dipartimento di Fisica,1
+21),Grenoble,1
+21),38000,1
+21),Avenue des Martyrs,1
+21),53,1
+21),Uppsala University,1
+21),Princeton,1
+21),USA),1
+21),NY,1
+21),New York,1
+21),10010,1
+21),162 5th Avenue,1
+21),Flatiron Institute,1
+21),(173) Center for Computational Astrophysics,1
+21),FI-90014 Oulu,1
+21),Pentti Kaiteran katu 1,1
+21),University of Oulu,1
+21),astronomy research unit,1
+21),(172) Space physics,1
+21),NJ 08544,1
+A. Grazian (5),9700 AV Groningen,1
+A. Grazian (5),PO Box 800,1
+A. Grazian (5),University of Groningen,1
+A. Grazian (5),(25) Kapteyn Astronomical Institute,1
+A. Grazian (5),Groningen,1
+A. Grazian (5),9747 AD,1
+A. Grazian (5),Landleven 12,1
+A. Grazian (5),(24) SRON Netherlands Institute for Space Research,1
+A. Grazian (5),"(23) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+A. Grazian (5),CH-1290 Versoix,1
+A. Grazian (5),Ecole Polytechnique F\'ed\'erale de Lausanne,1
+A. Grazian (5),Laboratory for Galaxy Evolution,1
+A. Grazian (5),(22) Institute of Physics,1
+A. Grazian (5),50019 Sesto Fiorentino,1
+A. Grazian (5),Universit\`a di Firenze,1
+A. Grazian (5),(21) Dipartimento di Fisica e Astronomia,1
+A. Grazian (5),50125,1
+A. Grazian (5),Largo E. Fermi 5,1
+A. Grazian (5),(20) INAF-Osservatorio Astrofisico di Arcetri,1
+A. Grazian (5),MK7 6AA,1
+A. Grazian (5),Milton Keynes,1
+A. Grazian (5),The Open University,1
+A. Grazian (5),(19) School of Physical Sciences,1
+A. Grazian (5),34143 Trieste,1
+A. Grazian (5),Via G. B. Tiepolo 11,1
+A. Grazian (5),(18) INAF-Osservatorio Astronomico di Trieste,1
+A. Grazian (5),08193 Barcelona,1
+A. Grazian (5),Carrer de Can Magrans,1
+A. Grazian (5),CSIC),1
+A. Grazian (5),via G. Sansone 1,1
+A. Grazian (5),University Federico II,1
+A. Grazian (5),"(35) Department of Physics ""E. Pancini""",1
+A. Grazian (5),(34) INFN-Sezione di Genova,1
+A. Grazian (5),Universit\`a di Genova,1
+A. Grazian (5),(33) Dipartimento di Fisica,1
+A. Grazian (5),(32) INFN-Sezione di Bologna,1
+A. Grazian (5),34136 Trieste TS,1
+A. Grazian (5),Via Bonomea 265,1
+A. Grazian (5),International School for Advanced Studies,1
+A. Grazian (5),(31) SISSA,1
+A. Grazian (5),34127 Trieste TS,1
+A. Grazian (5),Via Valerio 2,1
+A. Grazian (5),Sezione di Trieste,1
+A. Grazian (5),(30) INFN,1
+A. Grazian (5),(26) Univ. Lille,1
+A. Grazian (5),via Beirut 2,1
+A. Grazian (5),Institute for Fundamental Physics of the Universe,1
+A. Grazian (5),(29) IFPU,1
+A. Grazian (5),GU2 7XH,1
+A. Grazian (5),Surrey,1
+A. Grazian (5),Guildford,1
+A. Grazian (5),University of Surrey,1
+A. Grazian (5),Physics,1
+A. Grazian (5),(28) School of Mathematics,1
+A. Grazian (5),Orsay,1
+A. Grazian (5),91405,1
+A. Grazian (5),Institut d'astrophysique spatiale,1
+A. Grazian (5),(27) Universit\'e Paris-Saclay,1
+A. Grazian (5),UMR 9189 CRIStAL,1
+A. Grazian (5),Centrale Lille,1
+A. Grazian (5),34151 Trieste,1
+A. Grazian (5),Universit\`a di Bologna,1
+A. Grazian (5),(8) Dipartimento di Fisica e Astronomia,1
+A. Grazian (5),LAM,1
+A. Grazian (5),(7) Aix-Marseille Universit\'e,1
+A. Grazian (5),Oxford OX1 3RH,1
+A. Grazian (5),Keble Road,1
+A. Grazian (5),Oxford University,1
+A. Grazian (5),(6) Department of Physics,1
+A. Grazian (5),35122 Padova,1
+A. Grazian (5),Via dell'Osservatorio 5,1
+A. Grazian (5),(5) INAF-Osservatorio Astronomico di Padova,1
+A. Grazian (5),Universit\`a di Padova,1
+A. Grazian (5),"(4) Dipartimento di Fisica e Astronomia ""G. Galilei""",1
+A. Grazian (5),Via Alfonso Corti 12,1
+A. Grazian (5),(17) Institute of Space Sciences (ICE,1
+A. Grazian (5),Via Piero Gobetti 93/3,1
+A. Grazian (5),(2) INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna,1
+A. Grazian (5),via Piero Gobetti 93/2,1
+A. Grazian (5),"N. A. Walton (170) ((1) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+A. Grazian (5),P. Vielzeuf (63),1
+A. Grazian (5),G. Verza (173),1
+A. Grazian (5),A. Venhola (172),1
+A. Grazian (5),C. Valieri (32),1
+A. Grazian (5),M. Tucci (61),1
+A. Grazian (5),A. Troja (4,1
+A. Grazian (5),10),1
+A. Grazian (5),S. Tosi (33,1
+A. Grazian (5),R. Teyssier (171),1
+A. Grazian (5),G. Testera (34),1
+A. Grazian (5),C. Tao (63),1
+A. Grazian (5),(3) INAF-IASF Milano,1
+A. Grazian (5),Universidad de La Laguna (ULL),1
+A. Grazian (5),(16) Instituto de Astrof\'isica de Canarias (IAC),1
+A. Grazian (5),00100 Roma,1
+A. Grazian (5),100,1
+A. Grazian (5),via del Fosso del Cavaliere,1
+A. Grazian (5),(15) INAF-Istituto di Astrofisica e Planetologia Spaziali,1
+A. Grazian (5),"81679 M\""unchen",1
+A. Grazian (5),Scheinerstrasse 1,1
+A. Grazian (5),"Ludwig-Maximilians-Universit\""at M\""unchen",1
+A. Grazian (5),"Fakult\""at f\""ur Physik",1
+A. Grazian (5),"(14) Universit\""ats-Sternwarte M\""unchen",1
+A. Grazian (5),80131 Napoli,1
+A. Grazian (5),Via Moiariello 16,1
+A. Grazian (5),(13) INAF-Osservatorio Astronomico di Capodimonte,1
+A. Grazian (5),Via Gobetti 93/2,1
+A. Grazian (5),91191,1
+A. Grazian (5),AIM,1
+A. Grazian (5),(12) Universit\'e Paris-Saclay,1
+A. Grazian (5),MN 55455,1
+A. Grazian (5),Minneapolis,1
+A. Grazian (5),116 Church St SE,1
+A. Grazian (5),University of Minnesota,1
+A. Grazian (5),(11) Minnesota Institute for Astrophysics,1
+A. Grazian (5),(10) INAF-Osservatorio Astronomico di Brera,1
+A. Grazian (5),Madrid,1
+A. Grazian (5),28692 Villanueva de la Ca\~nada,1
+A. Grazian (5),Urb. Villafranca del Castillo,1
+A. Grazian (5),s/n.,1
+A. Grazian (5),Camino Bajo del Castillo,1
+A. Grazian (5),(9) ESAC/ESA,1
+A. Grazian (5),Gif-sur-Yvette,1
+A. Grazian (5),"(67) Dipartimento di Fisica ""Aldo Pontremoli""",1
+A. Grazian (5),Giessenbachstr. 1,1
+A. Grazian (5),(66) Max Planck Institute for Extraterrestrial Physics,1
+A. Grazian (5),40126 Bologna,1
+A. Grazian (5),Via Irnerio 46,1
+A. Grazian (5),(65) INFN-Bologna,1
+A. Grazian (5),00133 Roma,1
+A. Grazian (5),via del Politecnico snc,1
+A. Grazian (5),Italian Space Agency,1
+A. Grazian (5),(64) Space Science Data Center,1
+A. Grazian (5),CPPM,1
+A. Grazian (5),(63) Aix-Marseille Universit\'e,1
+A. Grazian (5),(62) INFN-Padova,1
+A. Grazian (5),ch. d'Ecogia 16,1
+A. Grazian (5),(36) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+A. Grazian (5),(61) Department of Astronomy,1
+A. Grazian (5),1749-016 Lisboa,1
+A. Grazian (5),(60) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+A. Grazian (5),PT1749-016 Lisboa,1
+A. Grazian (5),Edif\'icio C8,1
+A. Grazian (5),(59) Departamento de F\'isica,1
+A. Grazian (5),69622 Villeurbanne,1
+A. Grazian (5),4 rue Enrico Fermi,1
+A. Grazian (5),IUF,1
+A. Grazian (5),(58) UCB Lyon 1,1
+A. Grazian (5),08010 Barcelona,1
+A. Grazian (5),Passeig de Llu\'is Companys 23,1
+A. Grazian (5),(57) Instituci\'o Catalana de Recerca i Estudis Avan\c{c}ats (ICREA),1
+A. Grazian (5),08028 Barcelona,1
+A. Grazian (5),Mart\'i i Franqu\`es 1,1
+A. Grazian (5),University of Geneva,1
+A. Grazian (5),Greenbelt,1
+A. Grazian (5),(77) NASA Goddard Space Flight Center,1
+A. Grazian (5),69117 Heidelberg,1
+A. Grazian (5),"K\""onigstuhl 17",1
+A. Grazian (5),"(76) Max-Planck-Institut f\""ur Astronomie",1
+A. Grazian (5),75014 Paris,1
+A. Grazian (5),98 bis boulevard Arago,1
+A. Grazian (5),UMR 7095,1
+A. Grazian (5),(75) Institut d'Astrophysique de Paris,1
+A. Grazian (5),(74) Cosmic Dawn Center (DAWN),1
+A. Grazian (5),2800 Kgs. Lyngby,1
+A. Grazian (5),Elektrovej 327,1
+A. Grazian (5),(73) Technical University of Denmark,1
+A. Grazian (5),69181 Leimen,1
+A. Grazian (5),Universit\`a degli Studi di Milano,1
+A. Grazian (5),(72) Felix Hormuth Engineering,1
+A. Grazian (5),LA1 4YB,1
+A. Grazian (5),Lancaster,1
+A. Grazian (5),Lancaster University,1
+A. Grazian (5),(71) Department of Physics,1
+A. Grazian (5),91109,1
+A. Grazian (5),CA,1
+A. Grazian (5),4800 Oak Grove Drive,1
+A. Grazian (5),(70) Jet Propulsion Laboratory,1
+A. Grazian (5),Norway,1
+A. Grazian (5),0315 Oslo,1
+A. Grazian (5),P.O. Box 1029 Blindern,1
+A. Grazian (5),University of Oslo,1
+A. Grazian (5),(69) Institute of Theoretical Astrophysics,1
+A. Grazian (5),(68) INFN-Sezione di Milano,1
+A. Grazian (5),Goethestr. 17,1
+A. Grazian (5),RWTH Aachen University,1
+A. Grazian (5),Cosmology (TTK),1
+A. Grazian (5),(47) Institute for Theoretical Particle Physics,1
+A. Grazian (5),C. Albareda s/n,1
+A. Grazian (5),(46) Port d'Informaci\'o Cient\'ifica,1
+A. Grazian (5),28040 Madrid,1
+A. Grazian (5),Avenida Complutense 40,1
+A. Grazian (5),Medioambientales y Tecnol\'ogicas (CIEMAT),1
+A. Grazian (5),(45) Centro de Investigaciones Energ\'eticas,1
+A. Grazian (5),2333 CC Leiden,1
+A. Grazian (5),(44) Leiden Observatory,1
+A. Grazian (5),Niels Bohrweg 2,1
+A. Grazian (5),(43) Institute Lorentz,1
+A. Grazian (5),2201 AZ Noordwijk,1
+A. Grazian (5),Universitat de Barcelona (IEEC-UB),1
+A. Grazian (5),(42) European Space Agency/ESTEC,1
+A. Grazian (5),10025 Pino Torinese (TO),1
+A. Grazian (5),Via Osservatorio 20,1
+A. Grazian (5),(41) INAF-Osservatorio Astrofisico di Torino,1
+A. Grazian (5),(40) INFN-Sezione di Torino,1
+A. Grazian (5),Universit\`a degli Studi di Torino,1
+A. Grazian (5),(39) Dipartimento di Fisica,1
+A. Grazian (5),Karl-Schwarzschild-Str. 2,1
+A. Grazian (5),(38) European Southern Observatory,1
+A. Grazian (5),4150-007 Porto,1
+A. Grazian (5),Rua do Campo de Alegre,1
+A. Grazian (5),(37) Faculdade de Ci\^encias da Universidade do Porto,1
+A. Grazian (5),PT4150-762 Porto,1
+A. Grazian (5),CAUP,1
+A. Grazian (5),Universidade do Porto,1
+A. Grazian (5),Keplerlaan 1,1
+A. Grazian (5),(56) Institut de Ci\`encies del Cosmos (ICCUB),1
+A. Grazian (5),F-69100,1
+A. Grazian (5),Villeurbanne,1
+A. Grazian (5),UMR 5822,1
+A. Grazian (5),(55) Universit\'e Claude Bernard Lyon 1,1
+A. Grazian (5),Roma,1
+A. Grazian (5),00044 Frascati,1
+A. Grazian (5),Largo Galileo Galilei 1,1
+A. Grazian (5),(54) European Space Agency/ESRIN,1
+A. Grazian (5),Manchester M13 9PL,1
+A. Grazian (5),Oxford Road,1
+A. Grazian (5),University of Manchester,1
+A. Grazian (5),(53) Jodrell Bank Centre for Astrophysics,1
+A. Grazian (5),Edinburgh EH9 3HJ,1
+A. Grazian (5),52056 Aachen,1
+A. Grazian (5),Royal Observatory,1
+A. Grazian (5),University of Edinburgh,1
+A. Grazian (5),(52) Institute for Astronomy,1
+A. Grazian (5),38205 La Laguna,1
+A. Grazian (5),V\'ia L\'actea,1
+A. Grazian (5),(51) Instituto de Astrof\'isica de Canarias,1
+A. Grazian (5),HI 96822,1
+A. Grazian (5),Honolulu,1
+A. Grazian (5),2680 Woodlawn Drive,1
+A. Grazian (5),University of Hawaii,1
+A. Grazian (5),(50) Institute for Astronomy,1
+A. Grazian (5),(49) INFN section of Naples,1
+A. Grazian (5),00078 Monteporzio Catone,1
+A. Grazian (5),Via Frascati 33,1
+A. Grazian (5),(48) INAF-Osservatorio Astronomico di Roma,1
+A. Grazian (5),Blackford Hill,1
+A. Grazian (5),G. Verdoes Kleijn (25),1
+A. Grazian (5),T. Vassallo (14,1
+A. Grazian (5),J. Valiviita (81,1
+A. Grazian (5),L. Valenziano (2,1
+A. Grazian (5),106),1
+A. Grazian (5),I. Tutusaus (17,1
+A. Grazian (5),45),1
+A. Grazian (5),F. Torradeflot (46,1
+A. Grazian (5),R. Toledo-Moreo (116),1
+A. Grazian (5),115),1
+A. Grazian (5),S. Toft (114,1
+A. Grazian (5),113),1
+A. Grazian (5),I. Tereno (59,1
+A. Grazian (5),H. I. Teplitz (112),1
+A. Grazian (5),K. Tanidis (6),1
+A. Grazian (5),D. Tavagnacco (18),1
+A. Grazian (5),P. Tallada-Cresp\'i (45,1
+A. Grazian (5),J. Steinwagner (66),1
+A. Grazian (5),J.-L. Starck (12),1
+A. Grazian (5),L. Stanco (62),1
+A. Grazian (5),G. Sirri (32),1
+A. Grazian (5),C. Sirignano (4,1
+A. Grazian (5),P. Simon (87),1
+A. Grazian (5),111,1
+A. Grazian (5),S. Serrano (110,1
+A. Grazian (5),M. Seiffert (70),1
+A. Grazian (5),G. Seidel (76),1
+A. Grazian (5),E. Sefusatti (18,1
+A. Grazian (5),A. Secroun (63),1
+A. Grazian (5),M. Scodeggio (3),1
+A. Grazian (5),A. N. Taylor (52),1
+A. Grazian (5),M. Tenti (32),1
+A. Grazian (5),M. Sereno (2,1
+A. Grazian (5),126),1
+A. Grazian (5),V. Scottez (93,1
+A. Grazian (5),I. Risso (125),1
+A. Grazian (5),C. Porciani (87),1
+A. Grazian (5),"M. P\""ontinen (81)",1
+A. Grazian (5),A. Pezzotta (124,1
+A. Grazian (5),R. B. Metcalf (1,1
+A. Grazian (5),N. Mauri (23,1
+A. Grazian (5),S. Matthew (52),1
+A. Grazian (5),J. Mart\'in-Fleitas (123),1
+A. Grazian (5),122),1
+A. Grazian (5),121,1
+A. Grazian (5),A. Veropalumbo (10,1
+A. Grazian (5),M. Huertas-Company (51,1
+A. Grazian (5),J. A. Escartin Vigo (66),1
+A. Grazian (5),D. Di Ferdinando (32),1
+A. Grazian (5),120),1
+A. Grazian (5),A. Cappi (2,1
+A. Grazian (5),R. Cabanac (106),1
+A. Grazian (5),C. Burigana (119,1
+A. Grazian (5),E. Bozzo (61),1
+A. Grazian (5),118,1
+A. Grazian (5),M. Ballardini (117,1
+A. Grazian (5),E. Zucca (2),1
+A. Grazian (5),J. Weller (14,1
+A. Grazian (5),Y. Wang (112),1
+A. Grazian (5),D. Vibert (7),1
+A. Grazian (5),33),1
+A. Grazian (5),16,1
+A. Grazian (5),L. Moscardini (1,1
+A. Grazian (5),A. Mora (95),1
+A. Grazian (5),G. Meylan (94),1
+A. Grazian (5),E. Merlin (48),1
+A. Grazian (5),M. Meneghetti (2,1
+A. Grazian (5),75),1
+A. Grazian (5),Y. Mellier (93,1
+A. Grazian (5),M. Melchior (92),1
+A. Grazian (5),91),1
+A. Grazian (5),S. Mei (90,1
+A. Grazian (5),E. Medinaceli (2),1
+A. Grazian (5),R. J. Massey (89),1
+A. Grazian (5),F. Marulli (1,1
+A. Grazian (5),N. Martinet (7),1
+A. Grazian (5),T. Schrabback (109),1
+A. Grazian (5),O. Marggraf (87),1
+A. Grazian (5),S. Marcin (86),1
+A. Grazian (5),O. Mansutti (18),1
+A. Grazian (5),E. Maiorano (2),1
+A. Grazian (5),3,1
+A. Grazian (5),D. Maino (67,1
+A. Grazian (5),G. Mainetti (85),1
+A. Grazian (5),I. Lloro (84),1
+A. Grazian (5),V. Lindholm (81,1
+A. Grazian (5),P. B. Lilje (69),1
+A. Grazian (5),S. Ligori (41),1
+A. Grazian (5),A. M. C. Le Brun (83),1
+A. Grazian (5),H. Kurki-Suonio (81,1
+A. Grazian (5),M. Kunz (80),1
+A. Grazian (5),"M. K\""ummel (14)",1
+A. Grazian (5),M. Martinelli (48,1
+A. Grazian (5),P. Schneider (87),1
+A. Grazian (5),B. Sartoris (14,1
+A. Grazian (5),D. Sapone (108),1
+A. Grazian (5),A. G. S\'anchez (66),1
+A. Grazian (5),107),1
+A. Grazian (5),106,1
+A. Grazian (5),Z. Sakr (105,1
+A. Grazian (5),R. Saglia (14,1
+A. Grazian (5),M. Roncarelli (2),1
+A. Grazian (5),E. Romelli (18),1
+A. Grazian (5),G. Riccio (13),1
+A. Grazian (5),J. Rhodes (70),1
+A. Grazian (5),A. Renzi (4,1
+A. Grazian (5),104),1
+A. Grazian (5),C. Neissner (96,1
+A. Grazian (5),R. Rebolo (51,1
+A. Grazian (5),F. Raison (66),1
+A. Grazian (5),L. A. Popa (102),1
+A. Grazian (5),M. Poncet (101),1
+A. Grazian (5),G. Polenta (64),1
+A. Grazian (5),S. Pires (12),1
+A. Grazian (5),V. Pettorino (42),1
+A. Grazian (5),100),1
+A. Grazian (5),99,1
+A. Grazian (5),W. J. Percival (98,1
+A. Grazian (5),K. Pedersen (97),1
+A. Grazian (5),F. Pasian (18),1
+A. Grazian (5),S. Paltani (61),1
+A. Grazian (5),C. Padilla (96),1
+A. Grazian (5),S.-M. Niemi (42),1
+A. Grazian (5),103,1
+A. Grazian (5),36),1
+A. Grazian (5),C. J. A. P. Martins (164,1
+A. Grazian (5),48),1
+A. Grazian (5),R. Maoli (163,1
+A. Grazian (5),F. Mannucci (20),1
+A. Grazian (5),G. Maggio (18),1
+A. Grazian (5),J. Macias-Perez (162),1
+A. Grazian (5),161),1
+A. Grazian (5),A. Loureiro (160,1
+A. Grazian (5),S. J. Liu (15),1
+A. Grazian (5),T. I. Liaudat (159),1
+A. Grazian (5),L. Leuzzi (2),1
+A. Grazian (5),J. Lesgourgues (47),1
+A. Grazian (5),G. F. Lesci (1,1
+A. Grazian (5),M. Viel (29,1
+A. Grazian (5),G. Leroy (158,1
+A. Grazian (5),F. Lepori (157),1
+A. Grazian (5),M. Lembo (75),1
+A. Grazian (5),156),1
+A. Grazian (5),L. Legrand (155,1
+A. Grazian (5),C. C. Kirkpatrick (79),1
+A. Grazian (5),K. Kiiveri (79),1
+A. Grazian (5),154),1
+A. Grazian (5),D. Karagiannis (117,1
+A. Grazian (5),153),1
+A. Grazian (5),V. Kansal (152,1
+A. Grazian (5),Y. Kang (61),1
+A. Grazian (5),151),1
+A. Grazian (5),J. J. E. Kajava (150,1
+A. Grazian (5),J. Hjorth (97),1
+A. Grazian (5),89),1
+A. Grazian (5),L. C. Smith (170),1
+A. Grazian (5),F. Shankar (169),1
+A. Grazian (5),44),1
+A. Grazian (5),E. Sellentin (168,1
+A. Grazian (5),D. Sciotti (48,1
+A. Grazian (5),A. Schneider (157),1
+A. Grazian (5),E. Sarpa (31,1
+A. Grazian (5),D. B. Sanders (50),1
+A. Grazian (5),M. Sahl\'en (167),1
+A. Grazian (5),166),1
+A. Grazian (5),141,1
+A. Grazian (5),S. Sacquegna (142,1
+A. Grazian (5),5),1
+A. Grazian (5),G. Rodighiero (4,1
+A. Grazian (5),L. Maurin (27),1
+A. Grazian (5),M. Radovich (5),1
+A. Grazian (5),D. Potter (157),1
+A. Grazian (5),A. Pisani (63),1
+A. Grazian (5),L. Patrizii (32),1
+A. Grazian (5),K. Paterson (76),1
+A. Grazian (5),F. Passalacqua (4,1
+A. Grazian (5),S. Nesseris (128),1
+A. Grazian (5),A. Navarro-Alsina (87),1
+A. Grazian (5),K. Naidoo (145),1
+A. Grazian (5),S. Nadathur (145),1
+A. Grazian (5),G. Morgante (2),1
+A. Grazian (5),C. Moretti (31,1
+A. Grazian (5),P. Monaco (136,1
+A. Grazian (5),165),1
+A. Grazian (5),M. Miluzio (9,1
+A. Grazian (5),P.-F. Rocci (27),1
+A. Grazian (5),O. Cucciati (2),1
+A. Grazian (5),A. R. Cooray (138),1
+A. Grazian (5),T. Contini (106),1
+A. Grazian (5),S. Conseil (55),1
+A. Grazian (5),F. Cogato (1,1
+A. Grazian (5),T. Castro (18,1
+A. Grazian (5),C. S. Carvalho (113),1
+A. Grazian (5),F. Caro (48),1
+A. Grazian (5),B. Camacho Quevedo (29,1
+A. Grazian (5),A. Calabro (48),1
+A. Grazian (5),S. Bruton (137),1
+A. Grazian (5),M. L. Brown (53),1
+A. Grazian (5),S. Borgani (136,1
+A. Grazian (5),83),1
+A. Grazian (5),H. Hildebrandt (149),1
+A. Grazian (5),A. Blanchard (106),1
+A. Grazian (5),M. Bethermin (134),1
+A. Grazian (5),5,1
+A. Grazian (5),D. Bertacca (4,1
+A. Grazian (5),P. Bergamini (67,1
+A. Grazian (5),F. Atrio-Barandela (133),1
+A. Grazian (5),M. Archidiacono (67,1
+A. Grazian (5),132),1
+A. Grazian (5),4,1
+A. Grazian (5),S. Anselmi (62,1
+A. Grazian (5),131),1
+A. Grazian (5),I. T. Andika (130,1
+A. Grazian (5),129),1
+A. Grazian (5),Y. Akrami (128,1
+A. Grazian (5),M. Wiesmann (69),1
+A. Grazian (5),L. Blot (135,1
+A. Grazian (5),51),1
+A. Grazian (5),C. Hern\'andez-Monteagudo (104,1
+A. Grazian (5),S. Hemmati (148),1
+A. Grazian (5),A. Hall (52),1
+A. Grazian (5),C. M. Gutierrez (147),1
+A. Grazian (5),M. Guidi (8,1
+A. Grazian (5),81),1
+A. Grazian (5),G. Gozaliasl (146,1
+A. Grazian (5),F. Gianotti (2),1
+A. Grazian (5),F. Giacomini (32),1
+A. Grazian (5),145),1
+A. Grazian (5),E. Gaztanaga (17,1
+A. Grazian (5),V. Gautard (144),1
+A. Grazian (5),T. Gasparetto (18),1
+A. Grazian (5),S. Davini (34),1
+A. Grazian (5),K. Ganga (90),1
+A. Grazian (5),143),1
+A. Grazian (5),142,1
+A. Grazian (5),A. Franco (141,1
+A. Grazian (5),F. Fontanot (18,1
+A. Grazian (5),A. Fontana (48),1
+A. Grazian (5),A. Finoguenov (81),1
+A. Grazian (5),A. G. Ferrari (32),1
+A. Grazian (5),Y. Fang (14),1
+A. Grazian (5),J. M. Diego (140),1
+A. Grazian (5),34),1
+A. Grazian (5),S. Di Domizio (33,1
+A. Grazian (5),J. J. Diaz (51),1
+A. Grazian (5),A. D\'iaz-S\'anchez (139),1
+A. Grazian (5),G. Desprez (25),1
+A. Grazian (5),J. Garc\'ia-Bellido (128),1
+A. Grazian (5),MD 20771,1
+A. Grazian (5),USA),1
+A. Grazian (5),NY,1
+A. Grazian (5),New York,1
+A. Grazian (5),10010,1
+A. Grazian (5),162 5th Avenue,1
+A. Grazian (5),Flatiron Institute,1
+A. Grazian (5),Sapienza Universit\`a di Roma,1
+A. Grazian (5),(163) Dipartimento di Fisica,1
+A. Grazian (5),Grenoble,1
+A. Grazian (5),38000,1
+A. Grazian (5),Avenue des Martyrs,1
+A. Grazian (5),53,1
+A. Grazian (5),LPSC-IN2P3,1
+A. Grazian (5),Grenoble INP,1
+A. Grazian (5),(162) Univ. Grenoble Alpes,1
+A. Grazian (5),London SW7 2AZ,1
+A. Grazian (5),Imperial College London,1
+A. Grazian (5),Blackett Laboratory,1
+A. Grazian (5),(161) Astrophysics Group,1
+A. Grazian (5),SE-106 91,1
+A. Grazian (5),(173) Center for Computational Astrophysics,1
+A. Grazian (5),Stockholm University,1
+A. Grazian (5),(160) Oskar Klein Centre for Cosmoparticle Physics,1
+A. Grazian (5),Universit\'e Paris-Saclay 91191 Gif-sur-Yvette Cedex,1
+A. Grazian (5),(159) IRFU,1
+A. Grazian (5),Centre for Extragalactic Astronomy,1
+A. Grazian (5),(158) Department of Physics,1
+A. Grazian (5),8057 Zurich,1
+A. Grazian (5),Winterthurerstrasse 190,1
+A. Grazian (5),University of Zurich,1
+A. Grazian (5),(157) Department of Astrophysics,1
+A. Grazian (5),CB3 0HA,1
+A. Grazian (5),Cambridge,1
+A. Grazian (5),(156) Kavli Institute for Cosmology Cambridge,1
+A. Grazian (5),Cambridge CB3 0WA,1
+A. Grazian (5),Wilberforce Road,1
+A. Grazian (5),Stockholm,1
+A. Grazian (5),FI-90014 Oulu,1
+A. Grazian (5),Pentti Kaiteran katu 1,1
+A. Grazian (5),University of Oulu,1
+A. Grazian (5),astronomy research unit,1
+A. Grazian (5),(172) Space physics,1
+A. Grazian (5),NJ 08544,1
+A. Grazian (5),Princeton,1
+A. Grazian (5),Princeton University,1
+A. Grazian (5),Peyton Hall,1
+A. Grazian (5),(171) Department of Astrophysical Sciences,1
+A. Grazian (5),Cambridge CB3 0HA,1
+A. Grazian (5),University of Cambridge,1
+A. Grazian (5),(170) Institute of Astronomy,1
+A. Grazian (5),Southampton SO17 1BJ,1
+A. Grazian (5),Piazzale Aldo Moro 2,1
+A. Grazian (5),University of Southampton,1
+A. Grazian (5),(169) School of Physics \& Astronomy,1
+A. Grazian (5),University of Leiden,1
+A. Grazian (5),(168) Mathematical Institute,1
+A. Grazian (5),751 37 Uppsala,1
+A. Grazian (5),Box 516,1
+A. Grazian (5),Uppsala University,1
+A. Grazian (5),(167) Theoretical astrophysics,1
+A. Grazian (5),Teramo,1
+A. Grazian (5),64100,1
+A. Grazian (5),Via Maggini,1
+A. Grazian (5),(166) INAF - Osservatorio Astronomico d'Abruzzo,1
+A. Grazian (5),(165) HE Space for European Space Agency (ESA),1
+A. Grazian (5),4150-762 Porto,1
+A. Grazian (5),(164) Centro de Astrof\'isica da Universidade do Porto,1
+A. Grazian (5),Highfield Campus,1
+A. Grazian (5),Santiago,1
+A. Grazian (5),Blanco Encalada 2008,1
+A. Grazian (5),Universidad de Chile,1
+A. Grazian (5),FCFM,1
+A. Grazian (5),(108) Departamento de F\'isica,1
+A. Grazian (5),Lebanon,1
+A. Grazian (5),Beirut,1
+A. Grazian (5),Faculty of Sciences,1
+A. Grazian (5),(107) Universit\'e St Joseph,1
+A. Grazian (5),31400 Toulouse,1
+A. Grazian (5),14 Av. Edouard Belin,1
+A. Grazian (5),UPS,1
+A. Grazian (5),Universit\'e de Toulouse,1
+A. Grazian (5),(106) Institut de Recherche en Astrophysique et Plan\'etologie (IRAP),1
+A. Grazian (5),Centre for Mathematical Sciences,1
+A. Grazian (5),Philosophenweg 16,1
+A. Grazian (5),University of Heidelberg,1
+A. Grazian (5),"(105) Institut f\""ur Theoretische Physik",1
+A. Grazian (5),38206 La Laguna,1
+A. Grazian (5),(104) Universidad de La Laguna,1
+A. Grazian (5),28006 Madrid,1
+A. Grazian (5),Calle Serrano 117,1
+A. Grazian (5),(103) Consejo Superior de Investigaciones Cientificas,1
+A. Grazian (5),Romania,1
+A. Grazian (5),077125,1
+A. Grazian (5),Ilfov,1
+A. Grazian (5),nr. 409 M\u{a}gurele,1
+A. Grazian (5),Str. Atomistilor,1
+A. Grazian (5),(102) Institute of Space Science,1
+A. Grazian (5),31401 Toulouse Cedex 9,1
+A. Grazian (5),69120 Heidelberg,1
+A. Grazian (5),(119) INAF,1
+A. Grazian (5),Sezione di Ferrara,1
+A. Grazian (5),(118) Istituto Nazionale di Fisica Nucleare,1
+A. Grazian (5),Universit\`a degli Studi di Ferrara,1
+A. Grazian (5),(117) Dipartimento di Fisica e Scienze della Terra,1
+A. Grazian (5),Plaza del Hospital 1,1
+A. Grazian (5),Departamento de Electr\'onica y Tecnolog\'ia de Computadoras,1
+A. Grazian (5),(116) Universidad Polit\'ecnica de Cartagena,1
+A. Grazian (5),Jagtvej 128,1
+A. Grazian (5),(115) Niels Bohr Institute,1
+A. Grazian (5),(114) Cosmic Dawn Center (DAWN),1
+A. Grazian (5),1349-018 Lisboa,1
+A. Grazian (5),Tapada da Ajuda,1
+A. Grazian (5),(113) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+A. Grazian (5),Chile,1
+A. Grazian (5),(112) Infrared Processing,1
+A. Grazian (5),Leioa-Bilbao,1
+A. Grazian (5),Sede Bld 48940,1
+A. Grazian (5),University Science Park,1
+A. Grazian (5),(111) Satlantis,1
+A. Grazian (5),Barcelona,1
+A. Grazian (5),08860 Castelldefels,1
+A. Grazian (5),Campus UPC,1
+A. Grazian (5),Edifici RDIT,1
+A. Grazian (5),(110) Institut d'Estudis Espacials de Catalunya (IEEC),1
+A. Grazian (5),Austria,1
+A. Grazian (5),6020 Innsbruck,1
+A. Grazian (5),Technikerstr. 25/8,1
+A. Grazian (5),"Institut f\""ur Astro- und Teilchenphysik",1
+A. Grazian (5),"(109) Universit\""at Innsbruck",1
+A. Grazian (5),Analysis Center,1
+A. Grazian (5),Piazzale Aldo Moro,1
+A. Grazian (5),(88) INFN-Sezione di Roma,1
+A. Grazian (5),53121 Bonn,1
+A. Grazian (5),"Auf dem H\""ugel 71",1
+A. Grazian (5),"Argelander-Institut f\""ur Astronomie",1
+A. Grazian (5),"(87) Universit\""at Bonn",1
+A. Grazian (5),School of Computer Science,1
+A. Grazian (5),(86) University of Applied Sciences,1
+A. Grazian (5),21 avenue Pierre de Coubertin 69627 Villeurbanne Cedex,1
+A. Grazian (5),(85) Centre de Calcul de l'IN2P3/CNRS,1
+A. Grazian (5),United Kingdom,1
+A. Grazian (5),Macclesfield SK11 9FT,1
+A. Grazian (5),Lower Withington,1
+A. Grazian (5),Jodrell Bank,1
+A. Grazian (5),18 avenue Edouard Belin,1
+A. Grazian (5),(83) Laboratoire d'etude de l'Univers et des phenomenes eXtremes,1
+A. Grazian (5),(82) Helsinki Institute of Physics,1
+A. Grazian (5),P.O. Box 64,1
+A. Grazian (5),(81) Department of Physics,1
+A. Grazian (5),CH-1211 Gen\`eve 4,1
+A. Grazian (5),24 quai Ernest-Ansermet,1
+A. Grazian (5),Centre for Astroparticle Physics,1
+A. Grazian (5),D\'epartement de Physique Th\'eorique,1
+A. Grazian (5),(80) Universit\'e de Gen\`eve,1
+A. Grazian (5),Helsinki Institute of Physics,1
+A. Grazian (5),(79) Department of Physics,1
+A. Grazian (5),London WC1E 6BT,1
+A. Grazian (5),Gower Street,1
+A. Grazian (5),University College London,1
+A. Grazian (5),(78) Department of Physics,1
+A. Grazian (5),(84) SKAO,1
+A. Grazian (5),(101) Centre National d'Etudes Spatiales -- Centre spatial de Toulouse,1
+A. Grazian (5),Ontario N2L 2Y5,1
+A. Grazian (5),(100) Perimeter Institute for Theoretical Physics,1
+A. Grazian (5),(99) Department of Physics,1
+A. Grazian (5),(98) Waterloo Centre for Astrophysics,1
+A. Grazian (5),Jagtvej 155,1
+A. Grazian (5),Niels Bohr Institute,1
+A. Grazian (5),(97) DARK,1
+A. Grazian (5),Technology,1
+A. Grazian (5),The Barcelona Institute of Science,1
+A. Grazian (5),(96) Institut de F\'isica d'Altes Energies (IFAE),1
+A. Grazian (5),(95) Telespazio UK S.L. for European Space Agency (ESA),1
+A. Grazian (5),Ecole Polytechnique F\'ed\'erale de Lausanne (EPFL),1
+A. Grazian (5),Laboratory of Astrophysics,1
+A. Grazian (5),2 - c/o Dipartimento di Fisica,1
+A. Grazian (5),98bis Boulevard Arago,1
+A. Grazian (5),(93) Institut d'Astrophysique de Paris,1
+A. Grazian (5),School of Engineering,1
+A. Grazian (5),(92) University of Applied Sciences,1
+A. Grazian (5),Berkeley,1
+A. Grazian (5),CPB-IN2P3,1
+A. Grazian (5),IRL2007,1
+A. Grazian (5),Centre Pierre Bin\'etruy,1
+A. Grazian (5),(91) CNRS-UCB International Research Laboratory,1
+A. Grazian (5),75013 Paris,1
+A. Grazian (5),Astroparticule et Cosmologie,1
+A. Grazian (5),(90) Universit\'e Paris Cit\'e,1
+A. Grazian (5),Institute for Computational Cosmology,1
+A. Grazian (5),(89) Department of Physics,1
+A. Grazian (5),Edificio G. Marconi,1
+A. Grazian (5),(94) Institute of Physics,1
+A. Grazian (5),Espoo,1
+A. Grazian (5),PO Box 15400,1
+A. Grazian (5),Aalto University,1
+A. Grazian (5),(146) Department of Computer Science,1
+A. Grazian (5),Portsmouth PO1 3FX,1
+A. Grazian (5),University of Portsmouth,1
+A. Grazian (5),Gravitation,1
+A. Grazian (5),(145) Institute of Cosmology,1
+A. Grazian (5),91191 Gif-sur-Yvette,1
+A. Grazian (5),Bat. 709,1
+A. Grazian (5),Service d'Astrophysique,1
+A. Grazian (5),DFR/IRFU,1
+A. Grazian (5),(144) CEA Saclay,1
+A. Grazian (5),c/o Dipartimento Matematica e Fisica,1
+A. Grazian (5),Istituto di Radioastronomia,1
+A. Grazian (5),CP-I93,1
+A. Grazian (5),University of Salento,1
+A. Grazian (5),Physics E. De Giorgi,1
+A. Grazian (5),(142) Department of Mathematics,1
+A. Grazian (5),CP-193,1
+A. Grazian (5),Sezione di Lecce,1
+A. Grazian (5),(141) INFN,1
+A. Grazian (5),39005 Santander,1
+A. Grazian (5),Avenida de los Castros,1
+A. Grazian (5),Edificio Juan Jord\'a,1
+A. Grazian (5),(140) Instituto de F\'isica de Cantabria,1
+A. Grazian (5),Murcia,1
+A. Grazian (5),Campus Muralla del Mar,1
+A. Grazian (5),Universidad Polit\'ecnica de Cartagena,1
+A. Grazian (5),(139) Departamento F\'isica Aplicada,1
+A. Grazian (5),(143) INAF-Sezione di Lecce,1
+A. Grazian (5),(155) DAMTP,1
+A. Grazian (5),South Africa,1
+A. Grazian (5),7535,1
+A. Grazian (5),Cape Town,1
+A. Grazian (5),Bellville,1
+A. Grazian (5),University of the Western Cape,1
+A. Grazian (5),(154) Department of Physics,1
+A. Grazian (5),Victoria 3122,1
+A. Grazian (5),Hawthorn,1
+A. Grazian (5),Swinburne University of Technology,1
+A. Grazian (5),(153) Centre for Astrophysics \& Supercomputing,1
+A. Grazian (5),Melbourne,1
+A. Grazian (5),(152) ARC Centre of Excellence for Dark Matter Particle Physics,1
+A. Grazian (5),(151) Serco for European Space Agency (ESA),1
+A. Grazian (5),FI-00 076,1
+A. Grazian (5),University of Turku,1
+A. Grazian (5),Vesilinnantie 5,1
+A. Grazian (5),(150) Department of Physics,1
+A. Grazian (5),44780 Bochum,1
+A. Grazian (5),German Centre for Cosmological Lensing (GCCL),1
+A. Grazian (5),Astronomical Institute (AIRUB),1
+A. Grazian (5),Faculty of Physics,1
+A. Grazian (5),(149) Ruhr University Bochum,1
+A. Grazian (5),1200 E. California Blvd.,1
+A. Grazian (5),(148) Caltech/IPAC,1
+A. Grazian (5),Avda. Francisco Sanchez,1
+A. Grazian (5),Spain. Departamento de Astrof\'i sica de la Universidad de La Laguna,1
+A. Grazian (5),La Laguna 38200,1
+A. Grazian (5),c/ Via Lactea s/n,1
+A. Grazian (5),(147) Instituto de Astrof\'i sica de Canarias,1
+A. Grazian (5),20014 Turku,1
+A. Grazian (5),(129) CERCA/ISO,1
+A. Grazian (5),28049 Madrid,1
+A. Grazian (5),Campus de Cantoblanco,1
+A. Grazian (5),(128) Instituto de F\'isica Te\'orica UAM-CSIC,1
+A. Grazian (5),Bologna,1
+A. Grazian (5),Via Magnanelli 2,1
+A. Grazian (5),Big Data e Quantum Computing,1
+A. Grazian (5),(127) ICSC - Centro Nazionale di Ricerca in High Performance Computing,1
+A. Grazian (5),LITL,1
+A. Grazian (5),Universit\'e Catholique de Lille,1
+A. Grazian (5),Junia,1
+A. Grazian (5),(126) ICL,1
+A. Grazian (5),INFN-Sezione di Genova,1
+A. Grazian (5),(125) INAF-Osservatorio Astronomico di Brera,1
+A. Grazian (5),Irvine CA 92697,1
+A. Grazian (5),via Emilio Bianchi 46,1
+A. Grazian (5),(124) INAF - Osservatorio Astronomico di Brera,1
+A. Grazian (5),(123) Aurora Technology for European Space Agency (ESA),1
+A. Grazian (5),75013,1
+A. Grazian (5),5 Rue Thomas Mann,1
+A. Grazian (5),(122) Universit\'e Paris-Cit\'e,1
+A. Grazian (5),LERMA,1
+A. Grazian (5),(121) Universit\'e PSL,1
+A. Grazian (5),06304 Nice cedex 4,1
+A. Grazian (5),CS 34229,1
+A. Grazian (5),Bd de l'Observatoire,1
+A. Grazian (5),Laboratoire Lagrange,1
+A. Grazian (5),Observatoire de la C\^ote d'Azur,1
+A. Grazian (5),(120) Universit\'e C\^ote d'Azur,1
+A. Grazian (5),Via Piero Gobetti 101,1
+A. Grazian (5),23807 Merate,1
+A. Grazian (5),University of California Irvine,1
+A. Grazian (5),(138) Department of Physics \& Astronomy,1
+A. Grazian (5),1200 E California Blvd,1
+A. Grazian (5),(137) California Institute of Technology,1
+A. Grazian (5),34131 Trieste,1
+A. Grazian (5),Via Tiepolo 11,1
+A. Grazian (5),Universit\`a di Trieste,1
+A. Grazian (5),(136) Dipartimento di Fisica - Sezione di Astronomia,1
+A. Grazian (5),Japan,1
+A. Grazian (5),Chiba 277-8583,1
+A. Grazian (5),Kashiwa,1
+A. Grazian (5),The University of Tokyo,1
+A. Grazian (5),UTIAS,1
+A. Grazian (5),Kavli IPMU (WPI),1
+A. Grazian (5),Case Western Reserve University,1
+A. Grazian (5),67000 Strasbourg,1
+A. Grazian (5),UMR 7550,1
+A. Grazian (5),Observatoire astronomique de Strasbourg,1
+A. Grazian (5),(134) Universit\'e de Strasbourg,1
+A. Grazian (5),(133) Departamento de F\'isica Fundamental. Universidad de Salamanca. Plaza de la Merced s/n. 37008 Salamanca,1
+A. Grazian (5),(132) Laboratoire Univers et Th\'eorie,1
+A. Grazian (5),Karl-Schwarzschild-Str. 1,1
+A. Grazian (5),"(131) Max-Planck-Institut f\""ur Astrophysik",1
+A. Grazian (5),James-Franck-Str. 1,1
+A. Grazian (5),Physics Department,1
+A. Grazian (5),TUM School of Natural Sciences,1
+A. Grazian (5),(130) Technical University of Munich,1
+A. Grazian (5),OH 44106,1
+A. Grazian (5),Cleveland,1
+A. Grazian (5),10900 Euclid Avenue,1
+A. Grazian (5),(135) Center for Data-Driven Discovery,1
+A. Grazian (5),B. Kubik (55),1
+A. Grazian (5),A. Kiessling (70),1
+A. Grazian (5),S. Kermiche (63),1
+A. Grazian (5),"E. Keih\""anen (79)",1
+A. Grazian (5),B. Joachimi (78),1
+A. Grazian (5),M. Jhabvala (77),1
+A. Grazian (5),K. Jahnke (76),1
+A. Grazian (5),P. Hudelot (75),1
+A. Grazian (5),74),1
+A. Grazian (5),A. Hornstrup (73,1
+A. Grazian (5),F. Hormuth (72),1
+A. Grazian (5),I. M. Hook (71),1
+A. Grazian (5),W. Holmes (70),1
+A. Grazian (5),S. V. H. Haugan (69),1
+A. Grazian (5),10,1
+A. Grazian (5),14),1
+A. Grazian (5),F. Grupp (66,1
+A. Grazian (5),L. Guzzo (67,1
+D. Karagiannis (117,(142) Department of Mathematics,1
+D. Karagiannis (117,CP-193,1
+D. Karagiannis (117,Sezione di Lecce,1
+D. Karagiannis (117,(141) INFN,1
+D. Karagiannis (117,39005 Santander,1
+D. Karagiannis (117,Avenida de los Castros,1
+D. Karagiannis (117,Edificio Juan Jord\'a,1
+D. Karagiannis (117,(140) Instituto de F\'isica de Cantabria,1
+D. Karagiannis (117,Murcia,1
+D. Karagiannis (117,Campus Muralla del Mar,1
+D. Karagiannis (117,Universidad Polit\'ecnica de Cartagena,1
+D. Karagiannis (117,(139) Departamento F\'isica Aplicada,1
+D. Karagiannis (117,Irvine CA 92697,1
+D. Karagiannis (117,University of California Irvine,1
+D. Karagiannis (117,1200 E California Blvd,1
+D. Karagiannis (117,(137) California Institute of Technology,1
+D. Karagiannis (117,34131 Trieste,1
+D. Karagiannis (117,Via Tiepolo 11,1
+D. Karagiannis (117,Universit\`a di Trieste,1
+D. Karagiannis (117,(136) Dipartimento di Fisica - Sezione di Astronomia,1
+D. Karagiannis (117,Japan,1
+D. Karagiannis (117,Chiba 277-8583,1
+D. Karagiannis (117,Kashiwa,1
+D. Karagiannis (117,The University of Tokyo,1
+D. Karagiannis (117,UTIAS,1
+D. Karagiannis (117,Kavli IPMU (WPI),1
+D. Karagiannis (117,(135) Center for Data-Driven Discovery,1
+D. Karagiannis (117,67000 Strasbourg,1
+D. Karagiannis (117,UMR 7550,1
+D. Karagiannis (117,(138) Department of Physics \& Astronomy,1
+D. Karagiannis (117,44780 Bochum,1
+D. Karagiannis (117,German Centre for Cosmological Lensing (GCCL),1
+D. Karagiannis (117,Astronomical Institute (AIRUB),1
+D. Karagiannis (117,Faculty of Physics,1
+D. Karagiannis (117,(149) Ruhr University Bochum,1
+D. Karagiannis (117,1200 E. California Blvd.,1
+D. Karagiannis (117,(148) Caltech/IPAC,1
+D. Karagiannis (117,Avda. Francisco Sanchez,1
+D. Karagiannis (117,Spain. Departamento de Astrof\'i sica de la Universidad de La Laguna,1
+D. Karagiannis (117,La Laguna 38200,1
+D. Karagiannis (117,c/ Via Lactea s/n,1
+D. Karagiannis (117,(147) Instituto de Astrof\'i sica de Canarias,1
+D. Karagiannis (117,FI-00 076,1
+D. Karagiannis (117,Espoo,1
+D. Karagiannis (117,Physics E. De Giorgi,1
+D. Karagiannis (117,Aalto University,1
+D. Karagiannis (117,(146) Department of Computer Science,1
+D. Karagiannis (117,Portsmouth PO1 3FX,1
+D. Karagiannis (117,University of Portsmouth,1
+D. Karagiannis (117,Gravitation,1
+D. Karagiannis (117,(145) Institute of Cosmology,1
+D. Karagiannis (117,91191 Gif-sur-Yvette,1
+D. Karagiannis (117,Bat. 709,1
+D. Karagiannis (117,Service d'Astrophysique,1
+D. Karagiannis (117,DFR/IRFU,1
+D. Karagiannis (117,(144) CEA Saclay,1
+D. Karagiannis (117,c/o Dipartimento Matematica e Fisica,1
+D. Karagiannis (117,(143) INAF-Sezione di Lecce,1
+D. Karagiannis (117,CP-I93,1
+D. Karagiannis (117,University of Salento,1
+D. Karagiannis (117,PO Box 15400,1
+D. Karagiannis (117,75013,1
+D. Karagiannis (117,5 Rue Thomas Mann,1
+D. Karagiannis (117,(122) Universit\'e Paris-Cit\'e,1
+D. Karagiannis (117,LERMA,1
+D. Karagiannis (117,(121) Universit\'e PSL,1
+D. Karagiannis (117,06304 Nice cedex 4,1
+D. Karagiannis (117,CS 34229,1
+D. Karagiannis (117,Bd de l'Observatoire,1
+D. Karagiannis (117,Laboratoire Lagrange,1
+D. Karagiannis (117,Observatoire de la C\^ote d'Azur,1
+D. Karagiannis (117,(120) Universit\'e C\^ote d'Azur,1
+D. Karagiannis (117,Via Piero Gobetti 101,1
+D. Karagiannis (117,Istituto di Radioastronomia,1
+D. Karagiannis (117,(119) INAF,1
+D. Karagiannis (117,Observatoire astronomique de Strasbourg,1
+D. Karagiannis (117,(118) Istituto Nazionale di Fisica Nucleare,1
+D. Karagiannis (117,Universit\`a degli Studi di Ferrara,1
+D. Karagiannis (117,(117) Dipartimento di Fisica e Scienze della Terra,1
+D. Karagiannis (117,Plaza del Hospital 1,1
+D. Karagiannis (117,Departamento de Electr\'onica y Tecnolog\'ia de Computadoras,1
+D. Karagiannis (117,(116) Universidad Polit\'ecnica de Cartagena,1
+D. Karagiannis (117,Jagtvej 128,1
+D. Karagiannis (117,(115) Niels Bohr Institute,1
+D. Karagiannis (117,(114) Cosmic Dawn Center (DAWN),1
+D. Karagiannis (117,1349-018 Lisboa,1
+D. Karagiannis (117,Tapada da Ajuda,1
+D. Karagiannis (117,(113) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+D. Karagiannis (117,Analysis Center,1
+D. Karagiannis (117,(112) Infrared Processing,1
+D. Karagiannis (117,Leioa-Bilbao,1
+D. Karagiannis (117,Sezione di Ferrara,1
+D. Karagiannis (117,(134) Universit\'e de Strasbourg,1
+D. Karagiannis (117,(133) Departamento de F\'isica Fundamental. Universidad de Salamanca. Plaza de la Merced s/n. 37008 Salamanca,1
+D. Karagiannis (117,(132) Laboratoire Univers et Th\'eorie,1
+D. Karagiannis (117,Karl-Schwarzschild-Str. 1,1
+D. Karagiannis (117,"(131) Max-Planck-Institut f\""ur Astrophysik",1
+D. Karagiannis (117,James-Franck-Str. 1,1
+D. Karagiannis (117,Physics Department,1
+D. Karagiannis (117,TUM School of Natural Sciences,1
+D. Karagiannis (117,(130) Technical University of Munich,1
+D. Karagiannis (117,OH 44106,1
+D. Karagiannis (117,Cleveland,1
+D. Karagiannis (117,10900 Euclid Avenue,1
+D. Karagiannis (117,Case Western Reserve University,1
+D. Karagiannis (117,(129) CERCA/ISO,1
+D. Karagiannis (117,(123) Aurora Technology for European Space Agency (ESA),1
+D. Karagiannis (117,Campus de Cantoblanco,1
+D. Karagiannis (117,(128) Instituto de F\'isica Te\'orica UAM-CSIC,1
+D. Karagiannis (117,Bologna,1
+D. Karagiannis (117,Via Magnanelli 2,1
+D. Karagiannis (117,Big Data e Quantum Computing,1
+D. Karagiannis (117,(127) ICSC - Centro Nazionale di Ricerca in High Performance Computing,1
+D. Karagiannis (117,LITL,1
+D. Karagiannis (117,Universit\'e Catholique de Lille,1
+D. Karagiannis (117,Junia,1
+D. Karagiannis (117,(126) ICL,1
+D. Karagiannis (117,INFN-Sezione di Genova,1
+D. Karagiannis (117,(125) INAF-Osservatorio Astronomico di Brera,1
+D. Karagiannis (117,23807 Merate,1
+D. Karagiannis (117,via Emilio Bianchi 46,1
+D. Karagiannis (117,(124) INAF - Osservatorio Astronomico di Brera,1
+D. Karagiannis (117,28049 Madrid,1
+D. Karagiannis (117,USA),1
+D. Karagiannis (117,NY,1
+D. Karagiannis (117,New York,1
+D. Karagiannis (117,10010,1
+D. Karagiannis (117,162 5th Avenue,1
+D. Karagiannis (117,Flatiron Institute,1
+D. Karagiannis (117,(173) Center for Computational Astrophysics,1
+D. Karagiannis (117,FI-90014 Oulu,1
+D. Karagiannis (117,(150) Department of Physics,1
+D. Karagiannis (117,University of Oulu,1
+D. Karagiannis (117,astronomy research unit,1
+D. Karagiannis (117,(172) Space physics,1
+D. Karagiannis (117,NJ 08544,1
+D. Karagiannis (117,Princeton,1
+D. Karagiannis (117,Princeton University,1
+D. Karagiannis (117,Peyton Hall,1
+D. Karagiannis (117,(171) Department of Astrophysical Sciences,1
+D. Karagiannis (117,Cambridge CB3 0HA,1
+D. Karagiannis (117,University of Cambridge,1
+D. Karagiannis (117,(170) Institute of Astronomy,1
+D. Karagiannis (117,Southampton SO17 1BJ,1
+D. Karagiannis (117,Highfield Campus,1
+D. Karagiannis (117,University of Southampton,1
+D. Karagiannis (117,(169) School of Physics \& Astronomy,1
+D. Karagiannis (117,Pentti Kaiteran katu 1,1
+D. Karagiannis (117,(159) IRFU,1
+D. Karagiannis (117,Centre for Extragalactic Astronomy,1
+D. Karagiannis (117,(158) Department of Physics,1
+D. Karagiannis (117,8057 Zurich,1
+D. Karagiannis (117,Winterthurerstrasse 190,1
+D. Karagiannis (117,University of Zurich,1
+D. Karagiannis (117,(157) Department of Astrophysics,1
+D. Karagiannis (117,CB3 0HA,1
+D. Karagiannis (117,Cambridge,1
+D. Karagiannis (117,(156) Kavli Institute for Cosmology Cambridge,1
+D. Karagiannis (117,Cambridge CB3 0WA,1
+D. Karagiannis (117,Wilberforce Road,1
+D. Karagiannis (117,Centre for Mathematical Sciences,1
+D. Karagiannis (117,(155) DAMTP,1
+D. Karagiannis (117,University of Leiden,1
+D. Karagiannis (117,7535,1
+D. Karagiannis (117,Cape Town,1
+D. Karagiannis (117,Bellville,1
+D. Karagiannis (117,University of the Western Cape,1
+D. Karagiannis (117,(154) Department of Physics,1
+D. Karagiannis (117,Victoria 3122,1
+D. Karagiannis (117,Hawthorn,1
+D. Karagiannis (117,Swinburne University of Technology,1
+D. Karagiannis (117,(153) Centre for Astrophysics \& Supercomputing,1
+D. Karagiannis (117,Melbourne,1
+D. Karagiannis (117,(152) ARC Centre of Excellence for Dark Matter Particle Physics,1
+D. Karagiannis (117,(151) Serco for European Space Agency (ESA),1
+D. Karagiannis (117,20014 Turku,1
+D. Karagiannis (117,University of Turku,1
+D. Karagiannis (117,Vesilinnantie 5,1
+D. Karagiannis (117,South Africa,1
+D. Karagiannis (117,(168) Mathematical Institute,1
+D. Karagiannis (117,751 37 Uppsala,1
+D. Karagiannis (117,Box 516,1
+D. Karagiannis (117,Uppsala University,1
+D. Karagiannis (117,(167) Theoretical astrophysics,1
+D. Karagiannis (117,Teramo,1
+D. Karagiannis (117,64100,1
+D. Karagiannis (117,Via Maggini,1
+D. Karagiannis (117,(166) INAF - Osservatorio Astronomico d'Abruzzo,1
+D. Karagiannis (117,(165) HE Space for European Space Agency (ESA),1
+D. Karagiannis (117,4150-762 Porto,1
+D. Karagiannis (117,(164) Centro de Astrof\'isica da Universidade do Porto,1
+D. Karagiannis (117,Piazzale Aldo Moro 2,1
+D. Karagiannis (117,Sapienza Universit\`a di Roma,1
+D. Karagiannis (117,Universit\'e Paris-Saclay 91191 Gif-sur-Yvette Cedex,1
+D. Karagiannis (117,Grenoble,1
+D. Karagiannis (117,38000,1
+D. Karagiannis (117,Avenue des Martyrs,1
+D. Karagiannis (117,53,1
+D. Karagiannis (117,LPSC-IN2P3,1
+D. Karagiannis (117,Grenoble INP,1
+D. Karagiannis (117,(162) Univ. Grenoble Alpes,1
+D. Karagiannis (117,London SW7 2AZ,1
+D. Karagiannis (117,Imperial College London,1
+D. Karagiannis (117,Blackett Laboratory,1
+D. Karagiannis (117,(161) Astrophysics Group,1
+D. Karagiannis (117,SE-106 91,1
+D. Karagiannis (117,Stockholm,1
+D. Karagiannis (117,Stockholm University,1
+D. Karagiannis (117,(160) Oskar Klein Centre for Cosmoparticle Physics,1
+D. Karagiannis (117,(163) Dipartimento di Fisica,1
+D. Karagiannis (117,PT1749-016 Lisboa,1
+D. Karagiannis (117,Edif\'icio C8,1
+D. Karagiannis (117,(59) Departamento de F\'isica,1
+D. Karagiannis (117,69622 Villeurbanne,1
+D. Karagiannis (117,4 rue Enrico Fermi,1
+D. Karagiannis (117,IUF,1
+D. Karagiannis (117,(58) UCB Lyon 1,1
+D. Karagiannis (117,08010 Barcelona,1
+D. Karagiannis (117,Passeig de Llu\'is Companys 23,1
+D. Karagiannis (117,(57) Instituci\'o Catalana de Recerca i Estudis Avan\c{c}ats (ICREA),1
+D. Karagiannis (117,08028 Barcelona,1
+D. Karagiannis (117,Mart\'i i Franqu\`es 1,1
+D. Karagiannis (117,Universitat de Barcelona (IEEC-UB),1
+D. Karagiannis (117,(56) Institut de Ci\`encies del Cosmos (ICCUB),1
+D. Karagiannis (117,Sede Bld 48940,1
+D. Karagiannis (117,Villeurbanne,1
+D. Karagiannis (117,UMR 5822,1
+D. Karagiannis (117,(55) Universit\'e Claude Bernard Lyon 1,1
+D. Karagiannis (117,Roma,1
+D. Karagiannis (117,00044 Frascati,1
+D. Karagiannis (117,Largo Galileo Galilei 1,1
+D. Karagiannis (117,(54) European Space Agency/ESRIN,1
+D. Karagiannis (117,Manchester M13 9PL,1
+D. Karagiannis (117,Oxford Road,1
+D. Karagiannis (117,University of Manchester,1
+D. Karagiannis (117,(53) Jodrell Bank Centre for Astrophysics,1
+D. Karagiannis (117,Edinburgh EH9 3HJ,1
+D. Karagiannis (117,Blackford Hill,1
+D. Karagiannis (117,Royal Observatory,1
+D. Karagiannis (117,University of Edinburgh,1
+D. Karagiannis (117,F-69100,1
+D. Karagiannis (117,Lancaster University,1
+D. Karagiannis (117,(71) Department of Physics,1
+D. Karagiannis (117,91109,1
+D. Karagiannis (117,CA,1
+D. Karagiannis (117,4800 Oak Grove Drive,1
+D. Karagiannis (117,(70) Jet Propulsion Laboratory,1
+D. Karagiannis (117,Norway,1
+D. Karagiannis (117,0315 Oslo,1
+D. Karagiannis (117,P.O. Box 1029 Blindern,1
+D. Karagiannis (117,University of Oslo,1
+D. Karagiannis (117,(69) Institute of Theoretical Astrophysics,1
+D. Karagiannis (117,(68) INFN-Sezione di Milano,1
+D. Karagiannis (117,Universit\`a degli Studi di Milano,1
+D. Karagiannis (117,"(67) Dipartimento di Fisica ""Aldo Pontremoli""",1
+D. Karagiannis (117,(60) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+D. Karagiannis (117,(66) Max Planck Institute for Extraterrestrial Physics,1
+D. Karagiannis (117,40126 Bologna,1
+D. Karagiannis (117,Via Irnerio 46,1
+D. Karagiannis (117,(65) INFN-Bologna,1
+D. Karagiannis (117,00133 Roma,1
+D. Karagiannis (117,via del Politecnico snc,1
+D. Karagiannis (117,Italian Space Agency,1
+D. Karagiannis (117,(64) Space Science Data Center,1
+D. Karagiannis (117,CPPM,1
+D. Karagiannis (117,(63) Aix-Marseille Universit\'e,1
+D. Karagiannis (117,(62) INFN-Padova,1
+D. Karagiannis (117,ch. d'Ecogia 16,1
+D. Karagiannis (117,University of Geneva,1
+D. Karagiannis (117,(61) Department of Astronomy,1
+D. Karagiannis (117,1749-016 Lisboa,1
+D. Karagiannis (117,Giessenbachstr. 1,1
+D. Karagiannis (117,(41) INAF-Osservatorio Astrofisico di Torino,1
+D. Karagiannis (117,(40) INFN-Sezione di Torino,1
+D. Karagiannis (117,Universit\`a degli Studi di Torino,1
+D. Karagiannis (117,(39) Dipartimento di Fisica,1
+D. Karagiannis (117,Karl-Schwarzschild-Str. 2,1
+D. Karagiannis (117,(38) European Southern Observatory,1
+D. Karagiannis (117,4150-007 Porto,1
+D. Karagiannis (117,Rua do Campo de Alegre,1
+D. Karagiannis (117,(37) Faculdade de Ci\^encias da Universidade do Porto,1
+D. Karagiannis (117,PT4150-762 Porto,1
+D. Karagiannis (117,CAUP,1
+D. Karagiannis (117,Universidade do Porto,1
+D. Karagiannis (117,(36) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+D. Karagiannis (117,University Federico II,1
+D. Karagiannis (117,(52) Institute for Astronomy,1
+D. Karagiannis (117,(34) INFN-Sezione di Genova,1
+D. Karagiannis (117,Universit\`a di Genova,1
+D. Karagiannis (117,(33) Dipartimento di Fisica,1
+D. Karagiannis (117,(32) INFN-Sezione di Bologna,1
+D. Karagiannis (117,34136 Trieste TS,1
+D. Karagiannis (117,Via Bonomea 265,1
+D. Karagiannis (117,International School for Advanced Studies,1
+D. Karagiannis (117,(31) SISSA,1
+D. Karagiannis (117,34127 Trieste TS,1
+D. Karagiannis (117,Via Valerio 2,1
+D. Karagiannis (117,Sezione di Trieste,1
+D. Karagiannis (117,(30) INFN,1
+D. Karagiannis (117,34151 Trieste,1
+D. Karagiannis (117,via Beirut 2,1
+D. Karagiannis (117,Institute for Fundamental Physics of the Universe,1
+D. Karagiannis (117,"(35) Department of Physics ""E. Pancini""",1
+D. Karagiannis (117,38205 La Laguna,1
+D. Karagiannis (117,V\'ia L\'actea,1
+D. Karagiannis (117,(51) Instituto de Astrof\'isica de Canarias,1
+D. Karagiannis (117,HI 96822,1
+D. Karagiannis (117,Honolulu,1
+D. Karagiannis (117,2680 Woodlawn Drive,1
+D. Karagiannis (117,University of Hawaii,1
+D. Karagiannis (117,(50) Institute for Astronomy,1
+D. Karagiannis (117,(49) INFN section of Naples,1
+D. Karagiannis (117,00078 Monteporzio Catone,1
+D. Karagiannis (117,Via Frascati 33,1
+D. Karagiannis (117,(48) INAF-Osservatorio Astronomico di Roma,1
+D. Karagiannis (117,52056 Aachen,1
+D. Karagiannis (117,RWTH Aachen University,1
+D. Karagiannis (117,Via Osservatorio 20,1
+D. Karagiannis (117,(47) Institute for Theoretical Particle Physics,1
+D. Karagiannis (117,C. Albareda s/n,1
+D. Karagiannis (117,(46) Port d'Informaci\'o Cient\'ifica,1
+D. Karagiannis (117,28040 Madrid,1
+D. Karagiannis (117,Avenida Complutense 40,1
+D. Karagiannis (117,Medioambientales y Tecnol\'ogicas (CIEMAT),1
+D. Karagiannis (117,(45) Centro de Investigaciones Energ\'eticas,1
+D. Karagiannis (117,2333 CC Leiden,1
+D. Karagiannis (117,(44) Leiden Observatory,1
+D. Karagiannis (117,Niels Bohrweg 2,1
+D. Karagiannis (117,(43) Institute Lorentz,1
+D. Karagiannis (117,2201 AZ Noordwijk,1
+D. Karagiannis (117,Keplerlaan 1,1
+D. Karagiannis (117,(42) European Space Agency/ESTEC,1
+D. Karagiannis (117,10025 Pino Torinese (TO),1
+D. Karagiannis (117,Cosmology (TTK),1
+D. Karagiannis (117,38206 La Laguna,1
+D. Karagiannis (117,(104) Universidad de La Laguna,1
+D. Karagiannis (117,28006 Madrid,1
+D. Karagiannis (117,Calle Serrano 117,1
+D. Karagiannis (117,(103) Consejo Superior de Investigaciones Cientificas,1
+D. Karagiannis (117,Romania,1
+D. Karagiannis (117,077125,1
+D. Karagiannis (117,Ilfov,1
+D. Karagiannis (117,nr. 409 M\u{a}gurele,1
+D. Karagiannis (117,Str. Atomistilor,1
+D. Karagiannis (117,(102) Institute of Space Science,1
+D. Karagiannis (117,31401 Toulouse Cedex 9,1
+D. Karagiannis (117,18 avenue Edouard Belin,1
+D. Karagiannis (117,(101) Centre National d'Etudes Spatiales -- Centre spatial de Toulouse,1
+D. Karagiannis (117,Lancaster,1
+D. Karagiannis (117,(100) Perimeter Institute for Theoretical Physics,1
+D. Karagiannis (117,(99) Department of Physics,1
+D. Karagiannis (117,(98) Waterloo Centre for Astrophysics,1
+D. Karagiannis (117,Jagtvej 155,1
+D. Karagiannis (117,Niels Bohr Institute,1
+D. Karagiannis (117,(97) DARK,1
+D. Karagiannis (117,Technology,1
+D. Karagiannis (117,The Barcelona Institute of Science,1
+D. Karagiannis (117,(96) Institut de F\'isica d'Altes Energies (IFAE),1
+D. Karagiannis (117,(95) Telespazio UK S.L. for European Space Agency (ESA),1
+D. Karagiannis (117,Ecole Polytechnique F\'ed\'erale de Lausanne (EPFL),1
+D. Karagiannis (117,Laboratory of Astrophysics,1
+D. Karagiannis (117,(94) Institute of Physics,1
+D. Karagiannis (117,98bis Boulevard Arago,1
+D. Karagiannis (117,(93) Institut d'Astrophysique de Paris,1
+D. Karagiannis (117,Ontario N2L 2Y5,1
+D. Karagiannis (117,University Science Park,1
+D. Karagiannis (117,(111) Satlantis,1
+D. Karagiannis (117,Barcelona,1
+D. Karagiannis (117,08860 Castelldefels,1
+D. Karagiannis (117,Campus UPC,1
+D. Karagiannis (117,Edifici RDIT,1
+D. Karagiannis (117,(110) Institut d'Estudis Espacials de Catalunya (IEEC),1
+D. Karagiannis (117,Austria,1
+D. Karagiannis (117,6020 Innsbruck,1
+D. Karagiannis (117,Technikerstr. 25/8,1
+D. Karagiannis (117,"Institut f\""ur Astro- und Teilchenphysik",1
+D. Karagiannis (117,"(109) Universit\""at Innsbruck",1
+D. Karagiannis (117,Chile,1
+D. Karagiannis (117,Santiago,1
+D. Karagiannis (117,"(105) Institut f\""ur Theoretische Physik",1
+D. Karagiannis (117,Universidad de Chile,1
+D. Karagiannis (117,FCFM,1
+D. Karagiannis (117,(108) Departamento de F\'isica,1
+D. Karagiannis (117,Lebanon,1
+D. Karagiannis (117,Beirut,1
+D. Karagiannis (117,Faculty of Sciences,1
+D. Karagiannis (117,(107) Universit\'e St Joseph,1
+D. Karagiannis (117,31400 Toulouse,1
+D. Karagiannis (117,14 Av. Edouard Belin,1
+D. Karagiannis (117,UPS,1
+D. Karagiannis (117,Universit\'e de Toulouse,1
+D. Karagiannis (117,(106) Institut de Recherche en Astrophysique et Plan\'etologie (IRAP),1
+D. Karagiannis (117,69120 Heidelberg,1
+D. Karagiannis (117,Philosophenweg 16,1
+D. Karagiannis (117,University of Heidelberg,1
+D. Karagiannis (117,Blanco Encalada 2008,1
+D. Karagiannis (117,(81) Department of Physics,1
+D. Karagiannis (117,CH-1211 Gen\`eve 4,1
+D. Karagiannis (117,24 quai Ernest-Ansermet,1
+D. Karagiannis (117,Centre for Astroparticle Physics,1
+D. Karagiannis (117,D\'epartement de Physique Th\'eorique,1
+D. Karagiannis (117,(80) Universit\'e de Gen\`eve,1
+D. Karagiannis (117,Helsinki Institute of Physics,1
+D. Karagiannis (117,(79) Department of Physics,1
+D. Karagiannis (117,London WC1E 6BT,1
+D. Karagiannis (117,Gower Street,1
+D. Karagiannis (117,University College London,1
+D. Karagiannis (117,(78) Department of Physics,1
+D. Karagiannis (117,MD 20771,1
+D. Karagiannis (117,Greenbelt,1
+D. Karagiannis (117,School of Engineering,1
+D. Karagiannis (117,69117 Heidelberg,1
+D. Karagiannis (117,"K\""onigstuhl 17",1
+D. Karagiannis (117,"(76) Max-Planck-Institut f\""ur Astronomie",1
+D. Karagiannis (117,75014 Paris,1
+D. Karagiannis (117,98 bis boulevard Arago,1
+D. Karagiannis (117,UMR 7095,1
+D. Karagiannis (117,(75) Institut d'Astrophysique de Paris,1
+D. Karagiannis (117,(74) Cosmic Dawn Center (DAWN),1
+D. Karagiannis (117,2800 Kgs. Lyngby,1
+D. Karagiannis (117,Elektrovej 327,1
+D. Karagiannis (117,(73) Technical University of Denmark,1
+D. Karagiannis (117,69181 Leimen,1
+D. Karagiannis (117,Goethestr. 17,1
+D. Karagiannis (117,(72) Felix Hormuth Engineering,1
+D. Karagiannis (117,LA1 4YB,1
+D. Karagiannis (117,(77) NASA Goddard Space Flight Center,1
+D. Karagiannis (117,(92) University of Applied Sciences,1
+D. Karagiannis (117,Berkeley,1
+D. Karagiannis (117,CPB-IN2P3,1
+D. Karagiannis (117,IRL2007,1
+D. Karagiannis (117,Centre Pierre Bin\'etruy,1
+D. Karagiannis (117,(91) CNRS-UCB International Research Laboratory,1
+D. Karagiannis (117,75013 Paris,1
+D. Karagiannis (117,Astroparticule et Cosmologie,1
+D. Karagiannis (117,(90) Universit\'e Paris Cit\'e,1
+D. Karagiannis (117,Institute for Computational Cosmology,1
+D. Karagiannis (117,(89) Department of Physics,1
+D. Karagiannis (117,Edificio G. Marconi,1
+D. Karagiannis (117,2 - c/o Dipartimento di Fisica,1
+D. Karagiannis (117,Piazzale Aldo Moro,1
+D. Karagiannis (117,P.O. Box 64,1
+D. Karagiannis (117,53121 Bonn,1
+D. Karagiannis (117,"Auf dem H\""ugel 71",1
+D. Karagiannis (117,"Argelander-Institut f\""ur Astronomie",1
+D. Karagiannis (117,"(87) Universit\""at Bonn",1
+D. Karagiannis (117,School of Computer Science,1
+D. Karagiannis (117,(86) University of Applied Sciences,1
+D. Karagiannis (117,21 avenue Pierre de Coubertin 69627 Villeurbanne Cedex,1
+D. Karagiannis (117,(85) Centre de Calcul de l'IN2P3/CNRS,1
+D. Karagiannis (117,United Kingdom,1
+D. Karagiannis (117,Macclesfield SK11 9FT,1
+D. Karagiannis (117,Lower Withington,1
+D. Karagiannis (117,Jodrell Bank,1
+D. Karagiannis (117,(84) SKAO,1
+D. Karagiannis (117,(83) Laboratoire d'etude de l'Univers et des phenomenes eXtremes,1
+D. Karagiannis (117,(82) Helsinki Institute of Physics,1
+D. Karagiannis (117,(88) INFN-Sezione di Roma,1
+L. Legrand (155,29,1
+L. Legrand (155,C. Moretti (31,1
+L. Legrand (155,29),1
+L. Legrand (155,30,1
+L. Legrand (155,P. Monaco (136,1
+L. Legrand (155,165),1
+L. Legrand (155,M. Miluzio (9,1
+L. Legrand (155,L. Maurin (27),1
+L. Legrand (155,36),1
+L. Legrand (155,C. J. A. P. Martins (164,1
+L. Legrand (155,48),1
+L. Legrand (155,R. Maoli (163,1
+L. Legrand (155,F. Mannucci (20),1
+L. Legrand (155,G. Maggio (18),1
+L. Legrand (155,161),1
+L. Legrand (155,A. Loureiro (160,1
+L. Legrand (155,S. J. Liu (15),1
+L. Legrand (155,T. I. Liaudat (159),1
+L. Legrand (155,L. Leuzzi (2),1
+L. Legrand (155,J. Lesgourgues (47),1
+L. Legrand (155,2),1
+L. Legrand (155,G. F. Lesci (1,1
+L. Legrand (155,89),1
+L. Legrand (155,G. Leroy (158,1
+L. Legrand (155,F. Lepori (157),1
+L. Legrand (155,M. Lembo (75),1
+L. Legrand (155,156),1
+L. Legrand (155,J. Macias-Perez (162),1
+L. Legrand (155,Carrer de Can Magrans,1
+L. Legrand (155,CSIC),1
+L. Legrand (155,(17) Institute of Space Sciences (ICE,1
+L. Legrand (155,Universidad de La Laguna (ULL),1
+L. Legrand (155,(16) Instituto de Astrof\'isica de Canarias (IAC),1
+L. Legrand (155,00100 Roma,1
+L. Legrand (155,100,1
+L. Legrand (155,via del Fosso del Cavaliere,1
+L. Legrand (155,(15) INAF-Istituto di Astrofisica e Planetologia Spaziali,1
+L. Legrand (155,"81679 M\""unchen",1
+L. Legrand (155,Scheinerstrasse 1,1
+L. Legrand (155,"Ludwig-Maximilians-Universit\""at M\""unchen",1
+L. Legrand (155,"Fakult\""at f\""ur Physik",1
+L. Legrand (155,"(14) Universit\""ats-Sternwarte M\""unchen",1
+L. Legrand (155,G. Morgante (2),1
+L. Legrand (155,Via Moiariello 16,1
+L. Legrand (155,(13) INAF-Osservatorio Astronomico di Capodimonte,1
+L. Legrand (155,Gif-sur-Yvette,1
+L. Legrand (155,91191,1
+L. Legrand (155,AIM,1
+L. Legrand (155,(12) Universit\'e Paris-Saclay,1
+L. Legrand (155,MN 55455,1
+L. Legrand (155,Minneapolis,1
+L. Legrand (155,116 Church St SE,1
+L. Legrand (155,University of Minnesota,1
+L. Legrand (155,(11) Minnesota Institute for Astrophysics,1
+L. Legrand (155,(10) INAF-Osservatorio Astronomico di Brera,1
+L. Legrand (155,Madrid,1
+L. Legrand (155,28692 Villanueva de la Ca\~nada,1
+L. Legrand (155,Urb. Villafranca del Castillo,1
+L. Legrand (155,80131 Napoli,1
+L. Legrand (155,UMR 9189 CRIStAL,1
+L. Legrand (155,Centrale Lille,1
+L. Legrand (155,(26) Univ. Lille,1
+L. Legrand (155,9700 AV Groningen,1
+L. Legrand (155,PO Box 800,1
+L. Legrand (155,University of Groningen,1
+L. Legrand (155,(25) Kapteyn Astronomical Institute,1
+L. Legrand (155,Groningen,1
+L. Legrand (155,9747 AD,1
+L. Legrand (155,Landleven 12,1
+L. Legrand (155,(24) SRON Netherlands Institute for Space Research,1
+L. Legrand (155,"(23) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+L. Legrand (155,CH-1290 Versoix,1
+L. Legrand (155,Ecole Polytechnique F\'ed\'erale de Lausanne,1
+L. Legrand (155,08193 Barcelona,1
+L. Legrand (155,(22) Institute of Physics,1
+L. Legrand (155,50019 Sesto Fiorentino,1
+L. Legrand (155,via G. Sansone 1,1
+L. Legrand (155,Universit\`a di Firenze,1
+L. Legrand (155,(21) Dipartimento di Fisica e Astronomia,1
+L. Legrand (155,50125,1
+L. Legrand (155,Largo E. Fermi 5,1
+L. Legrand (155,(20) INAF-Osservatorio Astrofisico di Arcetri,1
+L. Legrand (155,MK7 6AA,1
+L. Legrand (155,Milton Keynes,1
+L. Legrand (155,The Open University,1
+L. Legrand (155,(19) School of Physical Sciences,1
+L. Legrand (155,34143 Trieste,1
+L. Legrand (155,Via G. B. Tiepolo 11,1
+L. Legrand (155,(18) INAF-Osservatorio Astronomico di Trieste,1
+L. Legrand (155,Laboratory for Galaxy Evolution,1
+L. Legrand (155,R. Teyssier (171),1
+L. Legrand (155,G. Testera (34),1
+L. Legrand (155,C. Tao (63),1
+L. Legrand (155,K. Tanidis (6),1
+L. Legrand (155,L. C. Smith (170),1
+L. Legrand (155,F. Shankar (169),1
+L. Legrand (155,44),1
+L. Legrand (155,E. Sellentin (168,1
+L. Legrand (155,88),1
+L. Legrand (155,D. Sciotti (48,1
+L. Legrand (155,A. Schneider (157),1
+L. Legrand (155,E. Sarpa (31,1
+L. Legrand (155,D. B. Sanders (50),1
+L. Legrand (155,M. Sahl\'en (167),1
+L. Legrand (155,s/n.,1
+L. Legrand (155,141,1
+L. Legrand (155,S. Sacquegna (142,1
+L. Legrand (155,5),1
+L. Legrand (155,G. Rodighiero (4,1
+L. Legrand (155,P.-F. Rocci (27),1
+L. Legrand (155,M. Radovich (5),1
+L. Legrand (155,D. Potter (157),1
+L. Legrand (155,A. Pisani (63),1
+L. Legrand (155,L. Patrizii (32),1
+L. Legrand (155,K. Paterson (76),1
+L. Legrand (155,F. Passalacqua (4,1
+L. Legrand (155,S. Nesseris (128),1
+L. Legrand (155,A. Navarro-Alsina (87),1
+L. Legrand (155,K. Naidoo (145),1
+L. Legrand (155,S. Nadathur (145),1
+L. Legrand (155,166),1
+L. Legrand (155,Camino Bajo del Castillo,1
+L. Legrand (155,(9) ESAC/ESA,1
+L. Legrand (155,Via Gobetti 93/2,1
+L. Legrand (155,Universit\`a di Bologna,1
+L. Legrand (155,(8) Dipartimento di Fisica e Astronomia,1
+L. Legrand (155,LAM,1
+L. Legrand (155,(7) Aix-Marseille Universit\'e,1
+L. Legrand (155,Oxford OX1 3RH,1
+L. Legrand (155,Keble Road,1
+L. Legrand (155,Oxford University,1
+L. Legrand (155,(6) Department of Physics,1
+L. Legrand (155,35122 Padova,1
+L. Legrand (155,Via dell'Osservatorio 5,1
+L. Legrand (155,(5) INAF-Osservatorio Astronomico di Padova,1
+L. Legrand (155,S. Tosi (33,1
+L. Legrand (155,"(4) Dipartimento di Fisica e Astronomia ""G. Galilei""",1
+L. Legrand (155,Via Alfonso Corti 12,1
+L. Legrand (155,(3) INAF-IASF Milano,1
+L. Legrand (155,Via Piero Gobetti 93/3,1
+L. Legrand (155,(2) INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna,1
+L. Legrand (155,via Piero Gobetti 93/2,1
+L. Legrand (155,"N. A. Walton (170) ((1) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+L. Legrand (155,P. Vielzeuf (63),1
+L. Legrand (155,G. Verza (173),1
+L. Legrand (155,A. Venhola (172),1
+L. Legrand (155,C. Valieri (32),1
+L. Legrand (155,M. Tucci (61),1
+L. Legrand (155,A. Troja (4,1
+L. Legrand (155,10),1
+L. Legrand (155,34,1
+L. Legrand (155,Universit\`a di Padova,1
+L. Legrand (155,Universidad Polit\'ecnica de Cartagena,1
+L. Legrand (155,(139) Departamento F\'isica Aplicada,1
+L. Legrand (155,Irvine CA 92697,1
+L. Legrand (155,University of California Irvine,1
+L. Legrand (155,(138) Department of Physics \& Astronomy,1
+L. Legrand (155,1200 E California Blvd,1
+L. Legrand (155,(137) California Institute of Technology,1
+L. Legrand (155,34131 Trieste,1
+L. Legrand (155,Via Tiepolo 11,1
+L. Legrand (155,Universit\`a di Trieste,1
+L. Legrand (155,(136) Dipartimento di Fisica - Sezione di Astronomia,1
+L. Legrand (155,Japan,1
+L. Legrand (155,Chiba 277-8583,1
+L. Legrand (155,Kashiwa,1
+L. Legrand (155,(27) Universit\'e Paris-Saclay,1
+L. Legrand (155,UTIAS,1
+L. Legrand (155,Kavli IPMU (WPI),1
+L. Legrand (155,(135) Center for Data-Driven Discovery,1
+L. Legrand (155,67000 Strasbourg,1
+L. Legrand (155,UMR 7550,1
+L. Legrand (155,Observatoire astronomique de Strasbourg,1
+L. Legrand (155,(134) Universit\'e de Strasbourg,1
+L. Legrand (155,(133) Departamento de F\'isica Fundamental. Universidad de Salamanca. Plaza de la Merced s/n. 37008 Salamanca,1
+L. Legrand (155,(132) Laboratoire Univers et Th\'eorie,1
+L. Legrand (155,Karl-Schwarzschild-Str. 1,1
+L. Legrand (155,"(131) Max-Planck-Institut f\""ur Astrophysik",1
+L. Legrand (155,James-Franck-Str. 1,1
+L. Legrand (155,Physics Department,1
+L. Legrand (155,TUM School of Natural Sciences,1
+L. Legrand (155,(130) Technical University of Munich,1
+L. Legrand (155,The University of Tokyo,1
+L. Legrand (155,c/ Via Lactea s/n,1
+L. Legrand (155,(147) Instituto de Astrof\'i sica de Canarias,1
+L. Legrand (155,FI-00 076,1
+L. Legrand (155,Espoo,1
+L. Legrand (155,PO Box 15400,1
+L. Legrand (155,Aalto University,1
+L. Legrand (155,(146) Department of Computer Science,1
+L. Legrand (155,Portsmouth PO1 3FX,1
+L. Legrand (155,University of Portsmouth,1
+L. Legrand (155,Gravitation,1
+L. Legrand (155,(145) Institute of Cosmology,1
+L. Legrand (155,91191 Gif-sur-Yvette,1
+L. Legrand (155,Bat. 709,1
+L. Legrand (155,Service d'Astrophysique,1
+L. Legrand (155,Campus Muralla del Mar,1
+L. Legrand (155,(144) CEA Saclay,1
+L. Legrand (155,c/o Dipartimento Matematica e Fisica,1
+L. Legrand (155,(143) INAF-Sezione di Lecce,1
+L. Legrand (155,CP-I93,1
+L. Legrand (155,University of Salento,1
+L. Legrand (155,Physics E. De Giorgi,1
+L. Legrand (155,(142) Department of Mathematics,1
+L. Legrand (155,CP-193,1
+L. Legrand (155,Sezione di Lecce,1
+L. Legrand (155,(141) INFN,1
+L. Legrand (155,39005 Santander,1
+L. Legrand (155,Avenida de los Castros,1
+L. Legrand (155,Edificio Juan Jord\'a,1
+L. Legrand (155,(140) Instituto de F\'isica de Cantabria,1
+L. Legrand (155,Murcia,1
+L. Legrand (155,DFR/IRFU,1
+L. Legrand (155,(120) Universit\'e C\^ote d'Azur,1
+L. Legrand (155,Via Piero Gobetti 101,1
+L. Legrand (155,Istituto di Radioastronomia,1
+L. Legrand (155,(119) INAF,1
+L. Legrand (155,Sezione di Ferrara,1
+L. Legrand (155,(118) Istituto Nazionale di Fisica Nucleare,1
+L. Legrand (155,Universit\`a degli Studi di Ferrara,1
+L. Legrand (155,(117) Dipartimento di Fisica e Scienze della Terra,1
+L. Legrand (155,Plaza del Hospital 1,1
+L. Legrand (155,Departamento de Electr\'onica y Tecnolog\'ia de Computadoras,1
+L. Legrand (155,(116) Universidad Polit\'ecnica de Cartagena,1
+L. Legrand (155,Jagtvej 128,1
+L. Legrand (155,(115) Niels Bohr Institute,1
+L. Legrand (155,(114) Cosmic Dawn Center (DAWN),1
+L. Legrand (155,OH 44106,1
+L. Legrand (155,Tapada da Ajuda,1
+L. Legrand (155,(113) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+L. Legrand (155,Analysis Center,1
+L. Legrand (155,(112) Infrared Processing,1
+L. Legrand (155,Leioa-Bilbao,1
+L. Legrand (155,Sede Bld 48940,1
+L. Legrand (155,University Science Park,1
+L. Legrand (155,(111) Satlantis,1
+L. Legrand (155,Barcelona,1
+L. Legrand (155,08860 Castelldefels,1
+L. Legrand (155,Campus UPC,1
+L. Legrand (155,Edifici RDIT,1
+L. Legrand (155,(110) Institut d'Estudis Espacials de Catalunya (IEEC),1
+L. Legrand (155,Austria,1
+L. Legrand (155,6020 Innsbruck,1
+L. Legrand (155,1349-018 Lisboa,1
+L. Legrand (155,Cleveland,1
+L. Legrand (155,10900 Euclid Avenue,1
+L. Legrand (155,Case Western Reserve University,1
+L. Legrand (155,(129) CERCA/ISO,1
+L. Legrand (155,28049 Madrid,1
+L. Legrand (155,Campus de Cantoblanco,1
+L. Legrand (155,(128) Instituto de F\'isica Te\'orica UAM-CSIC,1
+L. Legrand (155,Bologna,1
+L. Legrand (155,Via Magnanelli 2,1
+L. Legrand (155,Big Data e Quantum Computing,1
+L. Legrand (155,(127) ICSC - Centro Nazionale di Ricerca in High Performance Computing,1
+L. Legrand (155,LITL,1
+L. Legrand (155,Universit\'e Catholique de Lille,1
+L. Legrand (155,Junia,1
+L. Legrand (155,Observatoire de la C\^ote d'Azur,1
+L. Legrand (155,INFN-Sezione di Genova,1
+L. Legrand (155,(125) INAF-Osservatorio Astronomico di Brera,1
+L. Legrand (155,23807 Merate,1
+L. Legrand (155,via Emilio Bianchi 46,1
+L. Legrand (155,(124) INAF - Osservatorio Astronomico di Brera,1
+L. Legrand (155,(123) Aurora Technology for European Space Agency (ESA),1
+L. Legrand (155,75013,1
+L. Legrand (155,5 Rue Thomas Mann,1
+L. Legrand (155,(122) Universit\'e Paris-Cit\'e,1
+L. Legrand (155,LERMA,1
+L. Legrand (155,(121) Universit\'e PSL,1
+L. Legrand (155,06304 Nice cedex 4,1
+L. Legrand (155,CS 34229,1
+L. Legrand (155,Bd de l'Observatoire,1
+L. Legrand (155,Laboratoire Lagrange,1
+L. Legrand (155,(126) ICL,1
+L. Legrand (155,162 5th Avenue,1
+L. Legrand (155,Flatiron Institute,1
+L. Legrand (155,(173) Center for Computational Astrophysics,1
+L. Legrand (155,FI-90014 Oulu,1
+L. Legrand (155,Pentti Kaiteran katu 1,1
+L. Legrand (155,University of Oulu,1
+L. Legrand (155,astronomy research unit,1
+L. Legrand (155,(172) Space physics,1
+L. Legrand (155,NJ 08544,1
+L. Legrand (155,Princeton,1
+L. Legrand (155,Princeton University,1
+L. Legrand (155,Peyton Hall,1
+L. Legrand (155,(171) Department of Astrophysical Sciences,1
+L. Legrand (155,Cambridge CB3 0HA,1
+L. Legrand (155,La Laguna 38200,1
+L. Legrand (155,(170) Institute of Astronomy,1
+L. Legrand (155,Southampton SO17 1BJ,1
+L. Legrand (155,Highfield Campus,1
+L. Legrand (155,University of Southampton,1
+L. Legrand (155,(169) School of Physics \& Astronomy,1
+L. Legrand (155,University of Leiden,1
+L. Legrand (155,(168) Mathematical Institute,1
+L. Legrand (155,751 37 Uppsala,1
+L. Legrand (155,Box 516,1
+L. Legrand (155,Uppsala University,1
+L. Legrand (155,(167) Theoretical astrophysics,1
+L. Legrand (155,Teramo,1
+L. Legrand (155,64100,1
+L. Legrand (155,Via Maggini,1
+L. Legrand (155,(166) INAF - Osservatorio Astronomico d'Abruzzo,1
+L. Legrand (155,University of Cambridge,1
+L. Legrand (155,10010,1
+L. Legrand (155,USA),1
+L. Legrand (155,NY,1
+L. Legrand (155,New York,1
+L. Legrand (155,Cambridge CB3 0WA,1
+L. Legrand (155,Wilberforce Road,1
+L. Legrand (155,Centre for Mathematical Sciences,1
+L. Legrand (155,(155) DAMTP,1
+L. Legrand (155,South Africa,1
+L. Legrand (155,7535,1
+L. Legrand (155,Cape Town,1
+L. Legrand (155,Bellville,1
+L. Legrand (155,University of the Western Cape,1
+L. Legrand (155,(154) Department of Physics,1
+L. Legrand (155,Victoria 3122,1
+L. Legrand (155,Hawthorn,1
+L. Legrand (155,Swinburne University of Technology,1
+L. Legrand (155,(153) Centre for Astrophysics \& Supercomputing,1
+L. Legrand (155,(165) HE Space for European Space Agency (ESA),1
+L. Legrand (155,(152) ARC Centre of Excellence for Dark Matter Particle Physics,1
+L. Legrand (155,(151) Serco for European Space Agency (ESA),1
+L. Legrand (155,20014 Turku,1
+L. Legrand (155,University of Turku,1
+L. Legrand (155,Vesilinnantie 5,1
+L. Legrand (155,(150) Department of Physics,1
+L. Legrand (155,44780 Bochum,1
+L. Legrand (155,German Centre for Cosmological Lensing (GCCL),1
+L. Legrand (155,Astronomical Institute (AIRUB),1
+L. Legrand (155,Faculty of Physics,1
+L. Legrand (155,(149) Ruhr University Bochum,1
+L. Legrand (155,1200 E. California Blvd.,1
+L. Legrand (155,(148) Caltech/IPAC,1
+L. Legrand (155,Avda. Francisco Sanchez,1
+L. Legrand (155,Spain. Departamento de Astrof\'i sica de la Universidad de La Laguna,1
+L. Legrand (155,Melbourne,1
+L. Legrand (155,4150-762 Porto,1
+L. Legrand (155,(164) Centro de Astrof\'isica da Universidade do Porto,1
+L. Legrand (155,Piazzale Aldo Moro 2,1
+L. Legrand (155,Sapienza Universit\`a di Roma,1
+L. Legrand (155,(163) Dipartimento di Fisica,1
+L. Legrand (155,Grenoble,1
+L. Legrand (155,38000,1
+L. Legrand (155,Avenue des Martyrs,1
+L. Legrand (155,53,1
+L. Legrand (155,LPSC-IN2P3,1
+L. Legrand (155,Grenoble INP,1
+L. Legrand (155,(162) Univ. Grenoble Alpes,1
+L. Legrand (155,London SW7 2AZ,1
+L. Legrand (155,Imperial College London,1
+L. Legrand (155,(156) Kavli Institute for Cosmology Cambridge,1
+L. Legrand (155,(161) Astrophysics Group,1
+L. Legrand (155,SE-106 91,1
+L. Legrand (155,Stockholm,1
+L. Legrand (155,Stockholm University,1
+L. Legrand (155,(160) Oskar Klein Centre for Cosmoparticle Physics,1
+L. Legrand (155,Universit\'e Paris-Saclay 91191 Gif-sur-Yvette Cedex,1
+L. Legrand (155,(159) IRFU,1
+L. Legrand (155,Centre for Extragalactic Astronomy,1
+L. Legrand (155,(158) Department of Physics,1
+L. Legrand (155,8057 Zurich,1
+L. Legrand (155,Winterthurerstrasse 190,1
+L. Legrand (155,University of Zurich,1
+L. Legrand (155,(157) Department of Astrophysics,1
+L. Legrand (155,CB3 0HA,1
+L. Legrand (155,Cambridge,1
+L. Legrand (155,Blackett Laboratory,1
+L. Legrand (155,08028 Barcelona,1
+L. Legrand (155,Mart\'i i Franqu\`es 1,1
+L. Legrand (155,Universitat de Barcelona (IEEC-UB),1
+L. Legrand (155,(56) Institut de Ci\`encies del Cosmos (ICCUB),1
+L. Legrand (155,F-69100,1
+L. Legrand (155,Villeurbanne,1
+L. Legrand (155,UMR 5822,1
+L. Legrand (155,(55) Universit\'e Claude Bernard Lyon 1,1
+L. Legrand (155,Roma,1
+L. Legrand (155,00044 Frascati,1
+L. Legrand (155,Largo Galileo Galilei 1,1
+L. Legrand (155,(54) European Space Agency/ESRIN,1
+L. Legrand (155,Manchester M13 9PL,1
+L. Legrand (155,Oxford Road,1
+L. Legrand (155,Technikerstr. 25/8,1
+L. Legrand (155,(53) Jodrell Bank Centre for Astrophysics,1
+L. Legrand (155,Edinburgh EH9 3HJ,1
+L. Legrand (155,Blackford Hill,1
+L. Legrand (155,Royal Observatory,1
+L. Legrand (155,University of Edinburgh,1
+L. Legrand (155,(52) Institute for Astronomy,1
+L. Legrand (155,38205 La Laguna,1
+L. Legrand (155,V\'ia L\'actea,1
+L. Legrand (155,(51) Instituto de Astrof\'isica de Canarias,1
+L. Legrand (155,HI 96822,1
+L. Legrand (155,Honolulu,1
+L. Legrand (155,2680 Woodlawn Drive,1
+L. Legrand (155,University of Hawaii,1
+L. Legrand (155,(50) Institute for Astronomy,1
+L. Legrand (155,(49) INFN section of Naples,1
+L. Legrand (155,University of Manchester,1
+L. Legrand (155,(69) Institute of Theoretical Astrophysics,1
+L. Legrand (155,(68) INFN-Sezione di Milano,1
+L. Legrand (155,Universit\`a degli Studi di Milano,1
+L. Legrand (155,"(67) Dipartimento di Fisica ""Aldo Pontremoli""",1
+L. Legrand (155,Giessenbachstr. 1,1
+L. Legrand (155,(66) Max Planck Institute for Extraterrestrial Physics,1
+L. Legrand (155,40126 Bologna,1
+L. Legrand (155,Via Irnerio 46,1
+L. Legrand (155,(65) INFN-Bologna,1
+L. Legrand (155,00133 Roma,1
+L. Legrand (155,via del Politecnico snc,1
+L. Legrand (155,Italian Space Agency,1
+L. Legrand (155,(64) Space Science Data Center,1
+L. Legrand (155,CPPM,1
+L. Legrand (155,(57) Instituci\'o Catalana de Recerca i Estudis Avan\c{c}ats (ICREA),1
+L. Legrand (155,(62) INFN-Padova,1
+L. Legrand (155,ch. d'Ecogia 16,1
+L. Legrand (155,University of Geneva,1
+L. Legrand (155,(61) Department of Astronomy,1
+L. Legrand (155,1749-016 Lisboa,1
+L. Legrand (155,(60) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+L. Legrand (155,PT1749-016 Lisboa,1
+L. Legrand (155,Edif\'icio C8,1
+L. Legrand (155,(59) Departamento de F\'isica,1
+L. Legrand (155,69622 Villeurbanne,1
+L. Legrand (155,4 rue Enrico Fermi,1
+L. Legrand (155,IUF,1
+L. Legrand (155,(58) UCB Lyon 1,1
+L. Legrand (155,08010 Barcelona,1
+L. Legrand (155,Passeig de Llu\'is Companys 23,1
+L. Legrand (155,(63) Aix-Marseille Universit\'e,1
+L. Legrand (155,CAUP,1
+L. Legrand (155,Universidade do Porto,1
+L. Legrand (155,(36) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+L. Legrand (155,University Federico II,1
+L. Legrand (155,"(35) Department of Physics ""E. Pancini""",1
+L. Legrand (155,(34) INFN-Sezione di Genova,1
+L. Legrand (155,Universit\`a di Genova,1
+L. Legrand (155,(33) Dipartimento di Fisica,1
+L. Legrand (155,(32) INFN-Sezione di Bologna,1
+L. Legrand (155,34136 Trieste TS,1
+L. Legrand (155,Via Bonomea 265,1
+L. Legrand (155,International School for Advanced Studies,1
+L. Legrand (155,(31) SISSA,1
+L. Legrand (155,34127 Trieste TS,1
+L. Legrand (155,00078 Monteporzio Catone,1
+L. Legrand (155,Sezione di Trieste,1
+L. Legrand (155,(30) INFN,1
+L. Legrand (155,34151 Trieste,1
+L. Legrand (155,via Beirut 2,1
+L. Legrand (155,Institute for Fundamental Physics of the Universe,1
+L. Legrand (155,(29) IFPU,1
+L. Legrand (155,GU2 7XH,1
+L. Legrand (155,Surrey,1
+L. Legrand (155,Guildford,1
+L. Legrand (155,University of Surrey,1
+L. Legrand (155,Physics,1
+L. Legrand (155,(28) School of Mathematics,1
+L. Legrand (155,Orsay,1
+L. Legrand (155,91405,1
+L. Legrand (155,Institut d'astrophysique spatiale,1
+L. Legrand (155,Via Valerio 2,1
+L. Legrand (155,Via Frascati 33,1
+L. Legrand (155,(48) INAF-Osservatorio Astronomico di Roma,1
+L. Legrand (155,52056 Aachen,1
+L. Legrand (155,RWTH Aachen University,1
+L. Legrand (155,Cosmology (TTK),1
+L. Legrand (155,(47) Institute for Theoretical Particle Physics,1
+L. Legrand (155,C. Albareda s/n,1
+L. Legrand (155,(46) Port d'Informaci\'o Cient\'ifica,1
+L. Legrand (155,28040 Madrid,1
+L. Legrand (155,Avenida Complutense 40,1
+L. Legrand (155,Medioambientales y Tecnol\'ogicas (CIEMAT),1
+L. Legrand (155,(45) Centro de Investigaciones Energ\'eticas,1
+L. Legrand (155,2333 CC Leiden,1
+L. Legrand (155,(44) Leiden Observatory,1
+L. Legrand (155,PT4150-762 Porto,1
+L. Legrand (155,(43) Institute Lorentz,1
+L. Legrand (155,2201 AZ Noordwijk,1
+L. Legrand (155,Keplerlaan 1,1
+L. Legrand (155,(42) European Space Agency/ESTEC,1
+L. Legrand (155,10025 Pino Torinese (TO),1
+L. Legrand (155,Via Osservatorio 20,1
+L. Legrand (155,(41) INAF-Osservatorio Astrofisico di Torino,1
+L. Legrand (155,(40) INFN-Sezione di Torino,1
+L. Legrand (155,Universit\`a degli Studi di Torino,1
+L. Legrand (155,(39) Dipartimento di Fisica,1
+L. Legrand (155,Karl-Schwarzschild-Str. 2,1
+L. Legrand (155,(38) European Southern Observatory,1
+L. Legrand (155,4150-007 Porto,1
+L. Legrand (155,Rua do Campo de Alegre,1
+L. Legrand (155,(37) Faculdade de Ci\^encias da Universidade do Porto,1
+L. Legrand (155,Niels Bohrweg 2,1
+L. Legrand (155,(102) Institute of Space Science,1
+L. Legrand (155,31401 Toulouse Cedex 9,1
+L. Legrand (155,18 avenue Edouard Belin,1
+L. Legrand (155,(101) Centre National d'Etudes Spatiales -- Centre spatial de Toulouse,1
+L. Legrand (155,Ontario N2L 2Y5,1
+L. Legrand (155,(100) Perimeter Institute for Theoretical Physics,1
+L. Legrand (155,(99) Department of Physics,1
+L. Legrand (155,(98) Waterloo Centre for Astrophysics,1
+L. Legrand (155,Jagtvej 155,1
+L. Legrand (155,Niels Bohr Institute,1
+L. Legrand (155,(97) DARK,1
+L. Legrand (155,Technology,1
+L. Legrand (155,The Barcelona Institute of Science,1
+L. Legrand (155,(96) Institut de F\'isica d'Altes Energies (IFAE),1
+L. Legrand (155,University of Oslo,1
+L. Legrand (155,Ecole Polytechnique F\'ed\'erale de Lausanne (EPFL),1
+L. Legrand (155,Laboratory of Astrophysics,1
+L. Legrand (155,(94) Institute of Physics,1
+L. Legrand (155,98bis Boulevard Arago,1
+L. Legrand (155,(93) Institut d'Astrophysique de Paris,1
+L. Legrand (155,School of Engineering,1
+L. Legrand (155,(92) University of Applied Sciences,1
+L. Legrand (155,Berkeley,1
+L. Legrand (155,CPB-IN2P3,1
+L. Legrand (155,IRL2007,1
+L. Legrand (155,Centre Pierre Bin\'etruy,1
+L. Legrand (155,(91) CNRS-UCB International Research Laboratory,1
+L. Legrand (155,75013 Paris,1
+L. Legrand (155,Astroparticule et Cosmologie,1
+L. Legrand (155,(90) Universit\'e Paris Cit\'e,1
+L. Legrand (155,(95) Telespazio UK S.L. for European Space Agency (ESA),1
+L. Legrand (155,"Institut f\""ur Astro- und Teilchenphysik",1
+L. Legrand (155,"(109) Universit\""at Innsbruck",1
+L. Legrand (155,Chile,1
+L. Legrand (155,Santiago,1
+L. Legrand (155,Blanco Encalada 2008,1
+L. Legrand (155,Universidad de Chile,1
+L. Legrand (155,FCFM,1
+L. Legrand (155,(108) Departamento de F\'isica,1
+L. Legrand (155,Lebanon,1
+L. Legrand (155,Beirut,1
+L. Legrand (155,Faculty of Sciences,1
+L. Legrand (155,(107) Universit\'e St Joseph,1
+L. Legrand (155,31400 Toulouse,1
+L. Legrand (155,14 Av. Edouard Belin,1
+L. Legrand (155,Str. Atomistilor,1
+L. Legrand (155,Universit\'e de Toulouse,1
+L. Legrand (155,(106) Institut de Recherche en Astrophysique et Plan\'etologie (IRAP),1
+L. Legrand (155,69120 Heidelberg,1
+L. Legrand (155,Philosophenweg 16,1
+L. Legrand (155,University of Heidelberg,1
+L. Legrand (155,"(105) Institut f\""ur Theoretische Physik",1
+L. Legrand (155,38206 La Laguna,1
+L. Legrand (155,(104) Universidad de La Laguna,1
+L. Legrand (155,28006 Madrid,1
+L. Legrand (155,Calle Serrano 117,1
+L. Legrand (155,(103) Consejo Superior de Investigaciones Cientificas,1
+L. Legrand (155,Romania,1
+L. Legrand (155,077125,1
+L. Legrand (155,Ilfov,1
+L. Legrand (155,nr. 409 M\u{a}gurele,1
+L. Legrand (155,UPS,1
+L. Legrand (155,University College London,1
+L. Legrand (155,(78) Department of Physics,1
+L. Legrand (155,MD 20771,1
+L. Legrand (155,Greenbelt,1
+L. Legrand (155,(77) NASA Goddard Space Flight Center,1
+L. Legrand (155,69117 Heidelberg,1
+L. Legrand (155,"K\""onigstuhl 17",1
+L. Legrand (155,"(76) Max-Planck-Institut f\""ur Astronomie",1
+L. Legrand (155,75014 Paris,1
+L. Legrand (155,98 bis boulevard Arago,1
+L. Legrand (155,UMR 7095,1
+L. Legrand (155,(75) Institut d'Astrophysique de Paris,1
+L. Legrand (155,(74) Cosmic Dawn Center (DAWN),1
+L. Legrand (155,2800 Kgs. Lyngby,1
+L. Legrand (155,Institute for Computational Cosmology,1
+L. Legrand (155,(73) Technical University of Denmark,1
+L. Legrand (155,69181 Leimen,1
+L. Legrand (155,Goethestr. 17,1
+L. Legrand (155,(72) Felix Hormuth Engineering,1
+L. Legrand (155,LA1 4YB,1
+L. Legrand (155,Lancaster,1
+L. Legrand (155,Lancaster University,1
+L. Legrand (155,(71) Department of Physics,1
+L. Legrand (155,91109,1
+L. Legrand (155,CA,1
+L. Legrand (155,4800 Oak Grove Drive,1
+L. Legrand (155,(70) Jet Propulsion Laboratory,1
+L. Legrand (155,Norway,1
+L. Legrand (155,0315 Oslo,1
+L. Legrand (155,P.O. Box 1029 Blindern,1
+L. Legrand (155,Elektrovej 327,1
+L. Legrand (155,(89) Department of Physics,1
+L. Legrand (155,Edificio G. Marconi,1
+L. Legrand (155,2 - c/o Dipartimento di Fisica,1
+L. Legrand (155,Piazzale Aldo Moro,1
+L. Legrand (155,(88) INFN-Sezione di Roma,1
+L. Legrand (155,53121 Bonn,1
+L. Legrand (155,"Auf dem H\""ugel 71",1
+L. Legrand (155,"Argelander-Institut f\""ur Astronomie",1
+L. Legrand (155,"(87) Universit\""at Bonn",1
+L. Legrand (155,School of Computer Science,1
+L. Legrand (155,(86) University of Applied Sciences,1
+L. Legrand (155,21 avenue Pierre de Coubertin 69627 Villeurbanne Cedex,1
+L. Legrand (155,(85) Centre de Calcul de l'IN2P3/CNRS,1
+L. Legrand (155,United Kingdom,1
+L. Legrand (155,Gower Street,1
+L. Legrand (155,Lower Withington,1
+L. Legrand (155,Jodrell Bank,1
+L. Legrand (155,(84) SKAO,1
+L. Legrand (155,(83) Laboratoire d'etude de l'Univers et des phenomenes eXtremes,1
+L. Legrand (155,(82) Helsinki Institute of Physics,1
+L. Legrand (155,P.O. Box 64,1
+L. Legrand (155,(81) Department of Physics,1
+L. Legrand (155,CH-1211 Gen\`eve 4,1
+L. Legrand (155,24 quai Ernest-Ansermet,1
+L. Legrand (155,Centre for Astroparticle Physics,1
+L. Legrand (155,D\'epartement de Physique Th\'eorique,1
+L. Legrand (155,(80) Universit\'e de Gen\`eve,1
+L. Legrand (155,Helsinki Institute of Physics,1
+L. Legrand (155,(79) Department of Physics,1
+L. Legrand (155,London WC1E 6BT,1
+L. Legrand (155,Macclesfield SK11 9FT,1
+D. Karagiannis (117,(29) IFPU,1
+D. Karagiannis (117,2),1
+D. Karagiannis (117,G. F. Lesci (1,1
+D. Karagiannis (117,89),1
+D. Karagiannis (117,G. Leroy (158,1
+D. Karagiannis (117,F. Lepori (157),1
+D. Karagiannis (117,M. Lembo (75),1
+D. Karagiannis (117,156),1
+D. Karagiannis (117,L. Legrand (155,1
+D. Karagiannis (117,C. C. Kirkpatrick (79),1
+D. Karagiannis (117,K. Kiiveri (79),1
+D. Karagiannis (117,154),1
+D. Karagiannis (117,D. Potter (157),1
+D. Karagiannis (117,A. Pisani (63),1
+D. Karagiannis (117,L. Patrizii (32),1
+D. Karagiannis (117,K. Paterson (76),1
+D. Karagiannis (117,F. Passalacqua (4,1
+D. Karagiannis (117,S. Nesseris (128),1
+D. Karagiannis (117,A. Navarro-Alsina (87),1
+D. Karagiannis (117,K. Naidoo (145),1
+D. Karagiannis (117,S. Nadathur (145),1
+D. Karagiannis (117,G. Morgante (2),1
+D. Karagiannis (117,29,1
+D. Karagiannis (117,C. Moretti (31,1
+D. Karagiannis (117,29),1
+D. Karagiannis (117,30,1
+D. Karagiannis (117,J. Lesgourgues (47),1
+D. Karagiannis (117,165),1
+D. Karagiannis (117,M. Miluzio (9,1
+D. Karagiannis (117,L. Maurin (27),1
+D. Karagiannis (117,36),1
+D. Karagiannis (117,C. J. A. P. Martins (164,1
+D. Karagiannis (117,48),1
+D. Karagiannis (117,R. Maoli (163,1
+D. Karagiannis (117,F. Mannucci (20),1
+D. Karagiannis (117,G. Maggio (18),1
+D. Karagiannis (117,J. Macias-Perez (162),1
+D. Karagiannis (117,161),1
+D. Karagiannis (117,A. Loureiro (160,1
+D. Karagiannis (117,S. J. Liu (15),1
+D. Karagiannis (117,T. I. Liaudat (159),1
+D. Karagiannis (117,L. Leuzzi (2),1
+D. Karagiannis (117,P. Monaco (136,1
+D. Karagiannis (117,Largo E. Fermi 5,1
+D. Karagiannis (117,(20) INAF-Osservatorio Astrofisico di Arcetri,1
+D. Karagiannis (117,MK7 6AA,1
+D. Karagiannis (117,Milton Keynes,1
+D. Karagiannis (117,The Open University,1
+D. Karagiannis (117,(19) School of Physical Sciences,1
+D. Karagiannis (117,34143 Trieste,1
+D. Karagiannis (117,Via G. B. Tiepolo 11,1
+D. Karagiannis (117,(18) INAF-Osservatorio Astronomico di Trieste,1
+D. Karagiannis (117,08193 Barcelona,1
+D. Karagiannis (117,Carrer de Can Magrans,1
+D. Karagiannis (117,CSIC),1
+D. Karagiannis (117,(17) Institute of Space Sciences (ICE,1
+D. Karagiannis (117,Universidad de La Laguna (ULL),1
+D. Karagiannis (117,M. Radovich (5),1
+D. Karagiannis (117,00100 Roma,1
+D. Karagiannis (117,100,1
+D. Karagiannis (117,via del Fosso del Cavaliere,1
+D. Karagiannis (117,(15) INAF-Istituto di Astrofisica e Planetologia Spaziali,1
+D. Karagiannis (117,"81679 M\""unchen",1
+D. Karagiannis (117,Scheinerstrasse 1,1
+D. Karagiannis (117,"Ludwig-Maximilians-Universit\""at M\""unchen",1
+D. Karagiannis (117,"Fakult\""at f\""ur Physik",1
+D. Karagiannis (117,"(14) Universit\""ats-Sternwarte M\""unchen",1
+D. Karagiannis (117,80131 Napoli,1
+D. Karagiannis (117,Via Moiariello 16,1
+D. Karagiannis (117,(13) INAF-Osservatorio Astronomico di Capodimonte,1
+D. Karagiannis (117,Gif-sur-Yvette,1
+D. Karagiannis (117,91191,1
+D. Karagiannis (117,AIM,1
+D. Karagiannis (117,(16) Instituto de Astrof\'isica de Canarias (IAC),1
+D. Karagiannis (117,GU2 7XH,1
+D. Karagiannis (117,Surrey,1
+D. Karagiannis (117,Guildford,1
+D. Karagiannis (117,University of Surrey,1
+D. Karagiannis (117,Physics,1
+D. Karagiannis (117,(28) School of Mathematics,1
+D. Karagiannis (117,Orsay,1
+D. Karagiannis (117,91405,1
+D. Karagiannis (117,Institut d'astrophysique spatiale,1
+D. Karagiannis (117,(27) Universit\'e Paris-Saclay,1
+D. Karagiannis (117,UMR 9189 CRIStAL,1
+D. Karagiannis (117,Centrale Lille,1
+D. Karagiannis (117,(26) Univ. Lille,1
+D. Karagiannis (117,9700 AV Groningen,1
+D. Karagiannis (117,50125,1
+D. Karagiannis (117,University of Groningen,1
+D. Karagiannis (117,(25) Kapteyn Astronomical Institute,1
+D. Karagiannis (117,Groningen,1
+D. Karagiannis (117,9747 AD,1
+D. Karagiannis (117,Landleven 12,1
+D. Karagiannis (117,(24) SRON Netherlands Institute for Space Research,1
+D. Karagiannis (117,"(23) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+D. Karagiannis (117,CH-1290 Versoix,1
+D. Karagiannis (117,Ecole Polytechnique F\'ed\'erale de Lausanne,1
+D. Karagiannis (117,Laboratory for Galaxy Evolution,1
+D. Karagiannis (117,(22) Institute of Physics,1
+D. Karagiannis (117,50019 Sesto Fiorentino,1
+D. Karagiannis (117,via G. Sansone 1,1
+D. Karagiannis (117,Universit\`a di Firenze,1
+D. Karagiannis (117,(21) Dipartimento di Fisica e Astronomia,1
+D. Karagiannis (117,PO Box 800,1
+D. Karagiannis (117,"N. A. Walton (170) ((1) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+D. Karagiannis (117,P. Vielzeuf (63),1
+D. Karagiannis (117,G. Verza (173),1
+D. Karagiannis (117,A. Venhola (172),1
+D. Karagiannis (117,C. Valieri (32),1
+D. Karagiannis (117,M. Tucci (61),1
+D. Karagiannis (117,A. Troja (4,1
+D. Karagiannis (117,10),1
+D. Karagiannis (117,34,1
+D. Karagiannis (117,S. Tosi (33,1
+D. Karagiannis (117,R. Teyssier (171),1
+D. Karagiannis (117,G. Testera (34),1
+D. Karagiannis (117,C. Tao (63),1
+D. Karagiannis (117,K. Tanidis (6),1
+D. Karagiannis (117,(12) Universit\'e Paris-Saclay,1
+D. Karagiannis (117,F. Shankar (169),1
+D. Karagiannis (117,44),1
+D. Karagiannis (117,E. Sellentin (168,1
+D. Karagiannis (117,88),1
+D. Karagiannis (117,D. Sciotti (48,1
+D. Karagiannis (117,A. Schneider (157),1
+D. Karagiannis (117,E. Sarpa (31,1
+D. Karagiannis (117,D. B. Sanders (50),1
+D. Karagiannis (117,M. Sahl\'en (167),1
+D. Karagiannis (117,166),1
+D. Karagiannis (117,141,1
+D. Karagiannis (117,S. Sacquegna (142,1
+D. Karagiannis (117,5),1
+D. Karagiannis (117,G. Rodighiero (4,1
+D. Karagiannis (117,P.-F. Rocci (27),1
+D. Karagiannis (117,L. C. Smith (170),1
+D. Karagiannis (117,MN 55455,1
+D. Karagiannis (117,Minneapolis,1
+D. Karagiannis (117,116 Church St SE,1
+D. Karagiannis (117,University of Minnesota,1
+D. Karagiannis (117,(11) Minnesota Institute for Astrophysics,1
+D. Karagiannis (117,(10) INAF-Osservatorio Astronomico di Brera,1
+D. Karagiannis (117,Madrid,1
+D. Karagiannis (117,28692 Villanueva de la Ca\~nada,1
+D. Karagiannis (117,Urb. Villafranca del Castillo,1
+D. Karagiannis (117,s/n.,1
+D. Karagiannis (117,Camino Bajo del Castillo,1
+D. Karagiannis (117,(9) ESAC/ESA,1
+D. Karagiannis (117,Via Gobetti 93/2,1
+D. Karagiannis (117,Universit\`a di Bologna,1
+D. Karagiannis (117,via Piero Gobetti 93/2,1
+D. Karagiannis (117,LAM,1
+D. Karagiannis (117,(7) Aix-Marseille Universit\'e,1
+D. Karagiannis (117,Oxford OX1 3RH,1
+D. Karagiannis (117,Keble Road,1
+D. Karagiannis (117,Oxford University,1
+D. Karagiannis (117,(6) Department of Physics,1
+D. Karagiannis (117,35122 Padova,1
+D. Karagiannis (117,Via dell'Osservatorio 5,1
+D. Karagiannis (117,(5) INAF-Osservatorio Astronomico di Padova,1
+D. Karagiannis (117,Universit\`a di Padova,1
+D. Karagiannis (117,"(4) Dipartimento di Fisica e Astronomia ""G. Galilei""",1
+D. Karagiannis (117,Via Alfonso Corti 12,1
+D. Karagiannis (117,(3) INAF-IASF Milano,1
+D. Karagiannis (117,Via Piero Gobetti 93/3,1
+D. Karagiannis (117,(2) INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna,1
+D. Karagiannis (117,(8) Dipartimento di Fisica e Astronomia,1
+G. Rodighiero (4,(164) Centro de Astrof\'isica da Universidade do Porto,1
+G. Rodighiero (4,Piazzale Aldo Moro 2,1
+G. Rodighiero (4,Sapienza Universit\`a di Roma,1
+G. Rodighiero (4,(163) Dipartimento di Fisica,1
+G. Rodighiero (4,Grenoble,1
+G. Rodighiero (4,38000,1
+G. Rodighiero (4,Avenue des Martyrs,1
+G. Rodighiero (4,53,1
+G. Rodighiero (4,LPSC-IN2P3,1
+G. Rodighiero (4,Grenoble INP,1
+G. Rodighiero (4,(162) Univ. Grenoble Alpes,1
+G. Rodighiero (4,London SW7 2AZ,1
+G. Rodighiero (4,Imperial College London,1
+G. Rodighiero (4,Blackett Laboratory,1
+G. Rodighiero (4,SE-106 91,1
+G. Rodighiero (4,Stockholm,1
+G. Rodighiero (4,Stockholm University,1
+G. Rodighiero (4,(160) Oskar Klein Centre for Cosmoparticle Physics,1
+G. Rodighiero (4,Universit\'e Paris-Saclay 91191 Gif-sur-Yvette Cedex,1
+G. Rodighiero (4,(159) IRFU,1
+G. Rodighiero (4,Centre for Extragalactic Astronomy,1
+G. Rodighiero (4,(158) Department of Physics,1
+G. Rodighiero (4,8057 Zurich,1
+G. Rodighiero (4,Winterthurerstrasse 190,1
+G. Rodighiero (4,University of Zurich,1
+G. Rodighiero (4,(157) Department of Astrophysics,1
+G. Rodighiero (4,CB3 0HA,1
+G. Rodighiero (4,Cambridge,1
+G. Rodighiero (4,(156) Kavli Institute for Cosmology Cambridge,1
+G. Rodighiero (4,(161) Astrophysics Group,1
+G. Rodighiero (4,Flatiron Institute,1
+G. Rodighiero (4,(173) Center for Computational Astrophysics,1
+G. Rodighiero (4,FI-90014 Oulu,1
+G. Rodighiero (4,Pentti Kaiteran katu 1,1
+G. Rodighiero (4,University of Oulu,1
+G. Rodighiero (4,astronomy research unit,1
+G. Rodighiero (4,(172) Space physics,1
+G. Rodighiero (4,NJ 08544,1
+G. Rodighiero (4,Princeton,1
+G. Rodighiero (4,Princeton University,1
+G. Rodighiero (4,Peyton Hall,1
+G. Rodighiero (4,(171) Department of Astrophysical Sciences,1
+G. Rodighiero (4,Cambridge CB3 0HA,1
+G. Rodighiero (4,University of Cambridge,1
+G. Rodighiero (4,4150-762 Porto,1
+G. Rodighiero (4,Southampton SO17 1BJ,1
+G. Rodighiero (4,Highfield Campus,1
+G. Rodighiero (4,University of Southampton,1
+G. Rodighiero (4,(169) School of Physics \& Astronomy,1
+G. Rodighiero (4,University of Leiden,1
+G. Rodighiero (4,(168) Mathematical Institute,1
+G. Rodighiero (4,751 37 Uppsala,1
+G. Rodighiero (4,Box 516,1
+G. Rodighiero (4,Uppsala University,1
+G. Rodighiero (4,(167) Theoretical astrophysics,1
+G. Rodighiero (4,Teramo,1
+G. Rodighiero (4,64100,1
+G. Rodighiero (4,Via Maggini,1
+G. Rodighiero (4,(166) INAF - Osservatorio Astronomico d'Abruzzo,1
+G. Rodighiero (4,(165) HE Space for European Space Agency (ESA),1
+G. Rodighiero (4,(170) Institute of Astronomy,1
+G. Rodighiero (4,(147) Instituto de Astrof\'i sica de Canarias,1
+G. Rodighiero (4,FI-00 076,1
+G. Rodighiero (4,Espoo,1
+G. Rodighiero (4,PO Box 15400,1
+G. Rodighiero (4,Aalto University,1
+G. Rodighiero (4,(146) Department of Computer Science,1
+G. Rodighiero (4,Portsmouth PO1 3FX,1
+G. Rodighiero (4,University of Portsmouth,1
+G. Rodighiero (4,Gravitation,1
+G. Rodighiero (4,(145) Institute of Cosmology,1
+G. Rodighiero (4,91191 Gif-sur-Yvette,1
+G. Rodighiero (4,Bat. 709,1
+G. Rodighiero (4,Service d'Astrophysique,1
+G. Rodighiero (4,DFR/IRFU,1
+G. Rodighiero (4,Cambridge CB3 0WA,1
+G. Rodighiero (4,c/o Dipartimento Matematica e Fisica,1
+G. Rodighiero (4,(143) INAF-Sezione di Lecce,1
+G. Rodighiero (4,CP-I93,1
+G. Rodighiero (4,University of Salento,1
+G. Rodighiero (4,Physics E. De Giorgi,1
+G. Rodighiero (4,(142) Department of Mathematics,1
+G. Rodighiero (4,CP-193,1
+G. Rodighiero (4,Sezione di Lecce,1
+G. Rodighiero (4,(141) INFN,1
+G. Rodighiero (4,39005 Santander,1
+G. Rodighiero (4,Avenida de los Castros,1
+G. Rodighiero (4,Edificio Juan Jord\'a,1
+G. Rodighiero (4,(140) Instituto de F\'isica de Cantabria,1
+G. Rodighiero (4,Murcia,1
+G. Rodighiero (4,Campus Muralla del Mar,1
+G. Rodighiero (4,(144) CEA Saclay,1
+G. Rodighiero (4,Wilberforce Road,1
+G. Rodighiero (4,Centre for Mathematical Sciences,1
+G. Rodighiero (4,(155) DAMTP,1
+G. Rodighiero (4,South Africa,1
+G. Rodighiero (4,7535,1
+G. Rodighiero (4,Cape Town,1
+G. Rodighiero (4,Bellville,1
+G. Rodighiero (4,University of the Western Cape,1
+G. Rodighiero (4,(154) Department of Physics,1
+G. Rodighiero (4,Victoria 3122,1
+G. Rodighiero (4,Hawthorn,1
+G. Rodighiero (4,Swinburne University of Technology,1
+G. Rodighiero (4,(153) Centre for Astrophysics \& Supercomputing,1
+G. Rodighiero (4,Melbourne,1
+G. Rodighiero (4,c/ Via Lactea s/n,1
+G. Rodighiero (4,(151) Serco for European Space Agency (ESA),1
+G. Rodighiero (4,20014 Turku,1
+G. Rodighiero (4,University of Turku,1
+G. Rodighiero (4,Vesilinnantie 5,1
+G. Rodighiero (4,(150) Department of Physics,1
+G. Rodighiero (4,44780 Bochum,1
+G. Rodighiero (4,German Centre for Cosmological Lensing (GCCL),1
+G. Rodighiero (4,Astronomical Institute (AIRUB),1
+G. Rodighiero (4,Faculty of Physics,1
+G. Rodighiero (4,(149) Ruhr University Bochum,1
+G. Rodighiero (4,1200 E. California Blvd.,1
+G. Rodighiero (4,(148) Caltech/IPAC,1
+G. Rodighiero (4,Avda. Francisco Sanchez,1
+G. Rodighiero (4,Spain. Departamento de Astrof\'i sica de la Universidad de La Laguna,1
+G. Rodighiero (4,La Laguna 38200,1
+G. Rodighiero (4,(152) ARC Centre of Excellence for Dark Matter Particle Physics,1
+G. Rodighiero (4,162 5th Avenue,1
+G. Rodighiero (4,USA),1
+G. Rodighiero (4,NY,1
+G. Rodighiero (4,New York,1
+G. Rodighiero (4,10010,1
+G. Rodighiero (4,Edificio G. Marconi,1
+G. Rodighiero (4,2 - c/o Dipartimento di Fisica,1
+G. Rodighiero (4,Piazzale Aldo Moro,1
+G. Rodighiero (4,(88) INFN-Sezione di Roma,1
+G. Rodighiero (4,53121 Bonn,1
+G. Rodighiero (4,"Auf dem H\""ugel 71",1
+G. Rodighiero (4,"Argelander-Institut f\""ur Astronomie",1
+G. Rodighiero (4,"(87) Universit\""at Bonn",1
+G. Rodighiero (4,School of Computer Science,1
+G. Rodighiero (4,(86) University of Applied Sciences,1
+G. Rodighiero (4,21 avenue Pierre de Coubertin 69627 Villeurbanne Cedex,1
+G. Rodighiero (4,(85) Centre de Calcul de l'IN2P3/CNRS,1
+G. Rodighiero (4,United Kingdom,1
+G. Rodighiero (4,Macclesfield SK11 9FT,1
+G. Rodighiero (4,Universidad Polit\'ecnica de Cartagena,1
+G. Rodighiero (4,Jodrell Bank,1
+G. Rodighiero (4,(84) SKAO,1
+G. Rodighiero (4,(83) Laboratoire d'etude de l'Univers et des phenomenes eXtremes,1
+G. Rodighiero (4,(82) Helsinki Institute of Physics,1
+G. Rodighiero (4,P.O. Box 64,1
+G. Rodighiero (4,(81) Department of Physics,1
+G. Rodighiero (4,CH-1211 Gen\`eve 4,1
+G. Rodighiero (4,24 quai Ernest-Ansermet,1
+G. Rodighiero (4,Centre for Astroparticle Physics,1
+G. Rodighiero (4,D\'epartement de Physique Th\'eorique,1
+G. Rodighiero (4,(80) Universit\'e de Gen\`eve,1
+G. Rodighiero (4,Helsinki Institute of Physics,1
+G. Rodighiero (4,(79) Department of Physics,1
+G. Rodighiero (4,London WC1E 6BT,1
+G. Rodighiero (4,Gower Street,1
+G. Rodighiero (4,Lower Withington,1
+G. Rodighiero (4,31401 Toulouse Cedex 9,1
+G. Rodighiero (4,18 avenue Edouard Belin,1
+G. Rodighiero (4,(101) Centre National d'Etudes Spatiales -- Centre spatial de Toulouse,1
+G. Rodighiero (4,Ontario N2L 2Y5,1
+G. Rodighiero (4,(100) Perimeter Institute for Theoretical Physics,1
+G. Rodighiero (4,(99) Department of Physics,1
+G. Rodighiero (4,(98) Waterloo Centre for Astrophysics,1
+G. Rodighiero (4,Jagtvej 155,1
+G. Rodighiero (4,Niels Bohr Institute,1
+G. Rodighiero (4,(97) DARK,1
+G. Rodighiero (4,Technology,1
+G. Rodighiero (4,The Barcelona Institute of Science,1
+G. Rodighiero (4,(96) Institut de F\'isica d'Altes Energies (IFAE),1
+G. Rodighiero (4,(95) Telespazio UK S.L. for European Space Agency (ESA),1
+G. Rodighiero (4,(89) Department of Physics,1
+G. Rodighiero (4,Laboratory of Astrophysics,1
+G. Rodighiero (4,(94) Institute of Physics,1
+G. Rodighiero (4,98bis Boulevard Arago,1
+G. Rodighiero (4,(93) Institut d'Astrophysique de Paris,1
+G. Rodighiero (4,School of Engineering,1
+G. Rodighiero (4,(92) University of Applied Sciences,1
+G. Rodighiero (4,Berkeley,1
+G. Rodighiero (4,CPB-IN2P3,1
+G. Rodighiero (4,IRL2007,1
+G. Rodighiero (4,Centre Pierre Bin\'etruy,1
+G. Rodighiero (4,(91) CNRS-UCB International Research Laboratory,1
+G. Rodighiero (4,75013 Paris,1
+G. Rodighiero (4,Astroparticule et Cosmologie,1
+G. Rodighiero (4,(90) Universit\'e Paris Cit\'e,1
+G. Rodighiero (4,Institute for Computational Cosmology,1
+G. Rodighiero (4,Ecole Polytechnique F\'ed\'erale de Lausanne (EPFL),1
+G. Rodighiero (4,(68) INFN-Sezione di Milano,1
+G. Rodighiero (4,Universit\`a degli Studi di Milano,1
+G. Rodighiero (4,"(67) Dipartimento di Fisica ""Aldo Pontremoli""",1
+G. Rodighiero (4,Giessenbachstr. 1,1
+G. Rodighiero (4,(66) Max Planck Institute for Extraterrestrial Physics,1
+G. Rodighiero (4,40126 Bologna,1
+G. Rodighiero (4,Via Irnerio 46,1
+G. Rodighiero (4,(65) INFN-Bologna,1
+G. Rodighiero (4,00133 Roma,1
+G. Rodighiero (4,via del Politecnico snc,1
+G. Rodighiero (4,Italian Space Agency,1
+G. Rodighiero (4,(64) Space Science Data Center,1
+G. Rodighiero (4,CPPM,1
+G. Rodighiero (4,(63) Aix-Marseille Universit\'e,1
+G. Rodighiero (4,University College London,1
+G. Rodighiero (4,ch. d'Ecogia 16,1
+G. Rodighiero (4,University of Geneva,1
+G. Rodighiero (4,(61) Department of Astronomy,1
+G. Rodighiero (4,1749-016 Lisboa,1
+G. Rodighiero (4,(60) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+G. Rodighiero (4,PT1749-016 Lisboa,1
+G. Rodighiero (4,Edif\'icio C8,1
+G. Rodighiero (4,(59) Departamento de F\'isica,1
+G. Rodighiero (4,69622 Villeurbanne,1
+G. Rodighiero (4,4 rue Enrico Fermi,1
+G. Rodighiero (4,IUF,1
+G. Rodighiero (4,(58) UCB Lyon 1,1
+G. Rodighiero (4,08010 Barcelona,1
+G. Rodighiero (4,Passeig de Llu\'is Companys 23,1
+G. Rodighiero (4,(57) Instituci\'o Catalana de Recerca i Estudis Avan\c{c}ats (ICREA),1
+G. Rodighiero (4,(62) INFN-Padova,1
+G. Rodighiero (4,(78) Department of Physics,1
+G. Rodighiero (4,MD 20771,1
+G. Rodighiero (4,Greenbelt,1
+G. Rodighiero (4,(77) NASA Goddard Space Flight Center,1
+G. Rodighiero (4,69117 Heidelberg,1
+G. Rodighiero (4,"K\""onigstuhl 17",1
+G. Rodighiero (4,"(76) Max-Planck-Institut f\""ur Astronomie",1
+G. Rodighiero (4,75014 Paris,1
+G. Rodighiero (4,98 bis boulevard Arago,1
+G. Rodighiero (4,UMR 7095,1
+G. Rodighiero (4,(75) Institut d'Astrophysique de Paris,1
+G. Rodighiero (4,(74) Cosmic Dawn Center (DAWN),1
+G. Rodighiero (4,2800 Kgs. Lyngby,1
+G. Rodighiero (4,Elektrovej 327,1
+G. Rodighiero (4,(69) Institute of Theoretical Astrophysics,1
+G. Rodighiero (4,69181 Leimen,1
+G. Rodighiero (4,Goethestr. 17,1
+G. Rodighiero (4,(72) Felix Hormuth Engineering,1
+G. Rodighiero (4,LA1 4YB,1
+G. Rodighiero (4,Lancaster,1
+G. Rodighiero (4,Lancaster University,1
+G. Rodighiero (4,(71) Department of Physics,1
+G. Rodighiero (4,91109,1
+G. Rodighiero (4,CA,1
+G. Rodighiero (4,4800 Oak Grove Drive,1
+G. Rodighiero (4,(70) Jet Propulsion Laboratory,1
+G. Rodighiero (4,Norway,1
+G. Rodighiero (4,0315 Oslo,1
+G. Rodighiero (4,P.O. Box 1029 Blindern,1
+G. Rodighiero (4,University of Oslo,1
+G. Rodighiero (4,(73) Technical University of Denmark,1
+G. Rodighiero (4,10900 Euclid Avenue,1
+G. Rodighiero (4,Case Western Reserve University,1
+G. Rodighiero (4,(129) CERCA/ISO,1
+G. Rodighiero (4,28049 Madrid,1
+G. Rodighiero (4,Campus de Cantoblanco,1
+G. Rodighiero (4,(128) Instituto de F\'isica Te\'orica UAM-CSIC,1
+G. Rodighiero (4,Bologna,1
+G. Rodighiero (4,Via Magnanelli 2,1
+G. Rodighiero (4,Big Data e Quantum Computing,1
+G. Rodighiero (4,(127) ICSC - Centro Nazionale di Ricerca in High Performance Computing,1
+G. Rodighiero (4,LITL,1
+G. Rodighiero (4,Universit\'e Catholique de Lille,1
+G. Rodighiero (4,Junia,1
+G. Rodighiero (4,(126) ICL,1
+G. Rodighiero (4,(102) Institute of Space Science,1
+G. Rodighiero (4,(125) INAF-Osservatorio Astronomico di Brera,1
+G. Rodighiero (4,23807 Merate,1
+G. Rodighiero (4,via Emilio Bianchi 46,1
+G. Rodighiero (4,(124) INAF - Osservatorio Astronomico di Brera,1
+G. Rodighiero (4,(123) Aurora Technology for European Space Agency (ESA),1
+G. Rodighiero (4,75013,1
+G. Rodighiero (4,5 Rue Thomas Mann,1
+G. Rodighiero (4,(122) Universit\'e Paris-Cit\'e,1
+G. Rodighiero (4,LERMA,1
+G. Rodighiero (4,(121) Universit\'e PSL,1
+G. Rodighiero (4,06304 Nice cedex 4,1
+G. Rodighiero (4,CS 34229,1
+G. Rodighiero (4,Bd de l'Observatoire,1
+G. Rodighiero (4,Laboratoire Lagrange,1
+G. Rodighiero (4,Observatoire de la C\^ote d'Azur,1
+G. Rodighiero (4,INFN-Sezione di Genova,1
+G. Rodighiero (4,(139) Departamento F\'isica Aplicada,1
+G. Rodighiero (4,Irvine CA 92697,1
+G. Rodighiero (4,University of California Irvine,1
+G. Rodighiero (4,(138) Department of Physics \& Astronomy,1
+G. Rodighiero (4,1200 E California Blvd,1
+G. Rodighiero (4,(137) California Institute of Technology,1
+G. Rodighiero (4,34131 Trieste,1
+G. Rodighiero (4,Via Tiepolo 11,1
+G. Rodighiero (4,Universit\`a di Trieste,1
+G. Rodighiero (4,(136) Dipartimento di Fisica - Sezione di Astronomia,1
+G. Rodighiero (4,Japan,1
+G. Rodighiero (4,Chiba 277-8583,1
+G. Rodighiero (4,Kashiwa,1
+G. Rodighiero (4,The University of Tokyo,1
+G. Rodighiero (4,Cleveland,1
+G. Rodighiero (4,Kavli IPMU (WPI),1
+G. Rodighiero (4,(135) Center for Data-Driven Discovery,1
+G. Rodighiero (4,67000 Strasbourg,1
+G. Rodighiero (4,UMR 7550,1
+G. Rodighiero (4,Observatoire astronomique de Strasbourg,1
+G. Rodighiero (4,(134) Universit\'e de Strasbourg,1
+G. Rodighiero (4,(133) Departamento de F\'isica Fundamental. Universidad de Salamanca. Plaza de la Merced s/n. 37008 Salamanca,1
+G. Rodighiero (4,(132) Laboratoire Univers et Th\'eorie,1
+G. Rodighiero (4,Karl-Schwarzschild-Str. 1,1
+G. Rodighiero (4,"(131) Max-Planck-Institut f\""ur Astrophysik",1
+G. Rodighiero (4,James-Franck-Str. 1,1
+G. Rodighiero (4,Physics Department,1
+G. Rodighiero (4,TUM School of Natural Sciences,1
+G. Rodighiero (4,(130) Technical University of Munich,1
+G. Rodighiero (4,OH 44106,1
+G. Rodighiero (4,UTIAS,1
+G. Rodighiero (4,"(109) Universit\""at Innsbruck",1
+G. Rodighiero (4,Chile,1
+G. Rodighiero (4,Santiago,1
+G. Rodighiero (4,Blanco Encalada 2008,1
+G. Rodighiero (4,Universidad de Chile,1
+G. Rodighiero (4,FCFM,1
+G. Rodighiero (4,(108) Departamento de F\'isica,1
+G. Rodighiero (4,Lebanon,1
+G. Rodighiero (4,Beirut,1
+G. Rodighiero (4,Faculty of Sciences,1
+G. Rodighiero (4,(107) Universit\'e St Joseph,1
+G. Rodighiero (4,31400 Toulouse,1
+G. Rodighiero (4,14 Av. Edouard Belin,1
+G. Rodighiero (4,UPS,1
+G. Rodighiero (4,(120) Universit\'e C\^ote d'Azur,1
+G. Rodighiero (4,(106) Institut de Recherche en Astrophysique et Plan\'etologie (IRAP),1
+G. Rodighiero (4,69120 Heidelberg,1
+G. Rodighiero (4,Philosophenweg 16,1
+G. Rodighiero (4,University of Heidelberg,1
+G. Rodighiero (4,"(105) Institut f\""ur Theoretische Physik",1
+G. Rodighiero (4,38206 La Laguna,1
+G. Rodighiero (4,(104) Universidad de La Laguna,1
+G. Rodighiero (4,28006 Madrid,1
+G. Rodighiero (4,Calle Serrano 117,1
+G. Rodighiero (4,(103) Consejo Superior de Investigaciones Cientificas,1
+G. Rodighiero (4,Romania,1
+G. Rodighiero (4,077125,1
+G. Rodighiero (4,Ilfov,1
+G. Rodighiero (4,nr. 409 M\u{a}gurele,1
+G. Rodighiero (4,Str. Atomistilor,1
+G. Rodighiero (4,Universit\'e de Toulouse,1
+G. Rodighiero (4,Via Piero Gobetti 101,1
+G. Rodighiero (4,Istituto di Radioastronomia,1
+G. Rodighiero (4,(119) INAF,1
+G. Rodighiero (4,Sezione di Ferrara,1
+G. Rodighiero (4,(118) Istituto Nazionale di Fisica Nucleare,1
+G. Rodighiero (4,Universit\`a degli Studi di Ferrara,1
+G. Rodighiero (4,(117) Dipartimento di Fisica e Scienze della Terra,1
+G. Rodighiero (4,Plaza del Hospital 1,1
+G. Rodighiero (4,Departamento de Electr\'onica y Tecnolog\'ia de Computadoras,1
+G. Rodighiero (4,(116) Universidad Polit\'ecnica de Cartagena,1
+G. Rodighiero (4,Jagtvej 128,1
+G. Rodighiero (4,(115) Niels Bohr Institute,1
+G. Rodighiero (4,(114) Cosmic Dawn Center (DAWN),1
+G. Rodighiero (4,1349-018 Lisboa,1
+G. Rodighiero (4,"Institut f\""ur Astro- und Teilchenphysik",1
+G. Rodighiero (4,(113) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+G. Rodighiero (4,Analysis Center,1
+G. Rodighiero (4,(112) Infrared Processing,1
+G. Rodighiero (4,Leioa-Bilbao,1
+G. Rodighiero (4,Sede Bld 48940,1
+G. Rodighiero (4,University Science Park,1
+G. Rodighiero (4,(111) Satlantis,1
+G. Rodighiero (4,Barcelona,1
+G. Rodighiero (4,08860 Castelldefels,1
+G. Rodighiero (4,Campus UPC,1
+G. Rodighiero (4,Edifici RDIT,1
+G. Rodighiero (4,(110) Institut d'Estudis Espacials de Catalunya (IEEC),1
+G. Rodighiero (4,Austria,1
+G. Rodighiero (4,6020 Innsbruck,1
+G. Rodighiero (4,Technikerstr. 25/8,1
+G. Rodighiero (4,Tapada da Ajuda,1
+G. Rodighiero (4,08028 Barcelona,1
+G. Rodighiero (4,(9) ESAC/ESA,1
+G. Rodighiero (4,Via Gobetti 93/2,1
+G. Rodighiero (4,Universit\`a di Bologna,1
+G. Rodighiero (4,(8) Dipartimento di Fisica e Astronomia,1
+G. Rodighiero (4,LAM,1
+G. Rodighiero (4,(7) Aix-Marseille Universit\'e,1
+G. Rodighiero (4,Oxford OX1 3RH,1
+G. Rodighiero (4,Keble Road,1
+G. Rodighiero (4,Oxford University,1
+G. Rodighiero (4,(6) Department of Physics,1
+G. Rodighiero (4,35122 Padova,1
+G. Rodighiero (4,Via dell'Osservatorio 5,1
+G. Rodighiero (4,(5) INAF-Osservatorio Astronomico di Padova,1
+G. Rodighiero (4,Universit\`a di Padova,1
+G. Rodighiero (4,Via Alfonso Corti 12,1
+G. Rodighiero (4,(3) INAF-IASF Milano,1
+G. Rodighiero (4,Via Piero Gobetti 93/3,1
+G. Rodighiero (4,(2) INAF-Osservatorio di Astrofisica e Scienza dello Spazio di Bologna,1
+G. Rodighiero (4,via Piero Gobetti 93/2,1
+G. Rodighiero (4,"N. A. Walton (170) ((1) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+G. Rodighiero (4,P. Vielzeuf (63),1
+G. Rodighiero (4,G. Verza (173),1
+G. Rodighiero (4,A. Venhola (172),1
+G. Rodighiero (4,C. Valieri (32),1
+G. Rodighiero (4,M. Tucci (61),1
+G. Rodighiero (4,62),1
+G. Rodighiero (4,A. Troja (4,1
+G. Rodighiero (4,10),1
+G. Rodighiero (4,34,1
+G. Rodighiero (4,"(4) Dipartimento di Fisica e Astronomia ""G. Galilei""",1
+G. Rodighiero (4,CSIC),1
+G. Rodighiero (4,(17) Institute of Space Sciences (ICE,1
+G. Rodighiero (4,Universidad de La Laguna (ULL),1
+G. Rodighiero (4,(16) Instituto de Astrof\'isica de Canarias (IAC),1
+G. Rodighiero (4,00100 Roma,1
+G. Rodighiero (4,100,1
+G. Rodighiero (4,via del Fosso del Cavaliere,1
+G. Rodighiero (4,(15) INAF-Istituto di Astrofisica e Planetologia Spaziali,1
+G. Rodighiero (4,"81679 M\""unchen",1
+G. Rodighiero (4,Scheinerstrasse 1,1
+G. Rodighiero (4,"Ludwig-Maximilians-Universit\""at M\""unchen",1
+G. Rodighiero (4,"Fakult\""at f\""ur Physik",1
+G. Rodighiero (4,"(14) Universit\""ats-Sternwarte M\""unchen",1
+G. Rodighiero (4,80131 Napoli,1
+G. Rodighiero (4,Camino Bajo del Castillo,1
+G. Rodighiero (4,(13) INAF-Osservatorio Astronomico di Capodimonte,1
+G. Rodighiero (4,Gif-sur-Yvette,1
+G. Rodighiero (4,91191,1
+G. Rodighiero (4,AIM,1
+G. Rodighiero (4,(12) Universit\'e Paris-Saclay,1
+G. Rodighiero (4,MN 55455,1
+G. Rodighiero (4,Minneapolis,1
+G. Rodighiero (4,116 Church St SE,1
+G. Rodighiero (4,University of Minnesota,1
+G. Rodighiero (4,(11) Minnesota Institute for Astrophysics,1
+G. Rodighiero (4,(10) INAF-Osservatorio Astronomico di Brera,1
+G. Rodighiero (4,Madrid,1
+G. Rodighiero (4,28692 Villanueva de la Ca\~nada,1
+G. Rodighiero (4,Urb. Villafranca del Castillo,1
+G. Rodighiero (4,s/n.,1
+G. Rodighiero (4,Via Moiariello 16,1
+G. Rodighiero (4,S. Tosi (33,1
+G. Rodighiero (4,R. Teyssier (171),1
+G. Rodighiero (4,G. Testera (34),1
+G. Rodighiero (4,C. Tao (63),1
+G. Rodighiero (4,K. Tanidis (6),1
+G. Rodighiero (4,L. C. Smith (170),1
+G. Rodighiero (4,F. Shankar (169),1
+G. Rodighiero (4,44),1
+G. Rodighiero (4,E. Sellentin (168,1
+G. Rodighiero (4,88),1
+G. Rodighiero (4,D. Sciotti (48,1
+G. Rodighiero (4,A. Schneider (157),1
+G. Rodighiero (4,30),1
+G. Rodighiero (4,127,1
+G. Rodighiero (4,E. Sarpa (31,1
+G. Rodighiero (4,M. Sahl\'en (167),1
+G. Rodighiero (4,166),1
+G. Rodighiero (4,141,1
+G. Rodighiero (4,S. Sacquegna (142,1
+G. Rodighiero (4,5),1
+G. Rodighiero (4,D. B. Sanders (50),1
+G. Rodighiero (4,(48) INAF-Osservatorio Astronomico di Roma,1
+G. Rodighiero (4,52056 Aachen,1
+G. Rodighiero (4,RWTH Aachen University,1
+G. Rodighiero (4,Cosmology (TTK),1
+G. Rodighiero (4,(47) Institute for Theoretical Particle Physics,1
+G. Rodighiero (4,C. Albareda s/n,1
+G. Rodighiero (4,(46) Port d'Informaci\'o Cient\'ifica,1
+G. Rodighiero (4,28040 Madrid,1
+G. Rodighiero (4,Avenida Complutense 40,1
+G. Rodighiero (4,Medioambientales y Tecnol\'ogicas (CIEMAT),1
+G. Rodighiero (4,(45) Centro de Investigaciones Energ\'eticas,1
+G. Rodighiero (4,2333 CC Leiden,1
+G. Rodighiero (4,(44) Leiden Observatory,1
+G. Rodighiero (4,Niels Bohrweg 2,1
+G. Rodighiero (4,Carrer de Can Magrans,1
+G. Rodighiero (4,2201 AZ Noordwijk,1
+G. Rodighiero (4,Keplerlaan 1,1
+G. Rodighiero (4,(42) European Space Agency/ESTEC,1
+G. Rodighiero (4,10025 Pino Torinese (TO),1
+G. Rodighiero (4,Via Osservatorio 20,1
+G. Rodighiero (4,(41) INAF-Osservatorio Astrofisico di Torino,1
+G. Rodighiero (4,(40) INFN-Sezione di Torino,1
+G. Rodighiero (4,Universit\`a degli Studi di Torino,1
+G. Rodighiero (4,(39) Dipartimento di Fisica,1
+G. Rodighiero (4,Karl-Schwarzschild-Str. 2,1
+G. Rodighiero (4,(38) European Southern Observatory,1
+G. Rodighiero (4,4150-007 Porto,1
+G. Rodighiero (4,Rua do Campo de Alegre,1
+G. Rodighiero (4,(37) Faculdade de Ci\^encias da Universidade do Porto,1
+G. Rodighiero (4,PT4150-762 Porto,1
+G. Rodighiero (4,(43) Institute Lorentz,1
+G. Rodighiero (4,Mart\'i i Franqu\`es 1,1
+G. Rodighiero (4,Universitat de Barcelona (IEEC-UB),1
+G. Rodighiero (4,(56) Institut de Ci\`encies del Cosmos (ICCUB),1
+G. Rodighiero (4,F-69100,1
+G. Rodighiero (4,Villeurbanne,1
+G. Rodighiero (4,UMR 5822,1
+G. Rodighiero (4,(55) Universit\'e Claude Bernard Lyon 1,1
+G. Rodighiero (4,Roma,1
+G. Rodighiero (4,00044 Frascati,1
+G. Rodighiero (4,Largo Galileo Galilei 1,1
+G. Rodighiero (4,(54) European Space Agency/ESRIN,1
+G. Rodighiero (4,Manchester M13 9PL,1
+G. Rodighiero (4,Oxford Road,1
+G. Rodighiero (4,University of Manchester,1
+G. Rodighiero (4,Via Frascati 33,1
+G. Rodighiero (4,Edinburgh EH9 3HJ,1
+G. Rodighiero (4,Blackford Hill,1
+G. Rodighiero (4,Royal Observatory,1
+G. Rodighiero (4,University of Edinburgh,1
+G. Rodighiero (4,(52) Institute for Astronomy,1
+G. Rodighiero (4,38205 La Laguna,1
+G. Rodighiero (4,V\'ia L\'actea,1
+G. Rodighiero (4,(51) Instituto de Astrof\'isica de Canarias,1
+G. Rodighiero (4,HI 96822,1
+G. Rodighiero (4,Honolulu,1
+G. Rodighiero (4,2680 Woodlawn Drive,1
+G. Rodighiero (4,University of Hawaii,1
+G. Rodighiero (4,(50) Institute for Astronomy,1
+G. Rodighiero (4,(49) INFN section of Naples,1
+G. Rodighiero (4,00078 Monteporzio Catone,1
+G. Rodighiero (4,(53) Jodrell Bank Centre for Astrophysics,1
+G. Rodighiero (4,Centrale Lille,1
+G. Rodighiero (4,(26) Univ. Lille,1
+G. Rodighiero (4,9700 AV Groningen,1
+G. Rodighiero (4,PO Box 800,1
+G. Rodighiero (4,University of Groningen,1
+G. Rodighiero (4,(25) Kapteyn Astronomical Institute,1
+G. Rodighiero (4,Groningen,1
+G. Rodighiero (4,9747 AD,1
+G. Rodighiero (4,Landleven 12,1
+G. Rodighiero (4,(24) SRON Netherlands Institute for Space Research,1
+G. Rodighiero (4,"(23) Dipartimento di Fisica e Astronomia ""Augusto Righi"" - Alma Mater Studiorum Universit\`a di Bologna",1
+G. Rodighiero (4,CH-1290 Versoix,1
+G. Rodighiero (4,Ecole Polytechnique F\'ed\'erale de Lausanne,1
+G. Rodighiero (4,Laboratory for Galaxy Evolution,1
+G. Rodighiero (4,CAUP,1
+G. Rodighiero (4,50019 Sesto Fiorentino,1
+G. Rodighiero (4,via G. Sansone 1,1
+G. Rodighiero (4,Universit\`a di Firenze,1
+G. Rodighiero (4,(21) Dipartimento di Fisica e Astronomia,1
+G. Rodighiero (4,50125,1
+G. Rodighiero (4,Largo E. Fermi 5,1
+G. Rodighiero (4,(20) INAF-Osservatorio Astrofisico di Arcetri,1
+G. Rodighiero (4,MK7 6AA,1
+G. Rodighiero (4,Milton Keynes,1
+G. Rodighiero (4,The Open University,1
+G. Rodighiero (4,(19) School of Physical Sciences,1
+G. Rodighiero (4,34143 Trieste,1
+G. Rodighiero (4,Via G. B. Tiepolo 11,1
+G. Rodighiero (4,(18) INAF-Osservatorio Astronomico di Trieste,1
+G. Rodighiero (4,08193 Barcelona,1
+G. Rodighiero (4,(22) Institute of Physics,1
+G. Rodighiero (4,Universidade do Porto,1
+G. Rodighiero (4,(36) Instituto de Astrof\'isica e Ci\^encias do Espa\c{c}o,1
+G. Rodighiero (4,University Federico II,1
+G. Rodighiero (4,"(35) Department of Physics ""E. Pancini""",1
+G. Rodighiero (4,(34) INFN-Sezione di Genova,1
+G. Rodighiero (4,Universit\`a di Genova,1
+G. Rodighiero (4,(33) Dipartimento di Fisica,1
+G. Rodighiero (4,(32) INFN-Sezione di Bologna,1
+G. Rodighiero (4,34136 Trieste TS,1
+G. Rodighiero (4,Via Bonomea 265,1
+G. Rodighiero (4,International School for Advanced Studies,1
+G. Rodighiero (4,(31) SISSA,1
+G. Rodighiero (4,34127 Trieste TS,1
+G. Rodighiero (4,Via Valerio 2,1
+G. Rodighiero (4,UMR 9189 CRIStAL,1
+G. Rodighiero (4,(30) INFN,1
+G. Rodighiero (4,34151 Trieste,1
+G. Rodighiero (4,via Beirut 2,1
+G. Rodighiero (4,Institute for Fundamental Physics of the Universe,1
+G. Rodighiero (4,(29) IFPU,1
+G. Rodighiero (4,GU2 7XH,1
+G. Rodighiero (4,Surrey,1
+G. Rodighiero (4,Guildford,1
+G. Rodighiero (4,University of Surrey,1
+G. Rodighiero (4,Physics,1
+G. Rodighiero (4,(28) School of Mathematics,1
+G. Rodighiero (4,Orsay,1
+G. Rodighiero (4,91405,1
+G. Rodighiero (4,Institut d'astrophysique spatiale,1
+G. Rodighiero (4,(27) Universit\'e Paris-Saclay,1
+G. Rodighiero (4,Sezione di Trieste,1
