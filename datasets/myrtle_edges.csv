@@ -1,0 +1,94 @@
+source,target,weight
+Harry Potter,Ronald Weasley,10448
+Harry Potter,Hermione Granger,9019
+Hermione Granger,Ronald Weasley,6593
+Harry Potter,Severus Snape,2010
+Draco Malfoy,Harry Potter,1306
+Ginevra Weasley,Harry Potter,1011
+Ginevra Weasley,Ronald Weasley,573
+Cedric Diggory,Harry Potter,544
+Draco Malfoy,Ronald Weasley,467
+Ginevra Weasley,Hermione Granger,404
+Gregory Goyle,Vincent Crabbe,386
+Ronald Weasley,Severus Snape,385
+Argus Filch,Harry Potter,323
+Harry Potter,Percy Weasley,323
+Gilderoy Lockhart,Harry Potter,306
+Draco Malfoy,Vincent Crabbe,288
+Draco Malfoy,Gregory Goyle,279
+Harry Potter,Nymphadora Tonks,274
+Hermione Granger,Severus Snape,262
+Draco Malfoy,Hermione Granger,256
+Gregory Goyle,Harry Potter,234
+Harry Potter,Vincent Crabbe,229
+Draco Malfoy,Severus Snape,222
+Percy Weasley,Ronald Weasley,206
+Gilderoy Lockhart,Ronald Weasley,153
+Harry Potter,Myrtle Warren,130
+Gregory Goyle,Ronald Weasley,122
+Harry Potter,Peeves,120
+Ronald Weasley,Vincent Crabbe,109
+Argus Filch,Severus Snape,101
+Gilderoy Lockhart,Hermione Granger,89
+Hermione Granger,Percy Weasley,82
+Argus Filch,Ronald Weasley,69
+Gregory Goyle,Hermione Granger,67
+Ginevra Weasley,Percy Weasley,60
+Argus Filch,Hermione Granger,60
+Hermione Granger,Vincent Crabbe,58
+Hermione Granger,Nymphadora Tonks,50
+Nymphadora Tonks,Ronald Weasley,44
+Draco Malfoy,Ginevra Weasley,44
+Myrtle Warren,Ronald Weasley,44
+Argus Filch,Peeves,43
+Hermione Granger,Myrtle Warren,41
+Gilderoy Lockhart,Severus Snape,36
+Ginevra Weasley,Nymphadora Tonks,36
+Gilderoy Lockhart,Ginevra Weasley,35
+Cedric Diggory,Ronald Weasley,35
+Argus Filch,Draco Malfoy,29
+Cedric Diggory,Hermione Granger,29
+Peeves,Ronald Weasley,26
+Hermione Granger,Peeves,22
+Myrtle Warren,Olive Hornby,16
+Draco Malfoy,Percy Weasley,16
+Peeves,Severus Snape,14
+Nymphadora Tonks,Severus Snape,13
+Draco Malfoy,Nymphadora Tonks,12
+Myrtle Warren,Peeves,10
+Ginevra Weasley,Severus Snape,10
+Armando Dippet,Harry Potter,9
+Draco Malfoy,Gilderoy Lockhart,8
+Draco Malfoy,Peeves,8
+Gregory Goyle,Severus Snape,6
+Peeves,Percy Weasley,6
+Argus Filch,Vincent Crabbe,5
+Argus Filch,Ginevra Weasley,4
+Draco Malfoy,Myrtle Warren,4
+Cedric Diggory,Draco Malfoy,4
+Cedric Diggory,Myrtle Warren,4
+Gregory Goyle,Myrtle Warren,4
+Severus Snape,Vincent Crabbe,4
+Percy Weasley,Severus Snape,3
+Harry Potter,Olive Hornby,3
+Ginevra Weasley,Myrtle Warren,3
+Gilderoy Lockhart,Myrtle Warren,3
+Armando Dippet,Olive Hornby,3
+Myrtle Warren,Severus Snape,3
+Ginevra Weasley,Vincent Crabbe,3
+Argus Filch,Myrtle Warren,3
+Gilderoy Lockhart,Vincent Crabbe,2
+Argus Filch,Gilderoy Lockhart,2
+Armando Dippet,Myrtle Warren,2
+Gilderoy Lockhart,Gregory Goyle,2
+Myrtle Warren,Percy Weasley,2
+Myrtle Warren,Nymphadora Tonks,2
+Myrtle Warren,Vincent Crabbe,1
+Cedric Diggory,Vincent Crabbe,1
+Cedric Diggory,Ginevra Weasley,1
+Cedric Diggory,Gregory Goyle,1
+Argus Filch,Cedric Diggory,1
+Argus Filch,Gregory Goyle,1
+Argus Filch,Percy Weasley,1
+Ginevra Weasley,Olive Hornby,1
+Gilderoy Lockhart,Percy Weasley,1
