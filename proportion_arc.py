@@ -459,6 +459,7 @@ if __name__ == "__main__":
     # nodes, arcs = read_csv("datasets/harry_potter_house_interactions.csv")
     print(f"Original graph. {len(nodes)} nodes and {len(arcs)} edges")
     
+    nodes, arcs = read_csv("datasets/arXiv_final_50.csv")
     
     grouped_proportion_arc_chart(nodes, arcs)
     # convert_to_basic_arc(nodes, arcs)
