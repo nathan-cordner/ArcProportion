@@ -16,11 +16,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from helper import auto_resize, draw_arc, shade_arc
 
-from count_crossing import count_graph_crossings, local_adjusting
+from count_crossing import count_graph_crossings, local_adjusting, cluster_local_adjusting
 from arc_crossing import minimize_crossings
 
 # test code
 from basic_arc import basic_arc_plot
+import time
 
 
 def proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "", x_label_padding: float = 1.05):
@@ -121,6 +122,8 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
     new_nodes = []
     new_arcs = []
     
+    clean_arcs = []
+    
     # Map new nodes back to old groups
     new_node_map = {}
     
@@ -138,9 +141,12 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
         
         new_nodes += [node1, node2]
         new_arcs += [(node1, node2, a[2])]
+        clean_arcs += [(node1, node2)]
         
         
-    new_nodes.sort()
+    new_nodes.sort() 
+        
+    print("Starting number of crossings:", count_graph_crossings(new_nodes, clean_arcs))
         
     # now reorder new_nodes based on list given in nodes
     
@@ -176,7 +182,7 @@ def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, 
 
 
 
-def grouped_node_order(node_groups, nodes, arcs, node_map):
+def local_search_grouped_node_order(node_groups, nodes, arcs, node_map):
     """
         node_groups:  labels of node clusters
         nodes:  cluster_label followed by integer
@@ -186,7 +192,7 @@ def grouped_node_order(node_groups, nodes, arcs, node_map):
     
     clean_arcs = [(a[0], a[1]) for a in arcs]
     
-    
+    # LOCAL SEARCH METHOD
     cur_crossings = count_graph_crossings(nodes, clean_arcs)
     # print(cur_crossings)
     
@@ -194,10 +200,33 @@ def grouped_node_order(node_groups, nodes, arcs, node_map):
     start_index = 0
     while start_index < len(nodes):
         start_index, cur_crossings = local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, node_map)
-       
+
+    return clean_arcs
     
-    # print(count_graph_crossings(nodes, clean_arcs))
+def local_adjusting_grouped_node_order(node_groups, nodes, arcs, node_map):
+    """
+        node_groups:  labels of node clusters
+        nodes:  cluster_label followed by integer
+        arcs:  shows edges and weights between individual nodes
+        node_map:  maps node labels back to node cluster labels
+    """
     
+    clean_arcs = [(a[0], a[1]) for a in arcs]
+    
+    # CLUSTER LOCAL ADJUSTING
+    
+    start_index = 0
+    while start_index < len(nodes):
+        end_index = start_index
+        cur_group = node_map[nodes[start_index]]
+        while end_index < len(nodes) and node_map[nodes[end_index]] == cur_group:
+            end_index += 1
+        
+        nodes = cluster_local_adjusting(start_index, end_index - 1, nodes = nodes, arcs = clean_arcs)
+        start_index = end_index
+    
+    return clean_arcs
+
 
 def node_cluster_order(nodes, arcs):
     """
@@ -227,7 +256,6 @@ def node_cluster_order(nodes, arcs):
     
     # return node order of smallest number of crossings
     return min(candidates)[1]
-
     
 def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "", x_label_padding: float = 1.05):
     """
@@ -242,6 +270,8 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
 
     """
     
+    start = time.time()
+    
     # Find total resource flow
     loc_totals = {x: 0 for x in nodes}
     for a in arcs:
@@ -249,17 +279,30 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
         loc_totals[a[1]] += a[2]   
     total = max(loc_totals.values())
     
+    
+    
     # compute clustered node order
     # print(nodes)
     nodes = node_cluster_order(nodes, arcs)
     # print(nodes)
+    stop = time.time()
+    # print("Cluster node order time:", stop - start)
+
     
     # Split nodes by arcs
     new_nodes, new_arcs, new_node_map = convert_to_basic_arc(nodes, arcs)
+    print(f"Transformed graph. {len(new_nodes)} nodes and {len(new_arcs)} edges")
+
     
     # Redo node order
-    grouped_node_order(nodes, new_nodes, new_arcs, new_node_map)
-    
+    clean_arcs = local_search_grouped_node_order(nodes, new_nodes, new_arcs, new_node_map)
+
+    stop = time.time()
+    print("Proportion Arc Crossing Reduction Time:", stop - start)
+    # print(new_nodes)
+    # print(clean_arcs)
+    print("Final number of crossings:", count_graph_crossings(new_nodes, clean_arcs))
+
     
     # Node groups shall be preserved 
     cur_node = new_node_map[new_nodes[0]]
@@ -273,9 +316,11 @@ def grouped_proportion_arc_chart(nodes, arcs, figsize = "auto", title: str = "",
     # print(nodes)
     assert(len(temp_nodes) == len(nodes)) # Sanity check
     
+    
     # reassign node order
     nodes = temp_nodes
     # print(nodes)
+    
     
     
     # Create rectangle widths using specified node order
@@ -402,11 +447,18 @@ if __name__ == "__main__":
     
     """
     
- 
+    # Test data
+    nodes = ["A", "B", "C"]
+    arcs = [("A", "B", 100),
+            ("A", "C", 300),
+            ("B", "C", 200)]
     
+ 
+    # nodes, arcs = read_csv("datasets/hp_top_ten.csv", dest_col="target", connections_col = "weight")
     # nodes, arcs = read_csv("datasets/power_grid.csv")
     # nodes, arcs = read_csv("datasets/harry_potter_house_interactions.csv")
-    nodes, arcs = read_csv("datasets/arXiv_arcs_25.csv")
+    print(f"Original graph. {len(nodes)} nodes and {len(arcs)} edges")
+    
     
     grouped_proportion_arc_chart(nodes, arcs)
     # convert_to_basic_arc(nodes, arcs)
