@@ -11,11 +11,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from helper import auto_resize, draw_arc, shade_arc
 
-from count_crossing import count_graph_crossings, local_adjusting
+from count_crossing import count_graph_crossings, local_adjusting, cluster_local_adjusting
 from arc_crossing import minimize_crossings
 
 # test code
 from basic_arc import basic_arc_plot
+import time
 
 
 def convert_to_cluster_arc(nodes, groups, group_dict, arcs):
@@ -72,7 +73,7 @@ def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, 
 
 
 
-def grouped_node_order(node_groups, nodes, arcs, node_map):
+def local_search_grouped_node_order(node_groups, nodes, arcs, node_map):
     """
         node_groups:  labels of node clusters
         nodes:  cluster_label followed by integer
@@ -91,6 +92,26 @@ def grouped_node_order(node_groups, nodes, arcs, node_map):
        
     
     # print(count_graph_crossings(nodes, clean_arcs))
+
+def local_adjusting_grouped_node_order(node_groups, nodes, arcs, node_map):
+    """
+        node_groups:  labels of node clusters
+        nodes:  cluster_label followed by integer
+        arcs:  shows edges and weights between individual nodes
+        node_map:  maps node labels back to node cluster labels
+    """
+        
+    # CLUSTER LOCAL ADJUSTING
+    
+    start_index = 0
+    while start_index < len(nodes):
+        end_index = start_index
+        cur_group = node_map[nodes[start_index]]
+        while end_index < len(nodes) and node_map[nodes[end_index]] == cur_group:
+            end_index += 1
+        
+        nodes = cluster_local_adjusting(start_index, end_index - 1, nodes = nodes, arcs = arcs)
+        start_index = end_index
     
 
 def node_cluster_order(groups, cluster_arcs):
@@ -122,7 +143,7 @@ def node_cluster_order(groups, cluster_arcs):
     return min(candidates)[1]
 
     
-def grouped_arc_chart(nodes, groups, group_dict, arcs, figsize = "auto", title: str = "", x_label_padding: float = 1.05):
+def grouped_arc_chart(nodes, groups, group_dict, arcs, crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
     """
     Inputs:
     -- nodes:  list of input nodes
@@ -131,6 +152,8 @@ def grouped_arc_chart(nodes, groups, group_dict, arcs, figsize = "auto", title: 
     -- arcs  list of tuples to specify arcs (undirected)
       -- Index 0:  label of node 1
       -- Index 1:  label of node 2
+    -- crossing_method:  LS for local search, LA for local adjusting
+
     
     Output: grouped arc chart showing connection from sources to destinations
 
@@ -154,10 +177,12 @@ def grouped_arc_chart(nodes, groups, group_dict, arcs, figsize = "auto", title: 
     #  print(groups)
     # print(nodes)
     
-    
     # Redo node order
-    grouped_node_order(groups, nodes, arcs, group_dict)
-    
+    if crossing_method == "LS":
+        local_search_grouped_node_order(groups, nodes, arcs, group_dict)
+    else:
+        local_adjusting_grouped_node_order(groups, nodes, arcs, group_dict)
+
     
     # Visualize with basic arc chart
     # TODO:  deliniate groups by color
@@ -216,15 +241,45 @@ if __name__ == "__main__":
         Total of each location = sum of arc weights where location is either source or dest
     
     """
-    nodes, groups, group_dict = read_nodes("datasets/myrtle_houses.csv")
         
+    """
+    # Example 1:  power grid groupings
+    nodes, groups, group_dict = read_nodes("datasets/power_grid_groups.csv")
+    arcs = read_edges("datasets/power_grid.csv") #, dest_col = "target")
+
+    color_dict = {"Western Europe": "#D55E00",
+                  "Central Europe": "#009E73",
+                  "Eastern Europe": "#0072B2"}
+    """
+
+
+    
+    # Example 2:  Myrtle Warren character interactions harry potter
+    
+    nodes, groups, group_dict = read_nodes("datasets/myrtle_houses.csv")
     arcs = read_edges("datasets/myrtle_edges.csv", dest_col = "target")
- 
+    
     color_dict = {"Gryffindor": "#D55E00",
                   "Slytherin": "#009E73",
                   "Hufflepuff": "#F0E442",
                   "Ravenclaw": "#0072B2",
                   "Other" : "#000000"}
+    """
+    
+    # Example 3:  characters with high interactions
+    
+    nodes, groups, group_dict = read_nodes("datasets/hp_character_houses.csv")
+    arcs = read_edges("datasets/hp_character_interactions.csv")
+
+    color_dict = {"Gryffindor": "#D55E00",
+                  "Slytherin": "#009E73",
+                  "Hufflepuff": "#F0E442",
+                  "Ravenclaw": "#0072B2",
+                  "Other" : "#000000"}
+    """
+    
+    print("Num nodes:", len(nodes))
+    print("Num edges:", len(arcs))
     
     # BEFORE
     print(f"Crossings before: {count_graph_crossings(nodes, arcs)}")
@@ -235,10 +290,12 @@ if __name__ == "__main__":
     
     plt.show()
     
+    start = time.time()
     # plot optimized arc plot, without grouping houses together   
     nodes = node_cluster_order(nodes, arcs)
+    end = time.time()
     print(f"Crossings optimized: {count_graph_crossings(nodes, arcs)}")
-
+    print("Running time:", end - start)
     
     fig, ax = basic_arc_plot(node_labels = nodes, arcs = arcs)   
 
@@ -246,15 +303,39 @@ if __name__ == "__main__":
         xtick.set_color(color_dict[group_dict[xtick.get_text()]])    
     
     plt.show()  
- 
-    # Group houses together
-    fig, ax = grouped_arc_chart(nodes, groups, group_dict, arcs)
-    
-    
-    for xtick in ax.get_xticklabels():
-        xtick.set_color(color_dict[group_dict[xtick.get_text()]])
+
+    for i in range(5):    
         
-    plt.show()
+        nodes, groups, group_dict = read_nodes("datasets/myrtle_houses.csv")
+        arcs = read_edges("datasets/myrtle_edges.csv", dest_col = "target")
+
+        # Group houses together
+        start = time.time()
+        fig, ax = grouped_arc_chart(nodes, groups, group_dict, arcs)
+        end = time.time()
+        print("Running time:", end - start)
+        
+        for xtick in ax.get_xticklabels():
+            xtick.set_color(color_dict[group_dict[xtick.get_text()]])
+            
+        plt.show()
+        
+    for i in range(5):    
+        
+        nodes, groups, group_dict = read_nodes("datasets/myrtle_houses.csv")
+        arcs = read_edges("datasets/myrtle_edges.csv", dest_col = "target")
+        
+
+        # Group houses together
+        start = time.time()
+        fig, ax = grouped_arc_chart(nodes, groups, group_dict, arcs, crossing_method = "LA")
+        end = time.time()
+        print("Running time:", end - start)
+        
+        for xtick in ax.get_xticklabels():
+            xtick.set_color(color_dict[group_dict[xtick.get_text()]])
+            
+        plt.show()
     
     
     
