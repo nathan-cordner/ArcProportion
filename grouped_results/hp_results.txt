@@ -1,3 +1,0 @@
-Crossings before: 8717
-Crossings optimized: 8324
-Crossings grouped: 8569
