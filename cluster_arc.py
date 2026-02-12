@@ -252,7 +252,6 @@ if __name__ == "__main__":
                   "Eastern Europe": "#0072B2"}
     """
 
-
     
     # Example 2:  Myrtle Warren character interactions harry potter
     
@@ -264,8 +263,8 @@ if __name__ == "__main__":
                   "Hufflepuff": "#F0E442",
                   "Ravenclaw": "#0072B2",
                   "Other" : "#000000"}
-    """
     
+    """
     # Example 3:  characters with high interactions
     
     nodes, groups, group_dict = read_nodes("datasets/hp_character_houses.csv")
@@ -278,10 +277,21 @@ if __name__ == "__main__":
                   "Other" : "#000000"}
     """
     
+    
     print("Num nodes:", len(nodes))
     print("Num edges:", len(arcs))
     
     # BEFORE
+    
+    # Fill in nodes by group order
+    new_node_order = []
+    for g in groups:
+        for n in nodes:
+            if group_dict[n] == g:
+                new_node_order.append(n)
+    # Reassign
+    nodes = new_node_order    
+    
     print(f"Crossings before: {count_graph_crossings(nodes, arcs)}")
     fig, ax = basic_arc_plot(node_labels = nodes, arcs = arcs)   
 
@@ -289,6 +299,9 @@ if __name__ == "__main__":
         xtick.set_color(color_dict[group_dict[xtick.get_text()]])    
     
     plt.show()
+    
+    nodes, groups, group_dict = read_nodes("datasets/myrtle_houses.csv")
+    arcs = read_edges("datasets/myrtle_edges.csv", dest_col = "target")
     
     start = time.time()
     # plot optimized arc plot, without grouping houses together   
@@ -303,7 +316,9 @@ if __name__ == "__main__":
         xtick.set_color(color_dict[group_dict[xtick.get_text()]])    
     
     plt.show()  
+    
 
+    # Running time tests
     for i in range(5):    
         
         nodes, groups, group_dict = read_nodes("datasets/myrtle_houses.csv")
@@ -336,6 +351,7 @@ if __name__ == "__main__":
             xtick.set_color(color_dict[group_dict[xtick.get_text()]])
             
         plt.show()
+    
     
     
     
