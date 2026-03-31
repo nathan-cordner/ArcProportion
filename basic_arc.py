@@ -27,38 +27,36 @@ class Arc:
         self.color = color
         self.width = width
 
-def _labels_from_df(df):
+def _labels_from_df(df, source_col="source", dest_col="dest"):
     """
     Return node labels from Pandas dataframe
-    
-    TODO:  allow user to specify names of source and dest columns
 
     """
 
     # Create node labels
-    source_set = set(df["source"])
-    dest_set = set(df["dest"])
+    source_set = set(df[source_col])
+    dest_set = set(df[dest_col])
     # Combine
     combined = source_set.union(dest_set)
     # list and sort
     return sorted(list(combined))
 
-def _arcs_from_df(df, node_index):
+def _arcs_from_df(df, node_index, source_col="source", dest_col="dest",
+                  color_col="color", width_col="width",
+                  default_color="lightgray", default_width=1):
     """
     Create list of Arc objects from Pandas dataframe 
-    
-    TODO:  allow user to specify names for df columns
 
     """
     arcs = []
     for i in range(len(df)):
         row = df.iloc[i]
-        
-        cur_arc = Arc(node_index[row["source"]], node_index[row["dest"]])
-        if not pd.isna(row["color"]):
-            cur_arc.color = row["color"]
-        if not pd.isna(row["width"]):
-            cur_arc.width = row["width"]
+        cur_arc = Arc(node_index[row[source_col]], node_index[row[dest_col]],
+                      color=default_color, width=default_width)
+        if color_col in df.columns and not pd.isna(row[color_col]):
+            cur_arc.color = row[color_col]
+        if width_col in df.columns and not pd.isna(row[width_col]):
+            cur_arc.width = row[width_col]
         arcs.append(cur_arc)
     return arcs
 
@@ -93,27 +91,39 @@ def _draw_arc(arc:  Arc, ax):
     return radius  
     
   
-def basic_arc_plot(df = None, node_labels = [], arcs = [], figsize="auto", title = ""):
+def basic_arc_plot(df=None, node_labels=[], arcs=[], figsize="auto",
+                   title="", default_color="lightgray", default_width=1,
+                   source_col="source", dest_col="dest",
+                   color_col="color", width_col="width"):
     """
         
     Function for creating a basic arc plot
     
     Inputs:
-    -- df:  Pandas data frame (columns:  source, dest, color, and width)
+    -- df:  Pandas data frame (columns configurable via source_col, dest_col,
+            color_col, width_col)
     
     If no dataframe provided, then required inputs are
     -- node_labels:  a list of unique strings that define node positions
-    -- arcs:  a list of tuples of format (node_label_1, node_label_2)
+    -- arcs:  a list of tuples: (source, dest), (source, dest, color),
+              or (source, dest, color, width)
     
     Optional inputs include
     -- figsize:  if set to "auto", figure is resized based on node label length
-    -- title:  prints a title on the chart    
+    -- title:  prints a title on the chart
+    -- default_color:  fallback arc color (default "lightgray")
+    -- default_width:  fallback arc line width (default 1)
+    -- source_col:  name of source column in DataFrame (default "source")
+    -- dest_col:  name of dest column in DataFrame (default "dest")
+    -- color_col:  name of color column in DataFrame (default "color")
+    -- width_col:  name of width column in DataFrame (default "width")
     
     """
     
     if not df is None:
         if not node_labels:
-            node_labels = _labels_from_df(df)
+            node_labels = _labels_from_df(df, source_col=source_col,
+                                          dest_col=dest_col)
         
     # Create dictionary for nodes for quick index lookup
     node_index = {}
@@ -123,7 +133,11 @@ def basic_arc_plot(df = None, node_labels = [], arcs = [], figsize="auto", title
         
     # Create arc objects for df
     if not df is None:
-        arcs = _arcs_from_df(df, node_index)
+        arcs = _arcs_from_df(df, node_index, source_col=source_col,
+                             dest_col=dest_col, color_col=color_col,
+                             width_col=width_col,
+                             default_color=default_color,
+                             default_width=default_width)
         
     # resize figure
     if figsize == "auto":
@@ -143,7 +157,9 @@ def basic_arc_plot(df = None, node_labels = [], arcs = [], figsize="auto", title
         
             x = node_index[arc[0]]
             y = node_index[arc[1]]
-            cur_arc = Arc(x, y)
+            color = arc[2] if len(arc) >= 3 else default_color
+            width = arc[3] if len(arc) >= 4 else default_width
+            cur_arc = Arc(x, y, color=color, width=width)
         else:
             cur_arc = arc
 
