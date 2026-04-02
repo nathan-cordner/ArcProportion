@@ -8,7 +8,7 @@ Author: Carlos Rubio
 ## Notes:
 
 - For now, I decided to follow Dr. C.'s design pattern and have the counting
-algorithm generate it's own adjacency list. It was proposed that the data
+algorithm generate its own adjacency list. It was proposed that the data
 transformation be abstracted out of the functions, but in order to keep that
 avoid irregularities in the API, I decided to keep the design unified.
 

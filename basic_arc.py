@@ -1,7 +1,7 @@
 """
 Basic arc plots
 -- lists items along a horizontal axis, draws arcs to show relationships
--- can adjust arc color and with
+-- can adjust arc color and width
 -- figure size determined by x-axis text labels 
 
 Author:  Nathan Cordner
