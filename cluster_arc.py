@@ -146,19 +146,30 @@ def node_cluster_order(groups, cluster_arcs):
 def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source", dest_col="dest", color_col="color", width_col="width", nodes=[], groups=[], arcs=[], crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
     """
     Inputs:
+    -- group_dict:  dictionary containing node : group pairs
+    -- df:  Pandas data frame (columns configurable via source_col, dest_col,
+            color_col, width_col)
+    -- source_col:  name of source column in DataFrame (default "source")
+    -- dest_col:  name of dest column in DataFrame (default "dest")
+    -- color_col:  name of color column in DataFrame (default "color")
+    -- width_col:  name of width column in DataFrame (default "width")
     -- nodes:  list of input nodes
     -- groups:  list of node groups
-    -- group_dict:  dictionary containing node : group pairs
-    -- arcs  list of tuples to specify arcs (undirected)
+    -- arcs:  list of tuples to specify arcs (undirected)
       -- Index 0:  label of node 1
       -- Index 1:  label of node 2
+      -- Index 2:  color of arc
+      -- Index 3:  width of arc
     -- crossing_method:  LS for local search, LA for local adjusting
 
     
     Output: grouped arc chart showing connection from sources to destinations
 
     """
-    pure_arcs = arcs
+    pure_arcs = []
+    for arc in arcs:
+        pure_arcs.append((arc[0], arc[1]))
+
     if not df is None:
         pure_arcs = []
         arcs = []
@@ -232,7 +243,7 @@ def read_edges(file_name, source_col = "source", dest_col = "dest"):
                      df[dest_col].iloc[i]))
                 
     return arcs
-        
+
 
 def read_nodes(file_name, node_col = "node", group_col = "group"):
     df = pd.read_csv(file_name)
