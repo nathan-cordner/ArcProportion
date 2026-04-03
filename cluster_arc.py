@@ -142,8 +142,21 @@ def node_cluster_order(groups, cluster_arcs):
     # return node order of smallest number of crossings
     return min(candidates)[1]
 
-    
-def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source", dest_col="dest", color_col="color", width_col="width", nodes=[], groups=[], arcs=[], crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
+def _arcs_and_nodes_from_df(df:pd.DataFrame, source_col="source", dest_col="dest", color_col="color", width_col="width"):
+        arcs = []
+        nodes = set()
+        for _, row in df.iterrows():
+            source = row[source_col]
+            dest = row[dest_col]
+            if not dest in nodes:
+                nodes.add(dest)
+            if not source in nodes:
+                nodes.add(source)
+            arcs.append((row[source_col], row[dest_col], row[color_col], row[width_col]))
+        nodes = list(nodes)
+        return arcs, nodes
+
+def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source", dest_col="dest", color_col="color", width_col="width", nodes=[], arcs=[], crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
     """
     Inputs:
     -- group_dict:  dictionary containing node : group pairs
@@ -166,29 +179,21 @@ def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source"
     Output: grouped arc chart showing connection from sources to destinations
 
     """
+
+
+    if not df is None:
+        arcs, nodes = _arcs_and_nodes_from_df(df, source_col, dest_col, color_col, width_col)
+
     pure_arcs = []
     for arc in arcs:
         pure_arcs.append((arc[0], arc[1]))
 
-    if not df is None:
-        pure_arcs = []
-        arcs = []
-        groups = set()
-        nodes = set()
-        for _, row in df.iterrows():
-            source = row[source_col]
-            dest = row[dest_col]
-            if not dest in nodes:
-                nodes.add(dest)
-            if not source in nodes:
-                nodes.add(source)
-            arcs.append((row[source_col], row[dest_col], row[color_col], row[width_col]))
-            pure_arcs.append((row[source_col], row[dest_col]))
-        for node, group in group_dict.items():
-            if not group in groups:
-                groups.add(group)
-        nodes = list(nodes)
-        groups = list(groups)
+    groups = set()
+    for group in group_dict.values():
+        if not group in groups:
+            groups.add(group)
+
+    groups = list(groups)
 
     # Create cluster nodes based off of node groups and arcs 
     cluster_arcs = convert_to_cluster_arc(nodes, groups, group_dict, pure_arcs)
