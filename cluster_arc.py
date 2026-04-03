@@ -143,7 +143,7 @@ def node_cluster_order(groups, cluster_arcs):
     return min(candidates)[1]
 
     
-def grouped_arc_chart(nodes, groups, group_dict, arcs, crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
+def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source", dest_col="dest", color_col="color", width_col="width", nodes=[], groups=[], arcs=[], crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
     """
     Inputs:
     -- nodes:  list of input nodes
@@ -158,9 +158,29 @@ def grouped_arc_chart(nodes, groups, group_dict, arcs, crossing_method = "LS", f
     Output: grouped arc chart showing connection from sources to destinations
 
     """
-    
+    pure_arcs = arcs
+    if not df is None:
+        pure_arcs = []
+        arcs = []
+        groups = set()
+        nodes = set()
+        for _, row in df.iterrows():
+            source = row[source_col]
+            dest = row[dest_col]
+            if not dest in nodes:
+                nodes.add(dest)
+            if not source in nodes:
+                nodes.add(source)
+            arcs.append((row[source_col], row[dest_col], row[color_col], row[width_col]))
+            pure_arcs.append((row[source_col], row[dest_col]))
+        for node, group in group_dict.items():
+            if not group in groups:
+                groups.add(group)
+        nodes = list(nodes)
+        groups = list(groups)
+
     # Create cluster nodes based off of node groups and arcs 
-    cluster_arcs = convert_to_cluster_arc(nodes, groups, group_dict, arcs)
+    cluster_arcs = convert_to_cluster_arc(nodes, groups, group_dict, pure_arcs)
     
     # compute node group order
     groups = node_cluster_order(groups, cluster_arcs)
@@ -179,15 +199,15 @@ def grouped_arc_chart(nodes, groups, group_dict, arcs, crossing_method = "LS", f
     
     # Redo node order
     if crossing_method == "LS":
-        local_search_grouped_node_order(groups, nodes, arcs, group_dict)
+        local_search_grouped_node_order(groups, nodes, pure_arcs, group_dict)
     else:
-        local_adjusting_grouped_node_order(groups, nodes, arcs, group_dict)
+        local_adjusting_grouped_node_order(groups, nodes, pure_arcs, group_dict)
 
     
     # Visualize with basic arc chart
     # TODO:  deliniate groups by color
     
-    print(f"Crossings grouped: {count_graph_crossings(nodes, arcs)}")
+    print(f"Crossings grouped: {count_graph_crossings(nodes, pure_arcs)}")
 
     
     return basic_arc_plot(node_labels = nodes, arcs = arcs)
