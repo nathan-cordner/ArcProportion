@@ -219,8 +219,6 @@ def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source"
         local_search_grouped_node_order(groups, nodes, pure_arcs, group_dict)
     else:
         local_adjusting_grouped_node_order(groups, nodes, pure_arcs, group_dict)
-    
-    print(f"Crossings grouped: {count_graph_crossings(nodes, pure_arcs)}")
 
     
     fig, ax = basic_arc_plot(node_labels = nodes, arcs = arcs)
