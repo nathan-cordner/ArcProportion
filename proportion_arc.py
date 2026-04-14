@@ -56,7 +56,6 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
         else:
             new_arcs += [(node1, node2, a[2], "lightgray")]
 
-        new_arcs += [(node1, node2, a[2])]
         clean_arcs += [(node1, node2)]
         
         
@@ -238,7 +237,7 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
         fig, ax = plt.subplots(figsize=figsize)
     
     # Lazy rectangles
-    ax.bar(nodes, [-2] * len(nodes), width = widths)
+    ax.bar(nodes, [-2] * len(nodes), width = widths, color = "lightgray")
     
     # Calculate arc boundaries    
     # Define L and R boundaries for each of the new nodes
@@ -304,12 +303,12 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
     for i in range(0, len(lefts), 2):
         color = arc_colors[i // 2]
 
-        cur_radius = draw_arc(lefts[i], rights[i], ax)
+        cur_radius = draw_arc(lefts[i], rights[i], ax, color)
         ax.patches[-1].set_edgecolor(color)
         if cur_radius > max_radius:
             max_radius = cur_radius
 
-        cur_radius = draw_arc(lefts[i+1], rights[i+1], ax)
+        cur_radius = draw_arc(lefts[i+1], rights[i+1], ax, color)
         ax.patches[-1].set_edgecolor(color)
         if cur_radius > max_radius:
             max_radius = cur_radius
@@ -317,7 +316,7 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
     # shade the area between the two boundaries
     for i in range(0, len(lefts), 2):
         color = arc_colors[i // 2]
-        shade_arc((lefts[i], rights[i]), (lefts[i+1], rights[i+1]), ax)
+        shade_arc((lefts[i], rights[i]), (lefts[i+1], rights[i+1]), ax, color)
         ax.patches[-1].set_facecolor(color)
         ax.patches[-1].set_edgecolor(color)
         
@@ -375,9 +374,9 @@ if __name__ == "__main__":
     
     # Test data    
     nodes = ["A", "B", "C"]
-    arcs = [("A", "B", 100),
-            ("A", "C", 300),
-            ("B", "C", 200)]
+    arcs = [("A", "B", 100, "red"),
+            ("A", "C", 300, "blue"),
+            ("B", "C", 200, "purple")]
     
  
     # nodes, arcs = read_csv("datasets/hp_top_ten.csv", dest_col="target", connections_col = "weight")
