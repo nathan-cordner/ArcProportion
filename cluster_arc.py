@@ -142,25 +142,61 @@ def node_cluster_order(groups, cluster_arcs):
     # return node order of smallest number of crossings
     return min(candidates)[1]
 
-    
-def grouped_arc_chart(nodes, groups, group_dict, arcs, crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
+def _arcs_and_nodes_from_df(df:pd.DataFrame, source_col="source", dest_col="dest", color_col="color", width_col="width"):
+        arcs = []
+        nodes = set()
+        for _, row in df.iterrows():
+            source = row[source_col]
+            dest = row[dest_col]
+            if not dest in nodes:
+                nodes.add(dest)
+            if not source in nodes:
+                nodes.add(source)
+            arcs.append((row[source_col], row[dest_col], row[color_col], row[width_col]))
+        nodes = list(nodes)
+        return arcs, nodes
+
+def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source", dest_col="dest", color_col="color", width_col="width", nodes=[], arcs=[], crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
     """
     Inputs:
+    -- group_dict:  dictionary containing node : group pairs
+    -- df:  Pandas data frame (columns configurable via source_col, dest_col,
+            color_col, width_col)
+    -- source_col:  name of source column in DataFrame (default "source")
+    -- dest_col:  name of dest column in DataFrame (default "dest")
+    -- color_col:  name of color column in DataFrame (default "color")
+    -- width_col:  name of width column in DataFrame (default "width")
     -- nodes:  list of input nodes
     -- groups:  list of node groups
-    -- group_dict:  dictionary containing node : group pairs
-    -- arcs  list of tuples to specify arcs (undirected)
+    -- arcs:  list of tuples to specify arcs (undirected)
       -- Index 0:  label of node 1
       -- Index 1:  label of node 2
+      -- Index 2:  color of arc
+      -- Index 3:  width of arc
     -- crossing_method:  LS for local search, LA for local adjusting
 
     
     Output: grouped arc chart showing connection from sources to destinations
 
     """
-    
+
+
+    if not df is None:
+        arcs, nodes = _arcs_and_nodes_from_df(df, source_col, dest_col, color_col, width_col)
+
+    pure_arcs = []
+    for arc in arcs:
+        pure_arcs.append((arc[0], arc[1]))
+
+    groups = set()
+    for group in group_dict.values():
+        if not group in groups:
+            groups.add(group)
+
+    groups = list(groups)
+
     # Create cluster nodes based off of node groups and arcs 
-    cluster_arcs = convert_to_cluster_arc(nodes, groups, group_dict, arcs)
+    cluster_arcs = convert_to_cluster_arc(nodes, groups, group_dict, pure_arcs)
     
     # compute node group order
     groups = node_cluster_order(groups, cluster_arcs)
@@ -179,15 +215,15 @@ def grouped_arc_chart(nodes, groups, group_dict, arcs, crossing_method = "LS", f
     
     # Redo node order
     if crossing_method == "LS":
-        local_search_grouped_node_order(groups, nodes, arcs, group_dict)
+        local_search_grouped_node_order(groups, nodes, pure_arcs, group_dict)
     else:
-        local_adjusting_grouped_node_order(groups, nodes, arcs, group_dict)
+        local_adjusting_grouped_node_order(groups, nodes, pure_arcs, group_dict)
 
     
     # Visualize with basic arc chart
     # TODO:  deliniate groups by color
     
-    print(f"Crossings grouped: {count_graph_crossings(nodes, arcs)}")
+    print(f"Crossings grouped: {count_graph_crossings(nodes, pure_arcs)}")
 
     
     return basic_arc_plot(node_labels = nodes, arcs = arcs)
@@ -212,7 +248,7 @@ def read_edges(file_name, source_col = "source", dest_col = "dest"):
                      df[dest_col].iloc[i]))
                 
     return arcs
-        
+
 
 def read_nodes(file_name, node_col = "node", group_col = "group"):
     df = pd.read_csv(file_name)

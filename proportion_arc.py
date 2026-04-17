@@ -50,7 +50,12 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
         # TODO:  maintain weights with arcs, or create separate set        
         
         new_nodes += [node1, node2]
-        new_arcs += [(node1, node2, a[2])]
+
+        if len(a) >= 4 and pd.notna(a[3]):
+            new_arcs += [(node1, node2, a[2], a[3])]
+        else:
+            new_arcs += [(node1, node2, a[2], "lightgray")]
+
         clean_arcs += [(node1, node2)]
         
         
@@ -169,6 +174,7 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
       -- Index 0:  label of node 1
       -- Index 1:  label of node 2
       -- Index 2:  arc value (total or percentage)
+      -- Index 3:  arc color (optional, default lightgray)
     -- crossing_method:  LS for local search, LA for local adjusting, None for neither
     
     Output: proportional arc chart showing flow from sources to destinations
@@ -231,7 +237,7 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
         fig, ax = plt.subplots(figsize=figsize)
     
     # Lazy rectangles
-    ax.bar(nodes, [-2] * len(nodes), width = widths)
+    ax.bar(nodes, [-2] * len(nodes), width = widths, color = "lightgray")
     
     # Calculate arc boundaries    
     # Define L and R boundaries for each of the new nodes
@@ -277,26 +283,42 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
     
     lefts = []
     rights = []
+    arc_colors = []
     for a in new_arcs:
         source = a[0]
         dest = a[1]
-        
+        color = a[3] if len(a) >= 4 and pd.notna(a[3]) else "lightgray"
+
         if node_index[source] > node_index[dest]:
             source, dest = dest, source # swap so order is left to right
         
         # Create arc coordinates
         lefts += node_boundary_dict[source]      
         rights += node_boundary_dict[dest][::-1]
-        
+        arc_colors.append(color)
     
     max_radius = 0
-    for i in range(len(lefts)):
-        cur_radius = draw_arc(lefts[i], rights[i], ax) 
+
+    # draw the two boundary arcs for each proportional arc
+    for i in range(0, len(lefts), 2):
+        color = arc_colors[i // 2]
+
+        cur_radius = draw_arc(lefts[i], rights[i], ax, color)
+        ax.patches[-1].set_edgecolor(color)
         if cur_radius > max_radius:
             max_radius = cur_radius
-        
+
+        cur_radius = draw_arc(lefts[i+1], rights[i+1], ax, color)
+        ax.patches[-1].set_edgecolor(color)
+        if cur_radius > max_radius:
+            max_radius = cur_radius
+
+    # shade the area between the two boundaries
     for i in range(0, len(lefts), 2):
-        shade_arc((lefts[i], rights[i]), (lefts[i+1], rights[i+1]), ax)
+        color = arc_colors[i // 2]
+        shade_arc((lefts[i], rights[i]), (lefts[i+1], rights[i+1]), ax, color)
+        ax.patches[-1].set_facecolor(color)
+        ax.patches[-1].set_edgecolor(color)
         
     # Final adjustments
     ax.set_ylim(-0.2, max_radius * 2)
@@ -310,7 +332,7 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
     plt.show()
         
     
-def read_csv(file_name, source_col = "source", dest_col = "dest", connections_col = "connections"):
+def read_csv(file_name, source_col = "source", dest_col = "dest", connections_col = "connections", color_col = "color", default_color = "lightgray"):
     """
     Data format:
         (Source, Destination, Weight)
@@ -327,9 +349,14 @@ def read_csv(file_name, source_col = "source", dest_col = "dest", connections_co
     
     for i in range(len(df)):
         if df[connections_col].iloc[i] > 0:
+            color = default_color
+            if color_col in df.columns and pd.notna(df[color_col].iloc[i]):
+                color = df[color_col].iloc[i]
+
             arcs.append((df[source_col].iloc[i],
-                         df[dest_col].iloc[i],
-                         df[connections_col].iloc[i]))
+                        df[dest_col].iloc[i],
+                        df[connections_col].iloc[i],
+                        color))
                 
     return nodes, arcs
         
@@ -347,9 +374,9 @@ if __name__ == "__main__":
     
     # Test data    
     nodes = ["A", "B", "C"]
-    arcs = [("A", "B", 100),
-            ("A", "C", 300),
-            ("B", "C", 200)]
+    arcs = [("A", "B", 100, "red"),
+            ("A", "C", 300, "blue"),
+            ("B", "C", 200, "purple")]
     
  
     # nodes, arcs = read_csv("datasets/hp_top_ten.csv", dest_col="target", connections_col = "weight")
