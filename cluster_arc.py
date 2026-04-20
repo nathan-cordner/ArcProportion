@@ -156,7 +156,7 @@ def _arcs_and_nodes_from_df(df:pd.DataFrame, source_col="source", dest_col="dest
         nodes = list(nodes)
         return arcs, nodes
 
-def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source", dest_col="dest", color_col="color", width_col="width", nodes=[], arcs=[], crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
+def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source", dest_col="dest", color_col="color", width_col="width", nodes=[], arcs=[], crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05, group_coloring_map:dict|None = None):
     """
     Inputs:
     -- group_dict:  dictionary containing node : group pairs
@@ -174,6 +174,7 @@ def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source"
       -- Index 2:  color of arc
       -- Index 3:  width of arc
     -- crossing_method:  LS for local search, LA for local adjusting
+    -- group_coloring_map: dictionary mapping group names to node label text colors
 
     
     Output: grouped arc chart showing connection from sources to destinations
@@ -220,13 +221,16 @@ def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source"
         local_adjusting_grouped_node_order(groups, nodes, pure_arcs, group_dict)
 
     
-    # Visualize with basic arc chart
-    # TODO:  deliniate groups by color
-    
-    print(f"Crossings grouped: {count_graph_crossings(nodes, pure_arcs)}")
+    fig, ax = basic_arc_plot(node_labels = nodes, arcs = arcs)
 
-    
-    return basic_arc_plot(node_labels = nodes, arcs = arcs)
+    if group_coloring_map is not None:
+        for xtick in ax.get_xticklabels():
+            node_name = xtick.get_text()
+            group_name = group_dict.get(node_name)
+            if group_name in group_coloring_map:
+                xtick.set_color(group_coloring_map[group_name])
+
+    return fig, ax
 
         
     
@@ -362,12 +366,9 @@ if __name__ == "__main__":
 
         # Group houses together
         start = time.time()
-        fig, ax = grouped_arc_chart(nodes, groups, group_dict, arcs)
+        fig, ax = grouped_arc_chart(group_dict=group_dict, nodes=nodes, arcs=arcs, group_coloring_map=color_dict)
         end = time.time()
         print("Running time:", end - start)
-        
-        for xtick in ax.get_xticklabels():
-            xtick.set_color(color_dict[group_dict[xtick.get_text()]])
             
         plt.show()
         
@@ -379,12 +380,9 @@ if __name__ == "__main__":
 
         # Group houses together
         start = time.time()
-        fig, ax = grouped_arc_chart(nodes, groups, group_dict, arcs, crossing_method = "LA")
+        fig, ax = grouped_arc_chart(group_dict=group_dict, nodes=nodes, arcs=arcs, crossing_method = "LA", group_coloring_map=color_dict)
         end = time.time()
         print("Running time:", end - start)
-        
-        for xtick in ax.get_xticklabels():
-            xtick.set_color(color_dict[group_dict[xtick.get_text()]])
             
         plt.show()
     
