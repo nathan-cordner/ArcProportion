@@ -14,7 +14,7 @@ Author:  Nathan Cordner
 
 import pandas as pd
 import matplotlib.pyplot as plt
-from helper import auto_resize, draw_arc, shade_arc
+from helper import auto_resize, draw_arc, shade_arc, wrap_labels
 
 from count_crossing import count_graph_crossings, local_adjusting, cluster_local_adjusting
 from arc_crossing import minimize_crossings
@@ -25,7 +25,28 @@ import time
 
 
 def convert_to_basic_arc(nodes, arcs, title = ""):
-    
+    """
+    Split each node into one copy per incident arc so the proportional chart
+    can treat each (split) endpoint as a distinct basic-arc node. The i-th
+    occurrence of a node ``X`` becomes the label ``X<i>``, and every input
+    arc becomes one arc between the corresponding split-labels.
+
+    Inputs:
+        nodes:  list of node labels in desired display order
+        arcs:   list of ``(source, dest, value [, color])`` tuples
+        title:  unused; preserved for backwards compatibility
+
+    Output:
+        tmp_new_nodes:  list of split node labels, reordered so each run of
+                        labels coming from the same original node appears
+                        together, in the order ``nodes`` was given
+        new_arcs:       list of ``(split_source, split_dest, value)`` tuples
+                        whose endpoints are labels in ``tmp_new_nodes``
+        new_node_map:   dict mapping each split label back to its original
+                        node label
+
+    """
+
     node_count = {x : 1 for x in nodes}
     
     # Create new nodes and edges
@@ -73,12 +94,34 @@ def convert_to_basic_arc(nodes, arcs, title = ""):
     
         
 def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, node_map):
+    """
+    Reduce crossings within a single cluster of split nodes by trying every
+    pair swap inside it and keeping those that strictly lower the global
+    crossing count. The cluster is the maximal run of consecutive entries in
+    ``nodes`` sharing a value under ``node_map``, starting at ``start_index``.
+
+    Inputs:
+        start_index:    index into ``nodes`` where this cluster starts
+        cur_crossings:  crossing count for the current ordering of ``nodes``
+        nodes:          list of split node labels (reordered in place)
+        clean_arcs:     list of (source, dest) tuples over split labels
+        node_map:       dict mapping split label back to original node
+
+    Output:
+        (end_index, cur_crossings)
+            end_index:     first index after this cluster, so callers can
+                           resume at the next cluster
+            cur_crossings: updated crossing count after any improving swaps
+
+    Side effect:  swaps inside ``nodes`` mutate the list in place.
+
+    """
     end_index = start_index
     cur_group = node_map[nodes[start_index]]
     while end_index < len(nodes) and node_map[nodes[end_index]] == cur_group:
         end_index += 1
 
-    
+
     # Local search loop
     for i in range(start_index, end_index):
         for j in range(start_index,end_index):
@@ -90,7 +133,7 @@ def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, 
                     cur_crossings = new_crossings
                 else:
                     # Swap back
-                    nodes[i], nodes[j] = nodes[j], nodes[i]  
+                    nodes[i], nodes[j] = nodes[j], nodes[i]
     return end_index, cur_crossings
 
 
@@ -166,7 +209,7 @@ def node_cluster_order(nodes, arcs):
     # return node order of smallest number of crossings
     return min(candidates)[1]
     
-def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05):
+def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.15, gap: float = 0.15):
     """
     Inputs:
     -- nodes:  input nodes (previously split)
@@ -176,7 +219,11 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
       -- Index 2:  arc value (total or percentage)
       -- Index 3:  arc color (optional, default lightgray)
     -- crossing_method:  LS for local search, LA for local adjusting, None for neither
-    
+    -- gap:  spacing (in the same units as rectangle widths, i.e. fractions
+             of `total`) inserted between neighboring node rectangles. With
+             variable widths this controls how tightly nodes sit next to one
+             another; smaller values minimize whitespace.
+
     Output: proportional arc chart showing flow from sources to destinations
 
     """
@@ -229,24 +276,80 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
     
     # Create rectangle widths using specified node order
     widths = [loc_totals[x] / total for x in nodes]
-    
+
+    wrapped_nodes = wrap_labels(nodes)
+
     if figsize == "auto":
-        figwidth = auto_resize(nodes, 12, x_label_padding)        
-        fig, ax = plt.subplots(figsize=(figwidth, figwidth / 3))
+        figwidth, max_lines = auto_resize(nodes, 12, x_label_padding,
+                                          return_lines=True)
+        fig_height = figwidth / 3 + 0.25 * max(0, max_lines - 1)
     else:
-        fig, ax = plt.subplots(figsize=figsize)
-    
-    # Lazy rectangles
-    ax.bar(nodes, [-2] * len(nodes), width = widths, color = "lightgray")
-    
-    # Calculate arc boundaries    
-    # Define L and R boundaries for each of the new nodes
+        figwidth = figsize[0]
+        fig_height = figsize[1]
+
+    # Auto-grow `gap` (in data units) so every adjacent label pair has
+    # enough inches between x-positions to render without overlap. Use the
+    # widest adjacent *pair* (half-sum of neighbor label widths) — with a
+    # single-widest proxy, two equally-wide neighbors only get ~5% breathing
+    # room and visually touch. The relationship is self-referential (data
+    # span depends on `gap`), so iterate until it converges.
+    from helper import _label_line_widths
+    label_widths_px, _ = _label_line_widths(wrapped_nodes)
+    dpi = plt.rcParams['figure.dpi']
+    sum_w = sum(widths)
+    n = len(nodes)
+    half_pair_mins = [(widths[i] + widths[i + 1]) / 2 for i in range(n - 1)]
+    min_half_pair = min(half_pair_mins) if half_pair_mins else 0
+    if n > 1 and label_widths_px:
+        widest_pair_px = max((label_widths_px[i] + label_widths_px[i + 1]) / 2
+                             for i in range(n - 1))
+    else:
+        widest_pair_px = max(label_widths_px) if label_widths_px else 0
+    widest_in = widest_pair_px / dpi
+    # Effective plotting inches: the axes occupies ~78% of fig_width after
+    # matplotlib's default margins, so use that for label-fit calculations.
+    # The x-limits also pad data_span by `gap` on each side (set below).
+    AX_FRAC = 0.78
+    if n > 1 and widest_in > 0:
+        for _ in range(8):
+            data_span = sum_w + (n + 1) * gap
+            eff_inches = figwidth * AX_FRAC
+            widest_data = widest_in * x_label_padding * data_span / eff_inches
+            needed_gap = widest_data - min_half_pair
+            if needed_gap <= gap:
+                break
+            denom = eff_inches - widest_in * x_label_padding * (n + 1)
+            if denom <= 0:
+                figwidth *= 1.5
+                fig_height = figwidth / 3 + 0.25 * max(0, max_lines - 1)
+                continue
+            gap = (widest_in * x_label_padding * sum_w - min_half_pair * eff_inches) / denom
+            gap = max(gap, 0)
+
+    # Width-aware x-positions: each node's center sits one (half-width +
+    # gap + half-width) step from the previous center, so narrow nodes no
+    # longer leave awkward whitespace and wide nodes don't get crowded.
+    x_positions = [widths[0] / 2]
+    for i in range(1, len(nodes)):
+        x_positions.append(
+            x_positions[-1] + widths[i - 1] / 2 + gap + widths[i] / 2
+        )
+    node_center = dict(zip(nodes, x_positions))
+
+    fig, ax = plt.subplots(figsize=(figwidth, fig_height))
+
+    # Rectangles beneath each node label at their width-aware positions
+    ax.bar(x_positions, [-2] * len(nodes), width=widths, color="lightgray")
+    ax.set_xticks(x_positions)
+    ax.set_xticklabels(wrapped_nodes)
+
+    # Calculate arc boundaries
+    # Define L and R boundaries for each of the new nodes, anchored to the
+    # width-aware x-position of the original (pre-split) node.
     node_boundary_dict = {}
-    cur_node = new_node_map[new_nodes[0]]
-    cur_left = 0 - widths[0] / 2
-    cur_width = widths[0]
-    cur_index = 0
-    
+    cur_group = new_node_map[new_nodes[0]]
+    cur_left = node_center[cur_group] - widths[0] / 2
+
     for n in new_nodes:
         cur_arc = None
         # Find arc involving n
@@ -254,21 +357,20 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
             if n == arc[0] or n == arc[1]:
                 cur_arc = arc
                 break
-        if cur_arc == None:
-            continue # go to next node       
-        
-        if cur_node != new_node_map[n]:
-            cur_index += 1 
-            cur_width = widths[cur_index]
-            cur_node = new_node_map[n]
-            cur_left = cur_index - widths[cur_index] / 2           
-            
+        if cur_arc is None:
+            continue  # go to next node
+
+        if cur_group != new_node_map[n]:
+            cur_group = new_node_map[n]
+            idx = nodes.index(cur_group)
+            cur_left = node_center[cur_group] - widths[idx] / 2
+
         left = cur_left
         right = cur_left + (cur_arc[2] / total)
-            
+
         # save
         node_boundary_dict[n] = [left, right]
-            
+
         # update
         cur_left = right
         
@@ -322,7 +424,9 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
         
     # Final adjustments
     ax.set_ylim(-0.2, max_radius * 2)
-    
+    # Tight x-limits around the node rectangles so there's no dead space
+    ax.set_xlim(-widths[0] / 2 - gap, x_positions[-1] + widths[-1] / 2 + gap)
+
     ax.set_yticklabels([])
     ax.spines[["left", "right", "top", "bottom"]].set_visible(False)
     ax.tick_params(axis = "both", length = 0)

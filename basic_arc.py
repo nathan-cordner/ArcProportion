@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import pandas as pd
 
-from helper import auto_resize
+from helper import auto_resize, wrap_labels
 
 
 class Arc:
@@ -139,16 +139,21 @@ def basic_arc_plot(df=None, node_labels=[], arcs=[], figsize="auto",
                              default_color=default_color,
                              default_width=default_width)
         
+    # Wrap long labels so they don't overlap when rendered
+    wrapped_labels = wrap_labels(node_labels)
+
     # resize figure
     if figsize == "auto":
-        fig_width = auto_resize(node_labels)
-        figsize = (fig_width, fig_width / 4)
-    
+        fig_width, max_lines = auto_resize(node_labels, return_lines=True)
+        # Add a small amount of vertical room per extra label line
+        fig_height = fig_width / 4 + 0.25 * max(0, max_lines - 1)
+        figsize = (fig_width, fig_height)
+
     fig, ax = plt.subplots(figsize=figsize)
-   
-    # Plot nodes 
+
+    # Plot nodes
     x_vals = range(len(node_labels))
-    ax.set_xticks(x_vals, node_labels)
+    ax.set_xticks(x_vals, wrapped_labels)
      
     # Plot arcs
     max_height = 0
