@@ -23,30 +23,111 @@
 
 
 ## basic_arc.py
-- class Arc
-	* has description
-	* needs explanation or no? Type hints?
+### Arc
+`class Arc(self, source, dest, color = "lightgray", width = 1)`
+
+Basic object to store arc components. 
+
+**Parameters**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|source|int|None|A numerical index representing the arc's source node. The index is of the parameter node_labels[] in the function basic_arc_plot(). |
+|dest|int|None|A numerical index representing the arc's destination node The index is of the parameter node_labels[] in the function basic_arc_plot().|
+|color|string|"lightgray"|Sets the color of the arc. See [this link](https://matplotlib.org/stable/users/explain/colors/colors.html#colors-def) for Matplotlib color guide.|
+|width|float|1|Sets the width (thickness) of the Arc|
 	
-- _labels_from_df(df, source_col="source", dest_col="dest"):
-	* has description
-	* NEEDS param explanation
-	
-- _arcs_from_df(df, node_index, source_col="source", dest_col="dest",
+
+
+### _labels_from_df 
+`_labels_from_df(df, source_col="source", dest_col="dest")`
+
+Returns node labels from Pandas DataFrame. 
+
+**Parameters**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|df|pandas.DataFrame|None|A Pandas DataFrame with named columns|
+|source_col|str|"source"|Name of source column in DataFrame df|
+|dest_col|str|"dest|Name of destination column in DataFrame df|
+
+**Returns:** `list[str]` - list containing node labels
+
+
+
+### _arcs_from_df
+`_arcs_from_df(df, node_index, source_col="source", dest_col="dest",
                   color_col="color", width_col="width",
-                  default_color="lightgray", default_width=1):
-	* has description
-	* NEEDS param explanation
+                  default_color="lightgray", default_width=1)`
+
+Create list of Arc objects from Pandas dataframe 
+
+
+**Parameters**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|df|pandas.DataFrame|None|A Pandas DataFrame with named columns (columns configurable via source_col, dest_col, color_col, width_col)|
+|node_index|dict|None|Node labels in a dictionary of form {"First node label": 0, "Second node label": 1, [...], "n-th node label": n}|
+|source_col|str|"source"|Name of source column in DataFrame df|
+|dest_col|str|"dest"|Name of destination column in DataFrame df|
+|color_col|string|"color"|Sets the color of the arc. See [this link](https://matplotlib.org/stable/users/explain/colors/colors.html#colors-def) for Matplotlib color guide.|
+|width_col|str|"width"|Name of width column of DataFrame|
+|default_color|str|"lightgray"|Sets default arc color|
+|default_width|float|1|Sets the width (thickness) of the Arc|
 	
-- _draw_arc(arc:  Arc, ax):
-	* has description
-	* has param explanation
-	
-- basic_arc_plot(df=None, node_labels=[], arcs=[], figsize="auto",
+**Returns:** `list[Arc] - list of Arc objects for later visualization'
+
+
+
+### _draw_arc
+`- _draw_arc(arc:  Arc, ax)`
+
+Visually represent an arc.
+
+**Parameters**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|arc|Arc|None|An object of type Arc|
+|ax|matplotlib.axes.Axes|None|A matplotlib axes object|
+
+**Returns:** `float: radius` - the radius of the arc
+
+
+### basic_arc_plot
+`basic_arc_plot(df=None, node_labels=[], arcs=[], figsize="auto",
                    title="", default_color="lightgray", default_width=1,
                    source_col="source", dest_col="dest",
-                   color_col="color", width_col="width"):
-	* has description
-	* bas explanation
+                   color_col="color", width_col="width")`
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+| `df` | `pandas.DataFrame`, optional | `None` | Edge list as a DataFrame. Column names are configurable via `source_col`, `dest_col`, `color_col`, and `width_col`. If `None`, use `node_labels` and `arcs` instead. |
+| `node_labels` | `list[str]` | `[]` | Unique strings defining node positions along the x-axis. Required when `df` is not provided; when `df` *is* provided, an explicit list overrides the auto-detected ordering. |
+| `arcs` | `list[tuple \| Arc]` | `[]` | Connections between nodes. See **Arc formats** below. |
+| `figsize` | `tuple \| "auto"` | `"auto"` | Figure dimensions `(width, height)`. When `"auto"`, the figure is resized based on node label length so x-tick labels don't overlap. |
+| `title` | `str` | `""` | Title displayed above the chart. |
+| `default_color` | `str` | `"lightgray"` | Fallback arc color used when no per-arc override is given. |
+| `default_width` | `float` | `1` | Fallback arc line width used when no per-arc override is given. |
+| `source_col` | `str` | `"source"` | Name of the source column in the DataFrame. |
+| `dest_col` | `str` | `"dest"` | Name of the destination column in the DataFrame. |
+| `color_col` | `str` | `"color"` | Name of the optional color column in the DataFrame. |
+| `width_col` | `str` | `"width"` | Name of the optional width column in the DataFrame. |
+
+**Returns:** `(fig, ax)` — a matplotlib `Figure` and `Axes` pair.
+
+**Arc formats**
+
+An entry in the `arcs` list can be any of the following:
+
+- `(source, dest)` — uses `default_color` and `default_width`.
+- `(source, dest, color)` — custom color, default width.
+- `(source, dest, color, width)` — custom color and width.
+- `Arc(source, dest, color="...", width=...)` — a fully constructed `Arc` object.
+
+DataFrames that lack `color` or `width` columns — or rows where those cells are `NaN` — fall back to the global defaults without error.
 	
 ## cluster_arc.py
 - convert_to_cluster_arc(nodes, groups, group_dict, arcs):
