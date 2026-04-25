@@ -82,7 +82,7 @@ Create list of Arc objects from Pandas dataframe
 
 
 ### _draw_arc
-`- _draw_arc(arc:  Arc, ax)`
+`_draw_arc(arc:  Arc, ax)`
 
 Visually represent an arc.
 
@@ -167,21 +167,61 @@ DataFrames that lack `color` or `width` columns — or rows where those cells ar
 	
 
 ## helper.py
-- _max_text_width(node_labels)
-	* NEEDS description
-	* NEEDS param explanation
-	
-- auto_resize(node_labels, default_width = 6.4, padding = 1.05):
-	* has description
-	* NEEDS param explanation
+### _max_text_width
+`_max_text_width(node_labels)`
 
-- draw_arc(left, right, ax, color="tab:blue")
-	* NEEDS description
-	* NEEDS param explanation
+Determine how many pixels are used in the largest given text label
+
+**Parameters**
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|node_labels|list[str]|None|A list of node labels in string form.|
+
+**Returns:** `numpy.float64: cur_max` - The maximum pixel width used in any of the given node labels.
+
+
+### auto_resize
+`auto_resize(node_labels, default_width = 6.4, padding = 1.05)`
+
+Calculate ideal figure width based on size of node labels. Called when figsize set to "auto" in basic_arc.basic_arc_plot().
+
+**Parameters**
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|node_labels|list[str]|None|A list of node labels in string form.|
+|default_width|float|6.4|Figure width parameter.|
+|padding|float|1.05|Figure padding parameter.|
+
+**Returns:** `numpy.float64: fig_width` - ideal figure width based on nodel label length.
+
+## draw_arc
+`draw_arc(left, right, ax, color="tab:blue")`
+
+Add new arc to matplotlib.patches, and return the radius value. Used by proportion_arc.py
+
+**Parameters**
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|left|float|None|Left boundary of arc|
+|right|float|None|Right boundary of arc|
+|ax|matplotlib.axes.Axes|None|A matplotlib axes object|
+|color|str|"tab:blue"|Color of the arc|
+
+**Returns:** `numpy.float64:radius` - Radius for the arc to be drawn.
 	
-- shade_arc(pair1, pair2, ax, color="tab:blue"):
-	* NEEDS description
-	* NEEDS param explanation
+
+### shade_arc
+`shade_arc(pair1, pair2, ax, color="tab:blue")`
+
+Shade the area between arc boundaries.
+
+**Parameters**
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|pair1|tuple(float, float)|None|Left-right coordinates of one end of the proportion arc|
+|pair2|tuple(float, float)|None|Left-right coordinates of the other end of the proportion arc|
+|ax|matplotlib.axes.Axes|None|A matplotlib axes object|
+|color|str|"tab:blue"|Color to shade the arc's inner space|
 
 ## preprocessing.py
 - path_traversal(
