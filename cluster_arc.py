@@ -51,12 +51,34 @@ def convert_to_cluster_arc(nodes, groups, group_dict, arcs):
     
         
 def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, node_map):
+    """
+    Reduce crossings *within* one cluster by exhaustively trying every pair
+    swap inside it and keeping swaps that strictly improve the global
+    crossing count. The cluster is the maximal run of consecutive nodes
+    sharing a group (as given by ``node_map``) starting at ``start_index``.
+
+    Inputs:
+        start_index:     index into ``nodes`` where this cluster starts
+        cur_crossings:   crossing count for the current ordering of ``nodes``
+        nodes:           list of node labels (reordered in place)
+        clean_arcs:      list of (source, dest) tuples
+        node_map:        mapping from node label to group label
+
+    Output:
+        (end_index, cur_crossings)
+            end_index:    first index *after* this cluster, so callers can
+                          resume local search at the next cluster
+            cur_crossings: updated crossing count after any improving swaps
+
+    Side effect:  swaps inside ``nodes`` mutate the list in place.
+
+    """
     end_index = start_index
     cur_group = node_map[nodes[start_index]]
     while end_index < len(nodes) and node_map[nodes[end_index]] == cur_group:
         end_index += 1
 
-    
+
     # Local search loop
     for i in range(start_index, end_index):
         for j in range(start_index,end_index):
@@ -68,7 +90,7 @@ def local_search_inside_clusters(start_index, cur_crossings, nodes, clean_arcs, 
                     cur_crossings = new_crossings
                 else:
                     # Swap back
-                    nodes[i], nodes[j] = nodes[j], nodes[i]  
+                    nodes[i], nodes[j] = nodes[j], nodes[i]
     return end_index, cur_crossings
 
 
@@ -143,6 +165,25 @@ def node_cluster_order(groups, cluster_arcs):
     return min(candidates)[1]
 
 def _arcs_and_nodes_from_df(df:pd.DataFrame, source_col="source", dest_col="dest", color_col="color", width_col="width"):
+        """
+        Build the ``(arcs, nodes)`` pair consumed by ``grouped_arc_chart`` from
+        a DataFrame edge list.
+
+        Inputs:
+            df:          edge list; must contain ``source_col``, ``dest_col``,
+                         ``color_col``, and ``width_col`` columns
+            source_col:  name of the source column (default "source")
+            dest_col:    name of the destination column (default "dest")
+            color_col:   name of the arc color column (default "color")
+            width_col:   name of the arc line-width column (default "width")
+
+        Output:
+            arcs:   list of ``(source, dest, color, width)`` tuples
+            nodes:  list of unique node labels appearing in ``source_col`` or
+                    ``dest_col``; order is insertion order into the set, so
+                    callers that care about deterministic order should sort.
+
+        """
         arcs = []
         nodes = set()
         for _, row in df.iterrows():
@@ -224,9 +265,12 @@ def grouped_arc_chart(group_dict:dict, df:pd.DataFrame=None, source_col="source"
     fig, ax = basic_arc_plot(node_labels = nodes, arcs = arcs)
 
     if group_coloring_map is not None:
-        for xtick in ax.get_xticklabels():
-            node_name = xtick.get_text()
-            group_name = group_dict.get(node_name)
+        # xtick labels may be line-wrapped; resolve color by node index
+        # (xticks are set in the same order as `nodes`)
+        for i, xtick in enumerate(ax.get_xticklabels()):
+            if i >= len(nodes):
+                break
+            group_name = group_dict.get(nodes[i])
             if group_name in group_coloring_map:
                 xtick.set_color(group_coloring_map[group_name])
 
@@ -255,6 +299,23 @@ def read_edges(file_name, source_col = "source", dest_col = "dest"):
 
 
 def read_nodes(file_name, node_col = "node", group_col = "group"):
+    """
+    Read a node-to-group CSV and return the inputs ``grouped_arc_chart``
+    expects when called with ``nodes=`` and ``group_dict=``.
+
+    Inputs:
+        file_name:  path to a CSV with at least ``node_col`` and ``group_col``
+        node_col:   column containing node labels (default "node")
+        group_col:  column containing each node's group (default "group")
+
+    Output:
+        nodes:       list of node labels in CSV order
+        groups:      list of unique group labels (unordered; de-duplicated
+                     via ``set`` — callers that care about group ordering
+                     should sort)
+        group_dict:  dict mapping node label to its group label
+
+    """
     df = pd.read_csv(file_name)
     nodes = list(df[node_col])
     

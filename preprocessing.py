@@ -4,6 +4,24 @@ def path_traversal(
     traversal_stack, explored, branches,
     adj_list, node_deg
 ):
+    """
+    DFS a branch (tail) of the graph, collecting nodes with degree <= 2.
+    Traversal stops the moment it hits a node of degree > 2, which marks the
+    edge of the branch and the start of a denser subgraph. Nodes passed
+    through are added to ``branches`` so the caller can exclude them from
+    layout.
+
+    Inputs:
+        traversal_stack:  seed stack of node labels to explore (mutated)
+        explored:         set of already-visited labels (mutated)
+        branches:         list of branch nodes collected so far (mutated)
+        adj_list:         adjacency list {node: set(neighbors)}
+        node_deg:         degree lookup {node: int}
+
+    Output:
+        None — ``branches`` and ``explored`` are updated in place.
+
+    """
     while traversal_stack:
         current_node = traversal_stack.pop()
 
@@ -17,6 +35,22 @@ def path_traversal(
 
 
 def exclude_branches(node_labels = [], arcs = []):
+    """
+    Drop leaf branches (degree-1 tails) from a node list so only nodes that
+    participate in the graph's denser core remain. Useful as a preprocessing
+    step before an expensive crossing-reduction pass — nodes on a branch
+    can't be reordered to reduce crossings, so excluding them shrinks the
+    problem size.
+
+    Inputs:
+        node_labels:  list of node labels
+        arcs:         list of (source, dest) tuples
+
+    Output:
+        list of node labels with all branch nodes removed; preserves the
+        relative ordering of ``node_labels``.
+
+    """
     adj_list: dict[NodeLabel, set[NodeLabel]] = construct_adj_list(
         node_labels, arcs
     )
