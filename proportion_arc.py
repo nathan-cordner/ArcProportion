@@ -208,8 +208,22 @@ def node_cluster_order(nodes, arcs):
     
     # return node order of smallest number of crossings
     return min(candidates)[1]
-    
-def proportion_arc_chart(nodes, arcs, group_dict=None, color_dict=None, crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.15, gap: float = 0.15):
+
+def _arcs_and_nodes_from_df(df:pd.DataFrame, source_col="source", dest_col="dest", color_col="color", value_col="value"):
+        arcs = []
+        nodes = set()
+        for _, row in df.iterrows():
+            source = row[source_col]
+            dest = row[dest_col]
+            if not dest in nodes:
+                nodes.add(dest)
+            if not source in nodes:
+                nodes.add(source)
+            arcs.append((row[source_col], row[dest_col], row[value_col], row[color_col]))
+        nodes = list(nodes)
+        return arcs, nodes
+
+def proportion_arc_chart( df:pd.DataFrame=None, source_col="source", dest_col="dest", color_col="color", value_col="value", nodes=[], arcs=[], crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.05, group_dict=None, color_dict=None, gap: float = 0.15):
     """
     Inputs:
     -- nodes:  input nodes (previously split)
@@ -227,7 +241,10 @@ def proportion_arc_chart(nodes, arcs, group_dict=None, color_dict=None, crossing
     Output: proportional arc chart showing flow from sources to destinations
 
     """
-    
+
+    if not df is None:
+        arcs, nodes = _arcs_and_nodes_from_df(df, source_col, dest_col, color_col, value_col)
+
     start = time.time()
     
     # Find total resource flow
