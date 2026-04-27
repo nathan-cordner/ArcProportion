@@ -1,6 +1,8 @@
 __pycache__
 .venv
+.claude/
 Prior visualisations/
+sprint_showcase/
 chord_chart_example.png
 chord_myrtle_basic.png
 chord_myrtle_clustered.png
