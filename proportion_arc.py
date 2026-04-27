@@ -209,7 +209,7 @@ def node_cluster_order(nodes, arcs):
     # return node order of smallest number of crossings
     return min(candidates)[1]
     
-def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.15, gap: float = 0.15):
+def proportion_arc_chart(nodes, arcs, group_dict=None, color_dict=None, crossing_method = "LS", figsize = "auto", title: str = "", x_label_padding: float = 1.15, gap: float = 0.15):
     """
     Inputs:
     -- nodes:  input nodes (previously split)
@@ -337,12 +337,26 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
     node_center = dict(zip(nodes, x_positions))
 
     fig, ax = plt.subplots(figsize=(figwidth, fig_height))
+    
+    # node_color
+    bar_colors = []
 
+    for node in nodes:
+        cur_color = "lightgray"   # default
+
+        if group_dict is not None and color_dict is not None:
+            if node in group_dict:
+                cur_group = group_dict[node]
+                if cur_group in color_dict:
+                    cur_color = color_dict[cur_group]
+
+        bar_colors.append(cur_color)
+        
     # Rectangles beneath each node label at their width-aware positions
-    ax.bar(x_positions, [-2] * len(nodes), width=widths, color="lightgray")
+    ax.bar(x_positions, [-2] * len(nodes), width=widths, color=bar_colors)
     ax.set_xticks(x_positions)
     ax.set_xticklabels(wrapped_nodes)
-
+    
     # Calculate arc boundaries
     # Define L and R boundaries for each of the new nodes, anchored to the
     # width-aware x-position of the original (pre-split) node.
@@ -406,12 +420,10 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
         color = arc_colors[i // 2]
 
         cur_radius = draw_arc(lefts[i], rights[i], ax, color)
-        ax.patches[-1].set_edgecolor(color)
         if cur_radius > max_radius:
             max_radius = cur_radius
 
         cur_radius = draw_arc(lefts[i+1], rights[i+1], ax, color)
-        ax.patches[-1].set_edgecolor(color)
         if cur_radius > max_radius:
             max_radius = cur_radius
 
@@ -419,8 +431,6 @@ def proportion_arc_chart(nodes, arcs, crossing_method = "LS", figsize = "auto", 
     for i in range(0, len(lefts), 2):
         color = arc_colors[i // 2]
         shade_arc((lefts[i], rights[i]), (lefts[i+1], rights[i+1]), ax, color)
-        ax.patches[-1].set_facecolor(color)
-        ax.patches[-1].set_edgecolor(color)
         
     # Final adjustments
     ax.set_ylim(-0.2, max_radius * 2)
@@ -475,14 +485,14 @@ if __name__ == "__main__":
         Total of each location = sum of arc weights where location is either source or dest
     
     """
-    
+    """
     # Test data    
     nodes = ["A", "B", "C"]
     arcs = [("A", "B", 100, "red"),
             ("A", "C", 300, "blue"),
             ("B", "C", 200, "purple")]
     
- 
+    
     # nodes, arcs = read_csv("datasets/hp_top_ten.csv", dest_col="target", connections_col = "weight")
     # nodes, arcs = read_csv("datasets/power_grid.csv")
     # nodes, arcs = read_csv("datasets/harry_potter_house_interactions.csv")
@@ -493,7 +503,7 @@ if __name__ == "__main__":
     proportion_arc_chart(nodes, arcs, crossing_method = "LS")
 
     
-    """
+    #
     proportion_arc_chart(nodes, arcs, crossing_method = None)
     
 
@@ -506,4 +516,39 @@ if __name__ == "__main__":
     """
     
     
-    
+    nodes = ["A", "B", "C", "D"]
+
+    # Arc format:
+    # (source, dest, weight, arc_color)
+    arcs = [
+        ("A", "B", 100, "red"),
+        ("A", "C", 180, "blue"),
+        ("B", "D", 120, "purple"),
+        ("C", "D", 80, "green")
+    ]
+
+    # group_dict says which group each node belongs to
+    group_dict = {
+        "A": "Group1",
+        "B": "Group2",
+        "C": "Group4",
+        "D": "Group3"
+    }
+
+    # color_dict gives the NODE colors by group
+    color_dict = {
+        "Group1": "orange",
+        "Group2": "gold",
+        "Group3": "black"
+    }
+
+    print(f"Original graph. {len(nodes)} nodes and {len(arcs)} edges")
+
+    proportion_arc_chart(
+        nodes,
+        arcs,
+        group_dict=group_dict,
+        color_dict=color_dict,
+        crossing_method="LS",
+        title="Test: Arc Colors Different from Node Colors"
+    )

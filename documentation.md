@@ -23,30 +23,111 @@
 
 
 ## basic_arc.py
-- class Arc
-	* has description
-	* needs explanation or no? Type hints?
+### Arc
+`class Arc(self, source, dest, color = "lightgray", width = 1)`
+
+Basic object to store arc components. 
+
+**Parameters**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|source|int|None|A numerical index representing the arc's source node. The index is of the parameter node_labels[] in the function basic_arc_plot(). |
+|dest|int|None|A numerical index representing the arc's destination node The index is of the parameter node_labels[] in the function basic_arc_plot().|
+|color|string|"lightgray"|Sets the color of the arc. See [this link](https://matplotlib.org/stable/users/explain/colors/colors.html#colors-def) for Matplotlib color guide.|
+|width|float|1|Sets the width (thickness) of the Arc|
 	
-- _labels_from_df(df, source_col="source", dest_col="dest"):
-	* has description
-	* NEEDS param explanation
-	
-- _arcs_from_df(df, node_index, source_col="source", dest_col="dest",
+
+
+### _labels_from_df 
+`_labels_from_df(df, source_col="source", dest_col="dest")`
+
+Returns node labels from Pandas DataFrame. 
+
+**Parameters**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|df|pandas.DataFrame|None|A Pandas DataFrame with named columns|
+|source_col|str|"source"|Name of source column in DataFrame df|
+|dest_col|str|"dest|Name of destination column in DataFrame df|
+
+**Returns:** `list[str]` - list containing node labels
+
+
+
+### _arcs_from_df
+`_arcs_from_df(df, node_index, source_col="source", dest_col="dest",
                   color_col="color", width_col="width",
-                  default_color="lightgray", default_width=1):
-	* has description
-	* NEEDS param explanation
+                  default_color="lightgray", default_width=1)`
+
+Create list of Arc objects from Pandas dataframe 
+
+
+**Parameters**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|df|pandas.DataFrame|None|A Pandas DataFrame with named columns (columns configurable via source_col, dest_col, color_col, width_col)|
+|node_index|dict|None|Node labels in a dictionary of form {"First node label": 0, "Second node label": 1, [...], "n-th node label": n}|
+|source_col|str|"source"|Name of source column in DataFrame df|
+|dest_col|str|"dest"|Name of destination column in DataFrame df|
+|color_col|string|"color"|Sets the color of the arc. See [this link](https://matplotlib.org/stable/users/explain/colors/colors.html#colors-def) for Matplotlib color guide.|
+|width_col|str|"width"|Name of width column of DataFrame|
+|default_color|str|"lightgray"|Sets default arc color|
+|default_width|float|1|Sets the width (thickness) of the Arc|
 	
-- _draw_arc(arc:  Arc, ax):
-	* has description
-	* has param explanation
-	
-- basic_arc_plot(df=None, node_labels=[], arcs=[], figsize="auto",
+**Returns:** `list[Arc] - list of Arc objects for later visualization'
+
+
+
+### _draw_arc
+`_draw_arc(arc:  Arc, ax)`
+
+Visually represent an arc.
+
+**Parameters**
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|arc|Arc|None|An object of type Arc|
+|ax|matplotlib.axes.Axes|None|A matplotlib axes object|
+
+**Returns:** `float: radius` - the radius of the arc
+
+
+### basic_arc_plot
+`basic_arc_plot(df=None, node_labels=[], arcs=[], figsize="auto",
                    title="", default_color="lightgray", default_width=1,
                    source_col="source", dest_col="dest",
-                   color_col="color", width_col="width"):
-	* has description
-	* bas explanation
+                   color_col="color", width_col="width")`
+
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+| `df` | `pandas.DataFrame`, optional | `None` | Edge list as a DataFrame. Column names are configurable via `source_col`, `dest_col`, `color_col`, and `width_col`. If `None`, use `node_labels` and `arcs` instead. |
+| `node_labels` | `list[str]` | `[]` | Unique strings defining node positions along the x-axis. Required when `df` is not provided; when `df` *is* provided, an explicit list overrides the auto-detected ordering. |
+| `arcs` | `list[tuple \| Arc]` | `[]` | Connections between nodes. See **Arc formats** below. |
+| `figsize` | `tuple \| "auto"` | `"auto"` | Figure dimensions `(width, height)`. When `"auto"`, the figure is resized based on node label length so x-tick labels don't overlap. |
+| `title` | `str` | `""` | Title displayed above the chart. |
+| `default_color` | `str` | `"lightgray"` | Fallback arc color used when no per-arc override is given. |
+| `default_width` | `float` | `1` | Fallback arc line width used when no per-arc override is given. |
+| `source_col` | `str` | `"source"` | Name of the source column in the DataFrame. |
+| `dest_col` | `str` | `"dest"` | Name of the destination column in the DataFrame. |
+| `color_col` | `str` | `"color"` | Name of the optional color column in the DataFrame. |
+| `width_col` | `str` | `"width"` | Name of the optional width column in the DataFrame. |
+
+**Returns:** `(fig, ax)` — a matplotlib `Figure` and `Axes` pair.
+
+**Arc formats**
+
+An entry in the `arcs` list can be any of the following:
+
+- `(source, dest)` — uses `default_color` and `default_width`.
+- `(source, dest, color)` — custom color, default width.
+- `(source, dest, color, width)` — custom color and width.
+- `Arc(source, dest, color="...", width=...)` — a fully constructed `Arc` object.
+
+DataFrames that lack `color` or `width` columns — or rows where those cells are `NaN` — fall back to the global defaults without error.
 	
 ## cluster_arc.py
 - convert_to_cluster_arc(nodes, groups, group_dict, arcs):
@@ -86,21 +167,61 @@
 	
 
 ## helper.py
-- _max_text_width(node_labels)
-	* NEEDS description
-	* NEEDS param explanation
-	
-- auto_resize(node_labels, default_width = 6.4, padding = 1.05):
-	* has description
-	* NEEDS param explanation
+### _max_text_width
+`_max_text_width(node_labels)`
 
-- draw_arc(left, right, ax, color="tab:blue")
-	* NEEDS description
-	* NEEDS param explanation
+Determine how many pixels are used in the largest given text label
+
+**Parameters**
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|node_labels|list[str]|None|A list of node labels in string form.|
+
+**Returns:** `numpy.float64: cur_max` - The maximum pixel width used in any of the given node labels.
+
+
+### auto_resize
+`auto_resize(node_labels, default_width = 6.4, padding = 1.05)`
+
+Calculate ideal figure width based on size of node labels. Called when figsize set to "auto" in basic_arc.basic_arc_plot().
+
+**Parameters**
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|node_labels|list[str]|None|A list of node labels in string form.|
+|default_width|float|6.4|Figure width parameter.|
+|padding|float|1.05|Figure padding parameter.|
+
+**Returns:** `numpy.float64: fig_width` - ideal figure width based on nodel label length.
+
+## draw_arc
+`draw_arc(left, right, ax, color="tab:blue")`
+
+Add new arc to matplotlib.patches, and return the radius value. Used by proportion_arc.py
+
+**Parameters**
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|left|float|None|Left boundary of arc|
+|right|float|None|Right boundary of arc|
+|ax|matplotlib.axes.Axes|None|A matplotlib axes object|
+|color|str|"tab:blue"|Color of the arc|
+
+**Returns:** `numpy.float64:radius` - Radius for the arc to be drawn.
 	
-- shade_arc(pair1, pair2, ax, color="tab:blue"):
-	* NEEDS description
-	* NEEDS param explanation
+
+### shade_arc
+`shade_arc(pair1, pair2, ax, color="tab:blue")`
+
+Shade the area between arc boundaries.
+
+**Parameters**
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|pair1|tuple(float, float)|None|Left-right coordinates of one end of the proportion arc|
+|pair2|tuple(float, float)|None|Left-right coordinates of the other end of the proportion arc|
+|ax|matplotlib.axes.Axes|None|A matplotlib axes object|
+|color|str|"tab:blue"|Color to shade the arc's inner space|
 
 ## preprocessing.py
 - path_traversal(
