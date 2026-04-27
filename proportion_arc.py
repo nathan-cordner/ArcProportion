@@ -427,7 +427,7 @@ if __name__ == "__main__":
     group_dict = {
         "A": "Group1",
         "B": "Group2",
-        "C": "Group1",
+        "C": "Group4",
         "D": "Group3"
     }
 
